@@ -1,0 +1,6 @@
+transformers
+torch
+pillow
+einops 
+timm
+openai

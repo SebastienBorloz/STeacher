@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\noindent
+Méthode de substitution \hfill \textnormal{Analyse}
+
+\medskip
+
+\noindent
+Si $F(x)$ est une primitive de $f(x)$, on a 
+\[
+F(x) = \int f(x) \, dx \iff f(x) = \frac{d}{dx}F(x)
+\]
+
+\noindent
+si on pose $\boxed{x = g(t)}$, alors
+\[
+\frac{d}{dx} F(g(t)) = f(g(t)) \cdot g'(t) \iff \int f(g(t)) \cdot g'(t) \, dt = F(g(t)) + C
+\]
+
+\noindent
+On a donc 
+\[
+\boxed{\int f(x) \, dx = \int f(g(t)) \cdot g'(t) \, dt}
+\]
+
+\bigskip
+
+\noindent
+Ex:
+\[
+\int \frac{1}{\sqrt{x + 1}} \, dx = \Rightarrow t = \sqrt{x}, \quad x = t^2, \quad dx = 2t \, dt
+\]
+
+\noindent
+\[
+\implies \int \frac{1}{\sqrt{x + 1}} \, dx = \int \frac{1}{t^2 + 1} \cdot 2t\, dt = 2 \int \frac{t}{t^2 + 1} dt
+\]
+
+\noindent
+\[
+= 2 \int \left( 1 + \frac{-1}{t^2 + 1} \right) dt = 2 \cdot \left( t - \ln(t^2 + 1) \right) + C
+\]
+
+\end{document}

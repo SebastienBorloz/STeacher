@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{amsfonts}
+
+\begin{document}
+
+Le noyau de $f$ est $\mathrm{Ker}(f) := \{ \vec{x} \in \mathbb{R}^n \mid f(\vec{x}) = \vec{0} \}$ \\
+$ \quad (= f^{-1}(\vec{0})$, la préimage de $\vec{0}$) \\
+Ex: $f(\vec{x}) = \vec{0}$, $\forall \vec{x} \in \mathbb{R}^n \quad \rightarrow \quad A = 0_{m,n}$ \\
+
+$\mathrm{Im}(f) := \{ \vec{0} \} \Rightarrow \mathrm{Ker}(f) = \mathbb{R}^n$ \\
+
+$\displaystyle f\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x - y \\ x + y \end{pmatrix} \quad \mathrm{Im}(f) = \left\{ \begin{pmatrix} x - y \\ x + y \end{pmatrix} \mid x,y \in \mathbb{R} \right\}$ \\
+
+$= \left\{ x \begin{pmatrix} 1 \\ 1 \end{pmatrix} + y \begin{pmatrix} -1 \\ 1 \end{pmatrix} \mid x,y \in \mathbb{R} \right\}$ \\
+
+$= \mathbb{R}^2$ car $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ et $\begin{pmatrix} -1 \\ 1 \end{pmatrix}$ sont lin. indé. \\
+
+(Rem: ce sont les colonnes de $A$!) \\
+
+$\mathrm{Ker}(f) = \left\{ \begin{pmatrix} x \\ y \end{pmatrix} \mid \begin{pmatrix} x - y \\ x + y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \right\} \quad \Rightarrow \quad \left\{ \begin{array}{l} x - y = 0 \\ x + y = 0 \end{array} \right\} \quad \Leftrightarrow \quad \left\{ \begin{array}{l} x = 0 \\ y = 0 \end{array} \right\}$ \\
+
+\end{document}

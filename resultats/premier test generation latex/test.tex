@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+
+\section*{Noyau et image d'une application linéaire}
+
+Le noyau de $f$ est :
+\[
+\text{Ker}(f) := \left\{ \vec{x} \in \mathbb{R}^n \mid f(\vec{x}) = \vec{0} \right\}
+\]
+(c'est-à-dire $f^{-1}(\vec{0})$, la préimage de $\vec{0}$)
+
+\[
+\exists \vec{x}, f(\vec{x}) = \vec{0} \quad \forall \vec{x} \in \mathbb{R}^n \Rightarrow A = 0_{m,n}
+\]
+
+\[
+\text{Im}(f) = \left\{ \vec{0} \right\} \Rightarrow \text{Ker}(f) = \mathbb{R}^n
+\]
+
+\subsection*{Exemple :}
+
+\[
+f\left( \begin{pmatrix} x \\ y \end{pmatrix} \right) = \begin{pmatrix} x + y \\ x + y \end{pmatrix}
+\]
+
+\[
+\text{Im}(f) = \left\{ \begin{pmatrix} x + y \\ x + y \end{pmatrix} \mid x, y \in \mathbb{R} \right\}
+= \left\{ x \begin{pmatrix} 1 \\ 1 \end{pmatrix} + y \begin{pmatrix} 1 \\ 1 \end{pmatrix} \right\}
+= \mathbb{R} \cdot \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\]
+
+(car $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ et $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ sont linéairement dépendants)
+
+\textbf{Remarque :} ce sont les colonnes de $A$ !
+
+\[
+\text{Ker}(f) = \left\{ \begin{pmatrix} x \\ y \end{pmatrix} \mid \begin{pmatrix} x + y \\ x + y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \right\}
+\Rightarrow
+\begin{cases}
+x + y = 0 \\
+x + y = 0
+\end{cases}
+\Rightarrow
+\begin{cases}
+x = 0 \\
+y = 0
+\end{cases}
+\]
+
+\end{document}

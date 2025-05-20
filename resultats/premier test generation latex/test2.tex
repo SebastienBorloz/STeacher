@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+
+\section*{Méthode de substitution (Analyse)}
+
+Si $F(x)$ est une primitive de $f(x)$, on a :
+\[
+F(x) = \int f(x) \, dx \quad \Leftrightarrow \quad f(x) = \frac{d}{dx} F(x)
+\]
+
+Si on pose $x = g(t)$, alors :
+\[
+\frac{d}{dx} F(g(t)) = f(g(t)) \cdot g'(t) \Rightarrow \int f(g(t)) \cdot g'(t) \, dt = F(g(t)) + C
+\]
+
+\[
+\boxed{\int f(x) \, dx = \int f(g(t)) \cdot g'(t) \, dt}
+\]
+
+\subsection*{Exemple}
+
+\[
+\int \frac{1}{\sqrt{x} + 1} \, dx
+\Rightarrow t = \sqrt{x} \Rightarrow x = t^2 \Rightarrow dx = 2t \, dt
+\]
+
+\[
+\int \frac{1}{t + 1} \cdot 2t \, dt = 2 \int \frac{t}{t + 1} \, dt
+= 2 \int \left( 1 + \frac{t - 1}{t + 1} \right) dt
+\]
+
+\[
+= 2 \left( t - \ln(t + 1) \right) + C
+\]
+
+\end{document}
