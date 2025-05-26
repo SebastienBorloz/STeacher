@@ -1,0 +1,326 @@
+Step 1: Define the sum inside the inverse secant:
+
+\[
+S = \sum_{k=0}^{10} \sec\left(\frac{7\pi}{12} + \frac{k\pi}{2}\right) \sec\left(\frac{7\pi}{12} + \frac{(k+1)\pi}{2}\right)
+\]
+
+Step 2: Let
+
+\[
+x_k = \frac{7\pi}{12} + \frac{k\pi}{2}
+\]
+
+Then the term inside the sum is:
+
+\[
+\sec(x_k) \sec(x_{k+1})
+\]
+
+Step 3: Use the identity for secant in terms of cosine:
+
+\[
+\sec(x) = \frac{1}{\cos(x)}
+\]
+
+So,
+
+\[
+\sec(x_k) \sec(x_{k+1}) = \frac{1}{\cos(x_k) \cos(x_{k+1})}
+\]
+
+Step 4: Note the periodicity of cosine with period \(2\pi\), and the increment \(\frac{\pi}{2}\) in \(x_k\).
+
+Calculate the values of \(\cos(x_k)\) for \(k=0,1,2,3,4\) to find a pattern.
+
+\[
+x_0 = \frac{7\pi}{12}
+\]
+\[
+x_1 = \frac{7\pi}{12} + \frac{\pi}{2} = \frac{7\pi}{12} + \frac{6\pi}{12} = \frac{13\pi}{12}
+\]
+\[
+x_2 = \frac{7\pi}{12} + \pi = \frac{7\pi}{12} + \frac{12\pi}{12} = \frac{19\pi}{12}
+\]
+\[
+x_3 = \frac{7\pi}{12} + \frac{3\pi}{2} = \frac{7\pi}{12} + \frac{18\pi}{12} = \frac{25\pi}{12}
+\]
+\[
+x_4 = \frac{7\pi}{12} + 2\pi = \frac{7\pi}{12} + \frac{24\pi}{12} = \frac{31\pi}{12}
+\]
+
+Step 5: Use cosine periodicity:
+
+\[
+\cos(x + 2\pi) = \cos x
+\]
+
+So,
+
+\[
+\cos(x_4) = \cos\left(\frac{7\pi}{12} + 2\pi\right) = \cos\left(\frac{7\pi}{12}\right)
+\]
+
+Similarly, for \(k \geq 4\), the cosine values repeat every 4 steps.
+
+Step 6: Calculate \(\cos\left(\frac{7\pi}{12}\right)\):
+
+\[
+\frac{7\pi}{12} = \pi - \frac{5\pi}{12}
+\]
+
+\[
+\cos\left(\frac{7\pi}{12}\right) = \cos\left(\pi - \frac{5\pi}{12}\right) = -\cos\left(\frac{5\pi}{12}\right)
+\]
+
+Calculate \(\cos\left(\frac{5\pi}{12}\right)\):
+
+\[
+\frac{5\pi}{12} = \frac{\pi}{4} + \frac{\pi}{6}
+\]
+
+Use cosine addition formula:
+
+\[
+\cos(a+b) = \cos a \cos b - \sin a \sin b
+\]
+
+\[
+\cos\left(\frac{\pi}{4} + \frac{\pi}{6}\right) = \cos\frac{\pi}{4} \cos\frac{\pi}{6} - \sin\frac{\pi}{4} \sin\frac{\pi}{6}
+\]
+
+\[
+= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6}}{4} - \frac{\sqrt{2}}{4} = \frac{\sqrt{6} - \sqrt{2}}{4}
+\]
+
+Therefore,
+
+\[
+\cos\left(\frac{7\pi}{12}\right) = -\frac{\sqrt{6} - \sqrt{2}}{4} = \frac{\sqrt{2} - \sqrt{6}}{4}
+\]
+
+Step 7: Calculate \(\cos(x_k)\) for \(k=0,1,2,3\):
+
+- \(k=0\):
+
+\[
+\cos(x_0) = \cos\left(\frac{7\pi}{12}\right) = \frac{\sqrt{2} - \sqrt{6}}{4}
+\]
+
+- \(k=1\):
+
+\[
+x_1 = \frac{13\pi}{12} = \pi + \frac{\pi}{12}
+\]
+
+\[
+\cos\left(\pi + \frac{\pi}{12}\right) = -\cos\left(\frac{\pi}{12}\right)
+\]
+
+Calculate \(\cos\left(\frac{\pi}{12}\right)\):
+
+\[
+\frac{\pi}{12} = \frac{\pi}{4} - \frac{\pi}{6}
+\]
+
+\[
+\cos\left(\frac{\pi}{4} - \frac{\pi}{6}\right) = \cos\frac{\pi}{4} \cos\frac{\pi}{6} + \sin\frac{\pi}{4} \sin\frac{\pi}{6} = \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6}}{4} + \frac{\sqrt{2}}{4} = \frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+
+So,
+
+\[
+\cos(x_1) = -\frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+
+- \(k=2\):
+
+\[
+x_2 = \frac{19\pi}{12} = \pi + \frac{7\pi}{12}
+\]
+
+\[
+\cos\left(\pi + \frac{7\pi}{12}\right) = -\cos\left(\frac{7\pi}{12}\right) = -\frac{\sqrt{2} - \sqrt{6}}{4} = \frac{\sqrt{6} - \sqrt{2}}{4}
+\]
+
+- \(k=3\):
+
+\[
+x_3 = \frac{25\pi}{12} = 2\pi + \frac{\pi}{12}
+\]
+
+\[
+\cos\left(2\pi + \frac{\pi}{12}\right) = \cos\left(\frac{\pi}{12}\right) = \frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+
+Step 8: Summarize \(\cos(x_k)\) for \(k=0,1,2,3\):
+
+\[
+\cos(x_0) = \frac{\sqrt{2} - \sqrt{6}}{4}
+\]
+\[
+\cos(x_1) = -\frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+\[
+\cos(x_2) = \frac{\sqrt{6} - \sqrt{2}}{4}
+\]
+\[
+\cos(x_3) = \frac{\sqrt{6} + \sqrt{2}}{4}
+\]
+
+Step 9: The pattern repeats every 4 steps:
+
+\[
+\cos(x_{k+4}) = \cos(x_k)
+\]
+
+Step 10: Calculate the terms \(\sec(x_k) \sec(x_{k+1}) = \frac{1}{\cos(x_k) \cos(x_{k+1})}\) for \(k=0,1,2,3\):
+
+- \(k=0\):
+
+\[
+\frac{1}{\cos(x_0) \cos(x_1)} = \frac{1}{\left(\frac{\sqrt{2} - \sqrt{6}}{4}\right) \left(-\frac{\sqrt{6} + \sqrt{2}}{4}\right)} = \frac{1}{-\frac{(\sqrt{2} - \sqrt{6})(\sqrt{6} + \sqrt{2})}{16}} = -\frac{16}{(\sqrt{2} - \sqrt{6})(\sqrt{6} + \sqrt{2})}
+\]
+
+Simplify the denominator:
+
+\[
+(\sqrt{2} - \sqrt{6})(\sqrt{6} + \sqrt{2}) = \sqrt{2}\sqrt{6} + \sqrt{2}^2 - \sqrt{6}^2 - \sqrt{6}\sqrt{2} = (\sqrt{12} + 2) - (6 + \sqrt{12}) = 2 - 6 = -4
+\]
+
+So,
+
+\[
+\frac{1}{\cos(x_0) \cos(x_1)} = -\frac{16}{-4} = 4
+\]
+
+- \(k=1\):
+
+\[
+\frac{1}{\cos(x_1) \cos(x_2)} = \frac{1}{\left(-\frac{\sqrt{6} + \sqrt{2}}{4}\right) \left(\frac{\sqrt{6} - \sqrt{2}}{4}\right)} = \frac{1}{-\frac{(\sqrt{6} + \sqrt{2})(\sqrt{6} - \sqrt{2})}{16}} = -\frac{16}{(\sqrt{6} + \sqrt{2})(\sqrt{6} - \sqrt{2})}
+\]
+
+Simplify denominator:
+
+\[
+(\sqrt{6} + \sqrt{2})(\sqrt{6} - \sqrt{2}) = 6 - 2 = 4
+\]
+
+So,
+
+\[
+\frac{1}{\cos(x_1) \cos(x_2)} = -\frac{16}{4} = -4
+\]
+
+- \(k=2\):
+
+\[
+\frac{1}{\cos(x_2) \cos(x_3)} = \frac{1}{\left(\frac{\sqrt{6} - \sqrt{2}}{4}\right) \left(\frac{\sqrt{6} + \sqrt{2}}{4}\right)} = \frac{1}{\frac{(\sqrt{6} - \sqrt{2})(\sqrt{6} + \sqrt{2})}{16}} = \frac{16}{4} = 4
+\]
+
+- \(k=3\):
+
+\[
+\frac{1}{\cos(x_3) \cos(x_4)} = \frac{1}{\left(\frac{\sqrt{6} + \sqrt{2}}{4}\right) \left(\frac{\sqrt{2} - \sqrt{6}}{4}\right)} = \frac{1}{\frac{(\sqrt{6} + \sqrt{2})(\sqrt{2} - \sqrt{6})}{16}} = \frac{16}{(\sqrt{6} + \sqrt{2})(\sqrt{2} - \sqrt{6})}
+\]
+
+Note:
+
+\[
+(\sqrt{6} + \sqrt{2})(\sqrt{2} - \sqrt{6}) = -(\sqrt{2} - \sqrt{6})(\sqrt{6} + \sqrt{2}) = -(-4) = 4
+\]
+
+So,
+
+\[
+\frac{1}{\cos(x_3) \cos(x_4)} = \frac{16}{4} = 4
+\]
+
+Step 11: The terms for \(k=0,1,2,3\) are:
+
+\[
+4, -4, 4, 4
+\]
+
+Step 12: Since the pattern repeats every 4 steps, the sequence of terms is:
+
+\[
+4, -4, 4, 4, 4, -4, 4, 4, 4, -4, 4
+\]
+
+for \(k=0\) to \(10\).
+
+Step 13: Sum these 11 terms:
+
+Group in cycles of 4 terms:
+
+- First 4 terms: \(4 - 4 + 4 + 4 = 8\)
+- Next 4 terms: \(4 - 4 + 4 + 4 = 8\)
+- Remaining 3 terms: \(4 - 4 + 4 = 4\)
+
+Total sum:
+
+\[
+8 + 8 + 4 = 20
+\]
+
+Step 14: The expression inside the inverse secant is:
+
+\[
+\frac{1}{4} \times 20 = 5
+\]
+
+Step 15: We want to find:
+
+\[
+\sec^{-1}(5)
+\]
+
+in the interval \(\left[-\frac{\pi}{4}, \frac{3\pi}{4}\right]\).
+
+Step 16: Recall that \(\sec^{-1}(x)\) is the angle \(\theta\) such that \(\sec \theta = x\).
+
+Since \(\sec \theta = \frac{1}{\cos \theta}\), we have:
+
+\[
+\cos \theta = \frac{1}{5}
+\]
+
+Step 17: Find \(\theta\) in the interval \(\left[-\frac{\pi}{4}, \frac{3\pi}{4}\right]\) such that \(\cos \theta = \frac{1}{5}\).
+
+\(\cos \theta = \frac{1}{5} > 0\), so \(\theta\) is in the first quadrant or fourth quadrant.
+
+The interval includes the first quadrant \([0, \frac{\pi}{2}]\) and the second quadrant \([\frac{\pi}{2}, \frac{3\pi}{4}]\), and also negative angles down to \(-\frac{\pi}{4}\).
+
+Since \(\cos \theta = \frac{1}{5}\) is positive, \(\theta\) must be in the first quadrant.
+
+Step 18: Calculate \(\theta = \arccos\left(\frac{1}{5}\right)\).
+
+This is the principal value of \(\sec^{-1}(5)\) in the given interval.
+
+Final answer:
+
+\[
+\sec^{-1}(5) = \arccos\left(\frac{1}{5}\right)
+\]
+
+Numerically,
+
+\[
+\arccos\left(\frac{1}{5}\right) \approx 1.3694
+\]
+
+which lies in \(\left[0, \frac{\pi}{2}\right]\subset \left[-\frac{\pi}{4}, \frac{3\pi}{4}\right]\).
+
+---
+
+\[
+\boxed{\arccos\left(\frac{1}{5}\right)}
+\]
+
+---
+
+**Final line:**
+
+\[
+\arccos\left(\frac{1}{5}\right)
+\]

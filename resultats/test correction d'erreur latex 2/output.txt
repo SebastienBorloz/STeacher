@@ -1,0 +1,33 @@
+**student's logic:**
+
+(a)  
+- Il calcule la moyenne de x (notée \(\overline{x}\)) comme étant 80.  
+- Il calcule la moyenne de y (notée \(\overline{y}\)) comme étant 58,6.  
+- Il calcule l'écart-type de x en utilisant \(\sqrt{250} \approx 15,811\).  
+- Il calcule l'écart-type de y en utilisant \(\sqrt{15,8} \approx 3,975\).  
+- Il calcule la covariance selon la formule avec la somme des produits des écarts : \(\mathrm{Cov}(x,y) = \frac{1}{4} \sum (x_i - \overline{x})(y_i - \overline{y}) = -62,5\).  
+- Il calcule le coefficient de corrélation en divisant la covariance par le produit des écarts-types (62,85), mais obtient 0,9944.
+
+(b)  
+- Il conclut à l’existence d’une relation linéaire car la corrélation est très proche de \(-1\).
+
+(c)  
+- Il construit la matrice \(A\) avec les valeurs de x et un vecteur colonne de 1 pour l'ordonnée à l'origine.  
+- Il construit le vecteur \(B\) avec les valeurs y.  
+- Il calcule \(A^T A\) (matrice transposée fois matrice \(A\)).  
+- Il calcule l'inverse \((A^T A)^{-1}\).  
+- Il calcule \(A^T B\).  
+- Il multiplie \((A^T A)^{-1}\) par \(A^T B\) pour obtenir le vecteur \(X = (m, q)^T\).  
+- Il conclut que la droite de régression est \(y = -0,25 x + 78,6\).
+
+---
+
+**error list:**
+
+[CAL] : Le calcul de la corrélation est erroné. La covariance est négative et la corrélation doit être proche de \(-0,9944\), donc le signe est incorrect (il écrit \(0,9944\) positif).  
+[CAL] : Le dénominateur de la corrélation est mal calculé ou mal utilisé. Pour la corrélation, on divise par \(s_x s_y\), soit \(15,811 \times 3,975 = 62,85\), mais la valeur donnée semble fausse pour \(s_y\) (car \(\sqrt{15,8} \approx 3,975\) est correct, mais ce n’est pas cohérent avec la covariance donnée).  
+[REAS] : Dans la conclusion (b), il affirme que la corrélation est proche de \(-1\), mais dans sa résolution il a mis un résultat positif \(0,9944\). Cela montre une incohérence de raisonnement par rapport au signe.  
+[CAL] : L'inversion de la matrice \((A^T A)^{-1}\) est correcte, mais la multiplication finale donne \(\begin{pmatrix} -1250 \\ -393000 \end{pmatrix}\), qui divisé par 5000 donne \(\begin{pmatrix} -0,25 \\ -78,6 \end{pmatrix}\), or l’étudiant met \(q=78,6\) au lieu de \(-78,6\), erreur de signe.  
+[REAS] : L’interprétation finale de la constante \(q\) dans la droite de régression est erronée (le signe doit être négatif).
+
+En résumé, les principales erreurs sont dans la gestion des signes pour la corrélation et pour l'ordonnée à l'origine de la droite de régression, et une légère confusion dans le calcul des valeurs statistiques.

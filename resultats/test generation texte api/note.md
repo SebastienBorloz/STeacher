@@ -1,4 +1,4 @@
-Ces deux tests ont été faits sur l'api openai pour valider le fonctionnement de l'inclusion d'images dans les appels api. Les deux images sont test1_resized.jpg et test2_resized.jpg dans le dossier images.
+Ces deux tests ont été faits sur l'api openai pour tester le format employé par le llm si on lui refuse le Latex. Les deux images sont test1_resized.jpg et test2_resized.jpg dans le dossier images.
 
 Voici le prompt:
 
@@ -10,6 +10,7 @@ You must not translate the text.
 If, the image is unreadable or if the content doesn't seem to be maths, simply say [error]: {the error you encoutered}.
 for example, if you didn't receive an image, return '[error]: I was not given an image.'
 ```
+
 
 le llm a rendu un code en latex qui a ensuite été converti en pdf via pdflatex pour une meilleur lisibilité.
 

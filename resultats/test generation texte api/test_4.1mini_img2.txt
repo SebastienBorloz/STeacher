@@ -1,0 +1,17 @@
+Méthode de substitution                Analyse
+
+Si F(x) est une primitive de f(x), on a
+F(x) = ∫ f(x) dx <=> f(x) = d/dx F(x)
+
+si on pose [x = g(t)], alors
+d/dx F(g(t)) = f(g(t)) . g'(t) <=> ∫ f(g(t)) . g'(t) dt
+= F(g(t))+ C
+
+On a donc [∫ f(x) dx = ∫ f(g(t)) . g'(t) dt]
+
+Ex:
+∫ 1/√(x+1) dx => t = √x          ∫ 1/√(t+1) 2t dt
+    x = t²
+    dx = 2t . dt                                                     = 2 . ∫ t/(t+1) dt
+                                                                     = 2 . ∫ (1 + (-1/(t+1))) dt
+                                                                     = 2 . (t - ln(t+1)) + C

@@ -1,0 +1,14 @@
+Le noyau de f est Ker(f) := {x ∈ R^n | f(x) = 0}
+(= f^-1({0}), la préimage de {0})
+Ex(x) f(x) = 0, ∀ x ∈ R^n  -->  A = 0_m,n
+Im(f) := {0} -> Ker(f) = R^n
+(2) f(x/y) = (x - y / x + y)  Im(f) = {(x - y / x + y) | xi yi ∈ R}
+
+= {x (1/1) + y (-1/1) | xi yi ∈ R}
+= R^2 car (1/1) et (-1/1) sont lin. indé.
+(Rem: ce sont les colonnes de A !)
+
+Ker(f) = {(x/y) | (x - y / x + y) = (0 / 0) } = {0}
+{ x - y = 0
+  x + y = 0 } <=> { x = 0
+                    y = 0 }

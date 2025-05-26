@@ -1,0 +1,30 @@
+**student's logic:**
+
+- Ligne 1 : Calcul de la moyenne de x (80) et de y (58,6), puis calcul des écarts-types (s_x ≈ 15,844 et s_y ≈ 3,875). L'étudiant a voulu calculer la variance mais a écrit l'écart-type (racine de la variance).
+- Ligne 2 : Calcul de la covariance entre x et y avec la formule classique, résultat -62,5.
+- Ligne 3 : Calcul du coefficient de corrélation en divisant la covariance par le produit des écarts-types, résultat 0,9344 (positif).
+- Ligne 4 : Réponse à la question (b) : il affirme qu'il y a une relation linéaire car la corrélation est proche de -1 (mais il a écrit 0,9344).
+- Ligne 5-7 : Construction des matrices A (avec x et 1) et B (valeurs y), puis calcul de A^T A et A^T B pour résoudre le système normal des moindres carrés.
+- Ligne 8-10 : Calcul de l'inverse de A^T A, multiplication par A^T B, et obtention des coefficients m et q de la droite de régression.
+- Ligne 11 : Résultat final pour m et q : m = -0,25 (approximé), q = 78,6.
+- Ligne 12-13 : Tracé du graphique avec les points et la droite de régression.
+
+---
+
+**error list:**
+
+[CAL] : L'écart-type a été confondu avec la variance, alors que la consigne demandait la variance (s_x et s_y sont des écarts-types, pas des variances).
+
+[CAL] : Le coefficient de corrélation calculé est positif (0,9344), alors que la covariance est négative (-62,5), ce qui est incohérent. Le signe du coefficient de corrélation doit être négatif.
+
+[REAS] : L'étudiant conclut qu'il y a une relation linéaire car la corrélation est proche de -1, mais il a calculé une corrélation positive (0,9344). Il y a une confusion dans l'interprétation.
+
+[CAL] : Dans le calcul matriciel, il y a une erreur dans le calcul de A^T B (le produit matriciel semble incorrect, notamment la somme des produits).
+
+[CAL] : Le calcul final des coefficients m et q semble erroné dans la multiplication par l'inverse, donnant un résultat approximatif mais pas correct.
+
+[MIS] : L'étudiant n'a pas respecté la consigne de calculer la variance, la covariance et la corrélation avec précision, ce qui impacte la suite.
+
+---
+
+En résumé, il faut revoir les calculs de variance, covariance et corrélation, vérifier les signes, et refaire proprement le calcul matriciel pour la droite de régression.
