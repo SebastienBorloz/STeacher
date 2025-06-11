@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Exercice 4
+
+a) \quad 
+\[
+a^2 x - 2 b^2 y + 2 a^2 y - b^3 x \Rightarrow \frac{(a^2 - b^2)(x + 2 y)}{}
+\]
+
+b) \quad 
+\[
+a^2 - b^2 - 24 a x + 6 b y + 144 x^2 - 9 y^2 \Rightarrow (a - 12 x - b + 3 y)(a - 12 x + b - 3 y)
+\]
+
+c) \quad 
+\[
+(x^2 + 2)^2 + 4 x (x^2 + 2) + 4 x^2
+\]
+\[
+\Rightarrow (x^2 + 2)(x^2 + 2) = x^4 + 4x^2 + 4
+\]
+\[
+\Rightarrow  4x^3 + 8x
+\]
+\[
+\Rightarrow x^4 + 4 x^2 + 4 + 4 x^3 + 8 x + 4 x^2
+\]
+\[
+\Rightarrow x^4 + 4x^3 + 8 x^2 + 8 x + 4
+\]
+\[
+\Rightarrow (x^2 + 2 x + 2)(x^2 + 2 x + 2)
+\]
+
+d) \quad 
+\[
+x^6 - 12 x^4 + 48 x^2 - 64
+\]
+\[
+\Rightarrow (x - 2)^3 (x + 2)^3
+\]
+
+\end{document}

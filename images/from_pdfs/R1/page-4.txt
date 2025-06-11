@@ -1,0 +1,78 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+$f(x) = x - \sqrt{x - x^2}$
+
+$= \left(x - \sqrt{x - x^2}\right)'$
+
+$= 1 - \frac{1}{2\sqrt{x - x^2}} \cdot (1 - 2x)$
+
+$= 1 - \frac{1 - 2x}{2\sqrt{x - x^2}}$
+
+n) $f(x) = \sin(\cos(x))$
+
+$f'(x) = \cos(\cos(x)) \cdot (-\sin(x))$
+
+$= -\cos(\cos(x)) \cdot \sin(x)$
+
+o) $g(x) = x \cdot \cos(x^2 - 2)$
+
+$g'(x) = x' \cdot \cos(x^2 - 2) + x \cdot (\cos(x^2 - 2))'$
+
+$= 1 \cdot \cos(x^2 - 2) + x \cdot (-\sin(x^2 - 2)) \cdot (x^2 - 2)'$
+
+$= \cos(x^2 - 2) - 2x^2 \sin(x^2 - 2)$
+
+p) $\int_0^1 \frac{1}{2} h^2 f''(x) - h f'(x) \, dx = x$
+
+$\int_0^1 \frac{1}{2} h^2 f''(x) - h f'(x) \, dx = x$
+
+$= \frac{1}{2} \left[ h^2 f'(x) - (h^2)' f(x) \right]_0^1 - \int_0^1 (h^2)' f'(x) \, dx$
+
+$= \frac{1}{2} \left[ h^2 f'(x) - 2h h' f(x) \right]_0^1 - \int_0^1 2h h' f'(x) \, dx$
+
+$= \left[ h^2 f'(x) - h^2 f(x) \right]_0^1$
+
+$= h^2(1) f'(1) - h^2(0) f'(0)$
+
+q) $\int_0^1 \frac{x}{\sqrt{1 - x^2}} \, dx$
+
+$\int_0^1 \frac{x}{\sqrt{1 - x^2}} \, dx = \int_0^1 \frac{-\frac{1}{2} (1 - x^2)'}{\sqrt{1 - x^2}} \, dx$
+
+$= - \int_0^1 \frac{(1 - x^2)'}{2 \sqrt{1 - x^2}} \, dx$
+
+$= - \int_0^1 \frac{(1 - x^2)'}{2 (1 - x^2)^{1/2}} \, dx$
+
+$= - \int_0^1 \frac{d}{dx} \left( (1 - x^2)^{1/2} \right) \, dx$
+
+$= - \left[ (1 - x^2)^{1/2} \right]_0^1$
+
+$= - \left( 0 - 1 \right)$
+
+$= 1$
+
+r) $f(x) = \operatorname{arch} \left( \frac{1}{x} \right)$
+
+$= 0 \quad \text{(constante = 0)}$
+
+$\int_1^2 f'(x) \, dx = \int_1^2 \frac{1}{\sqrt{x^2 - 1}} \, dx$
+
+s) $f(x) = \operatorname{arch} \left( \frac{x-1}{x+1} \right)$
+
+$f'(x) = \frac{1}{\sqrt{\left(\frac{x-1}{x+1}\right)^2 - 1}} \cdot \left( \frac{(x-1)' (x+1) - (x-1) (x+1)'}{(x+1)^2} \right)$
+
+$= \frac{1}{\sqrt{\left(\frac{x-1}{x+1}\right)^2 - 1}} \cdot \frac{(1)(x+1) - (x-1)(1)}{(x+1)^2}$
+
+$= \frac{1}{\sqrt{\left(\frac{x-1}{x+1}\right)^2 - 1}} \cdot \frac{x + 1 - x + 1}{(x+1)^2}$
+
+$= \frac{1}{\sqrt{\left(\frac{x-1}{x+1}\right)^2 - 1}} \cdot \frac{2}{(x+1)^2}$
+
+$= \frac{2}{(x+1)^2 \sqrt{\left(\frac{x-1}{x+1}\right)^2 - 1}}$
+
+\end{document}
+```

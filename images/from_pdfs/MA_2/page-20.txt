@@ -1,0 +1,107 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+\textbf{3.} Soit 
+\[
+A = \begin{pmatrix}
+1 & -\sqrt{3} \\
+\sqrt{3} & 1
+\end{pmatrix}.
+\]
+
+(a) Calculer $A^2$, puis $A^3$.
+
+(b) En déduire $A^6$ et $A^{2024}$.
+
+\bigskip
+
+\noindent
+(a) 
+\[
+A^2 = \begin{pmatrix}
+1 & -\sqrt{3} \\
+\sqrt{3} & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & -\sqrt{3} \\
+\sqrt{3} & 1
+\end{pmatrix}
+= \begin{pmatrix}
+-2 & -2\sqrt{3} \\
+2\sqrt{3} & -2
+\end{pmatrix}
+\]
+
+\[
+A^3 = 2 \begin{pmatrix}
+1 & -\sqrt{3} \\
+\sqrt{3} & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & -\sqrt{3} \\
+\sqrt{3} & 1
+\end{pmatrix}
+= 2 \begin{pmatrix}
+-4 & 0 \\
+0 & -4
+\end{pmatrix} = -8 I_2
+\]
+
+\bigskip
+
+\noindent
+(b) 
+\[
+A^6 = (A^3)^2 = (-8 I_2)^2 = 64 I_2
+\]
+
+\[
+A^{2024} = A^{6 \times 337 + 2} = A^{6 \times 337} A^2 = 64^{337} I_2 \cdot A^2 = 6^{337} \cdot I_2 \cdot A^2 = 2^{2022} A^2
+\]
+
+\bigskip
+
+\textbf{4.} Soient 
+\[
+A = \begin{pmatrix}
+1 & 2 & 3 \\
+2 & 1 & -1 \\
+1 & 1 & 4
+\end{pmatrix}
+\quad \text{et} \quad
+B = \begin{pmatrix}
+-1 & 2 & 2 \\
+3 & 0 & 1 \\
+4 & 5 & 2
+\end{pmatrix}.
+\]
+
+Résoudre l'équation $X A^{-1} = B$, où l'inconnue $X$ est une matrice.
+
+\bigskip
+
+\[
+X A^{-1} = B \implies X = B A = 
+\begin{pmatrix}
+-1 & 2 & 2 \\
+3 & 0 & 1 \\
+4 & 5 & 2
+\end{pmatrix}
+\begin{pmatrix}
+2 & 3 & \\
+7 & -7 & \\
+1 & -1 & 4
+\end{pmatrix}
+= 
+\begin{pmatrix}
+5 & 2 & 3 \\
+6 & 7 & 13 \\
+16 & 15 & 15
+\end{pmatrix}
+\]
+
+\end{document}
+```

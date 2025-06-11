@@ -1,0 +1,66 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+3. Soit $A$ une matrice inversible. Montrer que
+
+(a) $(A^k)^{-1} = (A^{-1})^k$ \hspace{2cm} (b) $(ABA^{-1})^k = AB^kA^{-1}$
+
+pour tout $k \in \mathbb{N}^*$.
+
+a) \quad $(A^k)^{-1} = (A^{k-7} A)^{-7} = A^{-7} (A^{k-7})^{-7} = A^{-7} (A^{k-7} A)^{-7} = A^{-7} A^{-7} (A^{k-2})^{-7}$
+
+$= \ldots = (A^{-7})^k$
+
+b) \quad $(AB A^{-7})^k = (A B A^{-7}) (A B A^{-7}) \ldots (A B A^{-7}) = (A B^3 A^{-7}) (A B A^{-7}) \ldots A B A^{-7}$
+
+$= \ldots = A B^k A^{-7}$
+
+4. Soit $A$ la matrice régulière donnée par
+
+\[
+A = \begin{pmatrix}
+4 & 1 & 2 & 1 \\
+2 & 4 & 1 & 2 \\
+1 & 2 & 4 & 0 \\
+0 & 1 & 1 & 1
+\end{pmatrix}
+\]
+
+et soit $B = A^T$.
+
+Calculer $\left(\left((A^T)^{-1} (B^T)^{-1}\right)^T\right)^{-1}$.
+
+\[
+\left((A^T)^{-7} (B^T)^{-7}\right)^T)^{-7} = \left((A^{-7})^T (B^{-7})^T\right)^T)^{-7} = \left(((B^{-7} A^{-7})^T)^T\right)^{-7} = A B
+\]
+
+\[
+= A A^T
+\]
+
+\[
+A A^T = \begin{pmatrix}
+4 & 1 & 2 & 1 \\
+2 & 4 & 1 & 2 \\
+1 & 2 & 4 & 0 \\
+0 & 1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+4 & 2 & 1 & 0 \\
+1 & 4 & 2 & 1 \\
+2 & 1 & 4 & 1 \\
+1 & 2 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+22 & 16 & 14 & 6 \\
+16 & 25 & 14 & 7 \\
+14 & 14 & 24 & 6 \\
+6 & 7 & 6 & 3
+\end{pmatrix}
+\]
+
+\end{document}
+```

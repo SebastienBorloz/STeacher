@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{Modélisation Mathématique - Série 10}
+\]
+
+\[
+\text{Equations différentielles: Equations d’ordre 1 séparables}
+\]
+
+\[
+\text{1. (a) Déterminer la solution générale de l’équation différentielle}
+\]
+
+\[
+y' = \frac{1+y^2}{1+t^2}
+\]
+
+\[
+\text{1) } y' = \frac{1}{1+t^2} (1+y^2) \implies séparable
+\]
+
+\[
+\text{2) Solutions constantes:} h(y) = 0 \implies 1 + y^2 = 0 \implies \text{aucune solution constante.}
+\]
+
+\[
+3) \int \frac{1}{1+y^2} dy = \int \frac{1}{1+t^2} dt \implies \arctan(y) = \arctan(t) + c \implies y = \tan(\arctan(t) + c)
+\]
+
+\[
+\implies y = \frac{t + \tan(c)}{1 - t \tan(c)} = \frac{t + D}{1 - t \cdot D} \quad D = \tan(c) \in \mathbb{R}
+\]
+
+\[
+\text{(b) Déterminer la solution du problème initial}
+\]
+
+\[
+\begin{cases}
+y' = \frac{\ln t}{t y} \\
+y(1) = 2
+\end{cases}
+\]
+
+\[
+\text{1) } y' = \frac{\ln(t)}{t} \frac{1}{y} \implies \text{séparable}
+\]
+
+\[
+\text{2) } h(y) = 0 \implies \frac{1}{4} = 0 
+\]
+
+\[
+3) \int y \, dy = \int \frac{\ln(t)}{t} dt
+\]
+
+\[
+\implies \frac{y^2}{2} = \frac{1}{2} \ln(t)^2 + c \implies y = \pm \sqrt{\ln(t)^2 + D} \quad D =2C
+\]
+
+\[
+y(1) = 2 = \pm \sqrt{\ln(1)^2 + D} \implies 2 = \pm \sqrt{D} \implies D = 4 \implies y(t) = \sqrt{\ln(t)^2 + 4} 
+\]
+
+\end{document}

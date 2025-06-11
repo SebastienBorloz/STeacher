@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Mathématiques appliquées 2 - Série 6}
+
+1. Le résultat d'un sondage auprès de 150 personnes sur la mobilité urbaine est résumé dans le diagramme suivant.
+
+$A$ représente les personnes habitant à plus de 5 km du centre-ville, \\
+$B$ représente les personnes utilisant leur voiture pour se rendre au travail \\
+et $C$ les personnes qui sergent prêtes à se déplacer uniquement en transports publics.
+
+Déterminer pour un participant choisi au hasard :
+
+(a) $P(A)$, $P(B)$, $P(C)$, $P(A \cap B)$ et $P(A \cup B)$.
+
+(b) $P(A|B)$, $P(B|A)$, $P(\overline{A}|B)$ et $P(A|\overline{B})$.
+
+(c) La probabilité qu'une personne soit prête à utiliser uniquement les transports publics, sachant qu'elle habite à moins de 5 km du centre-ville.
+
+\bigskip
+
+a) $| \Omega | = 150$, $|A| = 84$, $|B| = 99$, $|C| = 84$, $|A \cap B| = 75$, $|A \cup B| = 108$ \\
+$\Rightarrow P(A) = \frac{84}{150} = 0.56$, \quad $P(B) = \frac{99}{150} = 0.66$, \quad $P(C) = \frac{45}{150} = 0.56$, \quad $P(A \cap B) = \frac{75}{150} = 0.5$ \\
+
+$P(A \cup B) = \frac{108}{150} = 0.72$
+
+\bigskip
+
+b) $P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{75}{99} = 0.\overline{75}$, \quad $P(B|A) = \frac{P(B \cap A)}{P(A)} = \frac{75}{84} = 0.893$ \\
+
+$P(\overline{A}|B) = \frac{P(\overline{A} \cap B)}{P(B)} = \frac{24}{99} = 0,\overline{24} = 1 - P(A|B)$, \quad $P(A|\overline{B}) = \frac{P(A \cap \overline{B})}{P(\overline{B})} = \frac{9}{51} = 0.176$
+
+\bigskip
+
+c) $P(C|\overline{A}) = \frac{P(C \cap \overline{A})}{P(\overline{A})} = \frac{22}{66} = 0.\overline3$
+
+\end{document}

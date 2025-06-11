@@ -1,0 +1,69 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Modélisation Mathématique - Série 7}
+
+Equations différentielles: généralités, équation exponentielle
+
+1. (a) Pour chacune des équations suivantes, vérifier que la fonction $y(t)$ donnée est une solution.
+
+\begin{itemize}
+\item[(i)] $y' + 2y = 2e^t \quad \quad y(t) = \frac{2}{3} e^t + e^{-2t}$
+\item[(ii)] $y' = y + t^2 \sin(t) \quad \quad y(t) = -t \cos(t) - t$
+\item[(iii)] $y' = -e^{-at}(\cos(t) + \sin(t)) \quad \quad y(t) = e^{-at} \cos(t)$
+\end{itemize}
+
+\medskip
+
+i) 
+\[
+y'(t) = \frac{2}{3} e^t - 2 e^{-2t}
+\]
+\[
+2 e^t - 2 y(t) = 2 e^t - 2 \left( \frac{2}{3} e^t + e^{-2t} \right) = \frac{2}{3} e^t - 2 e^{-2t} \quad \checkmark
+\]
+
+ii) 
+\[
+y'(t) = -\cos(t) + t \sin(t) - \gamma
+\]
+\[
+y(t) + t^2 \sin(t) = -t \cos(t) - t + t^2 \sin(t) = t(1 - \cos(t)) - t + t^2 \sin(t)
+= t y'(t)
+\]
+
+iii) 
+\[
+y'(t) = -a e^{-at} \cos(t) - \sin(t) e^{-at} = -e^{-at} (a \cos(t) + \sin(t))
+\]
+
+(b) Soit l'équation différentielle
+\[
+y' = -y^2.
+\]
+
+(i) A priori (c'est-à-dire sans effectuer ce calcul, juste en interprétant l'équation différentielle), quelles propriétés doivent être satisfaites par toute solution y de cette équation ?
+
+(ii) Vérifier que tous les membres de la famille de fonctions
+\[
+y = \frac{1}{t + C}, \quad C \in \mathbb{R}
+\]
+sont des solutions de l'équation différentielle.
+
+\medskip
+
+i) $\Rightarrow$ La valeur de la perte ne dépend que de $y(t)$, pas de t.
+
+$\Rightarrow -y^2 \leq 0 \quad \forall y \Rightarrow$ toutes les solutions doivent être décroissantes.
+
+ii) 
+\[
+y' = \left( (t + C)^{-1} \right)' = - (t + C)^{-2} = - \frac{1}{(t + C)^2} = - y^2 \quad \checkmark
+\]
+
+\end{document}
+```

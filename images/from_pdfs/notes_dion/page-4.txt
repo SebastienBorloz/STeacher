@@ -1,0 +1,29 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+1) \quad e^{3x} + 4e^{2x} - e^x = 0 \quad \mathcal{D} = \mathbb{R} \\
+
+\Leftrightarrow (e^x)^3 - e^x + 4(e^x)^2 = 0 \quad \text{soit } e^x = y \\
+
+\Rightarrow y^3 - y + 4y^2 = 0 \Leftrightarrow y(y^2 + 4y - 1) = 0 \\
+
+\Rightarrow \ln y (y^2 + 4y - 1) = \ln y + \ln (y^2 + 4y - 1) = 2y \cdot \ln e \\
+
+\Rightarrow y(1 - y^2) = 4(1-y) \Rightarrow \ln y (1 - y^2) = 2y \cdot \ln e \\
+
+2) \quad \log_4 10 + \log_5 10 + \log_{10} 10 = 0 \quad \mathcal{D} : \mathbb{R}^* \\
+
+\log_4 10 \quad \log_5 10 \quad \log_{10} 10 \\
+
+\frac{\log_4 10}{\log_5 10} \quad \frac{\log_5 10}{\log_{10} 10} \\
+
+\log_5 10 + 1 \quad \log_5 100 + 1 \\
+
+\Rightarrow y + \frac{y}{y+1} + \frac{y}{y+1} - 0 \Leftrightarrow y(y+1)^2 + y(y+1) + y = 0 \\
+
+\Leftrightarrow y^3 + 3y^2 + 3y + 1 = 0
+
+\end{document}
+```

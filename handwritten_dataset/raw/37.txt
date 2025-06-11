@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Exercice 7
+
+a) \quad
+\[
+\frac{\frac{y^{-3}}{10a}}{\frac{y^{-3}}{15b}} = \frac{y^{-3}}{10a} \quad \frac{15b}{y^{-3}} = \frac{15b}{10a} = \frac{3b}{2a}
+\]
+
+b) \quad
+\[
+\frac{x- \frac{1}{x}}{x + \frac{1}{x}} \left| \cdot \frac{x}{x} \implies \frac{x^2 - 1}{x^2 + 1}
+\right.
+\]
+
+c) \quad
+\[
+\frac{\frac{a+1}{a-1} - 1}{1 + \frac{a+1}{a-1}} \left| \cdot \frac{(a-1)}{(a-1)} \quad \Rightarrow \quad \frac{(a+1) - a + 1}{(a+1) + a - 1} = \frac{2}{2a} = \frac{1}{a}
+\right.
+\]
+
+d) \quad
+\[
+\frac{\frac{3a^2 - 27}{6a + 12}}{\frac{a^2 - 6a + 9}{a^2 + 4a + 4}} = \frac{\frac{3 (a^2 - 9)}{6 (a + 2)}}{\frac{(a - 3)(a - 3)}{(a + 2)(a + 2)}} = \frac{3(a - 3)(a + 3)}{6 (a + 2)} \cdot \frac{(a + 2)(a+2)}{(a-3)(a-3)} = \frac{3(a + 3)(a + 2)}{6(a-3)} = \frac{(a + 3)(a + 2)}{2(a-3)}
+\]
+
+e) \quad
+\[
+\frac{\frac{1}{a^2} - \frac{2}{ab} + \frac{1}{b^2}}{\frac{1}{a^2} - \frac{1}{b^2}} = \frac{(\frac{1}{a}-\frac{1}{b})^2}{(\frac{1}{a} - \frac{1}{b})(\frac{1}{a} + \frac{1}{b})} = \frac{\frac{1}{a} - \frac{1}{b}}{\frac{1}{a} + \frac{1}{b}} = \frac{\frac{b-a}{ab}}{\frac{b+a}{ab}} = \frac{b - a}{b + a}
+\]
+
+\end{document}

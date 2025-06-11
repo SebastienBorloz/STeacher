@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+
+Mathématiques appliquées 2 - Série 5
+
+1. Pour étudier la corrosion, on a mesuré par ultrasons la perte maximale d'épaisseur (en $10^{-3}$in) sur le fond de 20 réservoirs du même type et on a obtenu les valeurs suivantes.
+
+\[
+40 \quad 55 \quad 55 \quad 55 \quad 60 \quad 70 \quad 75 \quad 85 \quad 85 \quad 90 \quad 91 \quad 92 \quad 94 \quad 95 \quad 95 \quad 98 \quad 100 \quad 115 \quad 125 \quad 125
+\]
+
+(Valeurs adaptées de: Joshi, N.R., Materials Evaluation, pp. 946-849, 1994)
+
+(a) Calculer $Q_1, Q_2, Q_3, \bar{x}, s^2, s$.
+
+(b) Dessiner le boxplot des données.
+
+(c) Dessiner un histogramme basé sur les intervalles $[35,55[, [55,75[, [75,95[, [95,115[, [115,135[$.
+
+a) \quad $\frac{20+3}{4} = 5.75 \implies Q_1 = \frac{60 + 3 \cdot 70}{4} = 67.5$
+
+\[
+Q_2 = 90,5
+\]
+
+\[
+\frac{60 + 1}{4} = 15.25 \implies Q_3 = \frac{95 \cdot 3 + 98}{4} = 95.75
+\]
+
+\[
+\bar{x} = \frac{1700}{20} = 85
+\]
+
+\[
+s^2 = 555.78 \quad s = 23.58
+\]
+
+b) \quad IQR = $95.75 - 67.5 = 28.25$
+
+\[
+Q_1 - 1.5 \text{ IQR} = 67.5 - 42.375 = 25.125
+\]
+
+\[
+Q_3 + 1.5 \text{ IQR} = 95.75 + 42.375 = 138.125
+\]
+
+\end{document}

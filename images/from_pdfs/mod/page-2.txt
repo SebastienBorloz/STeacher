@@ -1,0 +1,21 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+(iii) Donner une solution de l'équation différentielle qui ne fait \textbf{pas} partie de la famille de fonctions décrite en (ii). \\
+(iv) Donner une solution de l'équation différentielle telle que $y(0) = \frac{1}{2}$. \\
+(v) Représenter quelques fonctions de la famille décrite en (ii), ainsi que les fonctions trouvées en (iii) et (iv), sur un même système d'axes. \\
+
+(ii) Solution constante : $y' = 0 \implies -y^2 = 0 \implies y(t) = 0$ \\
+
+(iv) $y(0) = \frac{1}{2} \implies y(0) = \frac{1}{c+c} = \frac{1}{2} \implies c = 2$ \\
+
+$\implies y(t) = \frac{1}{t+2}$ \\
+
+(v)
+
+\end{document}
+```

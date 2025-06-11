@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+5. Soit \( f : \mathbb{R}^3 \to \mathbb{R}^3 \) telle que 
+\[
+f(\vec{x}) = \begin{pmatrix}
+z \\
+2x - 3y \\
+x + y
+\end{pmatrix}, \quad \text{où } \vec{x} = \begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix}.
+\]
+
+(a) \( f \) est-elle une application linéaire ? Si oui, donner sa matrice \( A \).
+
+(b) Déterminer le volume de l'image par \( f \) du cube engendré par les vecteurs
+\[
+\begin{pmatrix}
+2 \\
+0 \\
+0
+\end{pmatrix}, \quad
+\begin{pmatrix}
+0 \\
+2 \\
+0
+\end{pmatrix} \quad \text{et} \quad
+\begin{pmatrix}
+0 \\
+0 \\
+2
+\end{pmatrix}.
+\]
+
+5 points
+
+(a) \( f \) est linéaire avec
+\[
+A_f = \begin{pmatrix}
+0 & 0 & 1 \\
+2 & -3 & 0 \\
+1 & 1 & 0
+\end{pmatrix} \quad \text{on a bien } A_f \begin{pmatrix} x \\ y \\ z \end{pmatrix} = f\left(\vec{x}\right)
+\]
+
+(b) \( 2^3 \cdot \det(A) = 2^3 \begin{vmatrix}
+0 & 0 & 1 \\
+2 & -3 & 0 \\
+1 & 1 & 0
+\end{vmatrix} = 2^3 \cdot 5 = 40 \)
+
+6. On considère dans \(\mathbb{R}^3\) la projection orthogonale \( g \) sur le vecteur 
+\[
+\begin{pmatrix}
+1 \\
+1 \\
+1
+\end{pmatrix}.
+\]
+
+(a) Déterminer la matrice \( A \) de l'application \( g \).
+
+(b) Déterminer \( A^{2024} \).
+
+7 points
+
+(a) \(\vec{v} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}, \quad g(\vec{x}) = \frac{\vec{x} \cdot \vec{v}}{\|\vec{v}\|^2} \vec{v} = \frac{x + y + z}{3} \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} = \frac{1}{3} \begin{pmatrix} x + y + z \\ x + y + z \\ x + y + z \end{pmatrix}  = \frac{1}{3} \begin{pmatrix} 1 + 1 + 1 \\ 1 + 1 + 1 \\ 1 + 1 + 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} \)
+
+\[
+\vec{x} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+\]
+
+\[
+\Rightarrow A = \frac{1}{3} \begin{pmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix}
+\]
+
+(b) \( A^{2024} = A \) car faire la projection d'une projection ne change plus rien.
+
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\noindent
+$f(x) = \frac{2}{x^3}$
+
+\vspace{1em}
+
+\noindent
+b) \quad $F(x) = ? \quad F(x) = P(x \leq x) = \int_{-\infty}^x f(t) dt$
+
+\vspace{1em}
+
+\noindent
+$\int_1^x \frac{1}{t^3} dt = \left[ 2 \frac{t^{-2}}{-2} \right]_1^x = 1 - x^{-2} = 1 - x^{-2}$
+
+\vspace{1em}
+
+\noindent
+$f(x) = \begin{cases}
+0 & \text{si } x < 1 \\
+1 - x^{-2} & \text{si } x \geq 1
+\end{cases}$
+
+\vspace{1em}
+
+\noindent
+$y = F(x)$
+
+\vspace{1em}
+
+\noindent
+$\int \frac{2}{t^3} dt$
+
+\end{document}

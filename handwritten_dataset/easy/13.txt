@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[ E(x) = \mu \]
+
+\[ \text{Var}(x) = \sigma^2 \]
+
+\[ P(|x - \mu| \geq \alpha) \leq \frac{\sigma^2}{\alpha^2} \]
+
+\end{document}

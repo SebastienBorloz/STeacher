@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{(c) Le taux de décomposition du pentoxyde d’azote N_2O_5 en tétraoxyde d’azote N_2O_4 et oxygène O est proportionnel à sa concentration. On considère une solution contenant 5 moles de N_2O_5. Après 10 minutes, la solution ne contient plus que 3 moles de N_2O_5. En combien de temps 90\% du pentoxyde d’azote sera-t-il décomposé ?}
+\]
+
+\[
+\text{Soit} c = c(t) \text{la concentration de N_2O_5 au temps t
+On cherche} c' = rc, \text{r constante de proportionnalité.}
+\]
+
+\[
+\implies c(t) = De^{rt} D \in \mathbb{R}
+\]
+
+\[
+c(0) = 5 \implies D = 5
+\]
+
+\[
+c(10) = 3 \implies 3 = 5 \cdot e^{r \cdot 10} \implies \frac{3}{5} = e^{r \cdot 10}
+\]
+
+\[
+\implies r = \frac{1}{10} \ln \left(\frac{3}{5}\right)
+\]
+
+\[
+\text{On veut} c(t) = 0.5 \text{(10\% de 5)} \implies 0.5 = 5 \cdot e^{rt}
+\]
+
+\[
+\implies t = \frac{1}{r} \ln \left(\frac{1}{10}\right) = \frac{1}{\frac{1}{10} \ln \left(\frac{3}{5}\right)} \ln \left(\frac{1}{10}\right) = \frac{10 \ln \left(\frac{1}{10}\right)}{\ln \left(\frac{3}{5}\right)} \approx 45 \text{ minutes}
+\]
+
+\[
+\text{2. Une procédure médicale requiert qu’on bloque temporairement les voies respiratoires d’une patient-e, empêchant ainsi l’inspiration d’oxygène. La durée pendant laquelle une telle procédure peut être exécutée sans danger peut être augmentée en remplaçant au préalable une grande portion de l’air contenu dans les poumons du/de la patient-e par de l’oxygène pur. \\
+On suppose que le volume des poumons est de 3 litres et qu’on remplace l’air des poumons par de l’oxygène pur à une vitesse de 10 ml/s. En particulier, au temps t, une partie de l’oxygène pur précédemment injecté dans les poumons s’est mélangée à l’air des poumons et a été éjectée.}
+\]
+
+\[
+\text{(a) On note V(t) le volume d’oxygène dans les poumons après t secondes. Expliquer pourquoi la dynamique décrite plus haut est exprimée par l’équation différentielle}
+\]
+
+\[
+V' = \frac{1}{100} - \frac{V}{300}
+\]
+
+
+
+
+\[
+\text{Annotations:
+Variation du volume d’oxygène au temps t
+\frac{1}{100}: entrée
+\frac{V}{300}: sortie
+\implies proportion d’oxygène}
+O_2 \ximplies{10 \text{ ml/s}} \boxed{\text{poumons}} \ximplies{10 \text{ ml/s}} \text{éjection}
+\]
+
+\end{document}

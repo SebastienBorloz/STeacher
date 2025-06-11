@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Ex 4}
+
+1700 $\to$ Vrai spam \\
+$\Rightarrow$ 1360/1700 contenaient des mots de la liste \\
+
+Dans les messages qui n'étaient pas des spam 300 contenaient des mots de la liste \\
+
+a) 1) \quad $P(N|CS) = P(CS|N) \cdot P(N) / P(CS)$ \\
+
+\[
+= \frac{3}{16}
+\]
+
+\[
+\begin{array}{c|cc}
+ & CS & CN \\
+\hline
+S & \checkmark & \textcolor{red}{\cdot} \\
+N & \textcolor{purple}{\circ} & \checkmark \\
+\end{array}
+\]
+
+\end{document}

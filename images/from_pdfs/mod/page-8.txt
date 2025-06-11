@@ -1,0 +1,36 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+(b) La croissance d'une population est décrite par
+\[
+N' = 1.2N \left( 1 - \frac{N}{4200} \right).
+\]
+
+(i) Pour quelles valeurs de $N$ est-ce que la population augmente ? \\
+(ii) Pour quelles valeurs de $N$ est-ce que la population diminue ? \\
+(iii) Pour quelles valeurs de $N$ est-ce que la population reste constante ?
+
+On a une population, donc $N(t) \geq 0$. \\
+$\to$ Le signe de $N'$ est celui de $\left(1 - \frac{N}{4200}\right)$ \\
+$\to N = 0 \Rightarrow N' = 0$
+
+\[
+\begin{array}{c|cc}
+\text{Valeur de } N & 0 & 4200 \\
+\hline
+\text{Signe de } N' & + & 0 & - \\
+\hline
+\text{Croissance de } N & \nearrow & \to & \searrow \\
+\end{array}
+\]
+
+i) $N(t) \nearrow$ si $N \in ]0,4200[$ \\
+ii) $N(t) \searrow$ si $N \in ]4200, \infty[$ \\
+iii) $N(t)$ constante lorsque $N(t) = 0$ et $N(t) = 4200$
+
+\end{document}
+```

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{c) }(x^2 + 2)^2 + 4 x (x^2 + 2) + 4 x^2
+\]
+
+\[
+\implies (x^2 + 2)(x^2 + 2) = x^4 + 4x^2 + 4
+\]
+
+\[
+\implies  4x^3 + 8x
+\]
+
+\[
+\implies x^4 + 4 x^2 + 4 + 4 x^3 + 8 x + 4 x^2
+\]
+
+\[
+\implies x^4 + 4x^3 + 8 x^2 + 8 x + 4
+\]
+
+\[
+\implies (x^2 + 2 x + 2)(x^2 + 2 x + 2)
+\]
+
+\end{document}

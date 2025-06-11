@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\partial |A P| = \partial |B, P|
+\]
+\[
+\implies (p_1 - 1)^2 + (p_2 - 0)^2 + (p_3 - 2)^2 + (p_4 + 1)^2 = (p_1 - 0)^2 + (p_2 - 1)^2 + (p_3 + 1)^2 + (p_4 - 1)^2
+\]
+\[
+\implies -2 p_1 + 1 - 4 p_3 + 4 + 2 p_4 + 1 = -2 p_1 + 1 + 2 p_3 + 1 + 1 - 2 p_4
+\]
+\[
+\implies -2 p_1 + 2 p_2 - 6 p_3 + 4 p_4 = -3 \quad \text{c'est un hyperplan.}
+\]
+
+\end{document}

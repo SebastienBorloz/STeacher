@@ -1,0 +1,85 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+d) i est linéaire car 
+\[
+A_i = \begin{pmatrix} 2 & -7 \\ 3 & 4 \end{pmatrix}
+\]
+est une matrice telle que
+\[
+A_i \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 2 & -7 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 2x - 7y \\ 3x + 4y \end{pmatrix} = i(x,y)
+\]
+
+\[
+i(\vec{e_1}) = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
+\quad
+i(\vec{e_2}) = \begin{pmatrix} -7 \\ 4 \end{pmatrix}
+\]
+
+\[
+\begin{array}{c}
+\text{i} \\
+\overset{\curvearrowright}{\longrightarrow}
+\end{array}
+\quad
+\begin{array}{c}
+\text{Les sommets du parallélogramme sont} \\
+(0,0), (2,-7), (2,3), (7,4)
+\end{array}
+\]
+
+Son volume est $|A_i| = 5$.
+
+e) p est linéaire car 
+\[
+A_p = \frac{1}{a_1^2 + a_2^2} \begin{pmatrix} a_1^2 & a_1 a_2 \\ a_1 a_2 & a_2^2 \end{pmatrix}
+\]
+est telle que 
+\[
+A_p \begin{pmatrix} x \\ y \end{pmatrix} = p(x,y)
+\]
+avec 
+\[
+p(x,y) = \left( \frac{\vec{x} \cdot \vec{a}}{\vec{a} \cdot \vec{a}} \right) \vec{a} = \left( \frac{x a_1 + y a_2}{a_1^2 + a_2^2} \right) \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \frac{1}{a_1^2 + a_2^2} \begin{pmatrix} a_1^2 x + a_1 a_2 y \\ a_1 a_2 x + a_2^2 y \end{pmatrix}
+\]
+
+p est la projection orthogonale de $\vec{x} = \begin{pmatrix} x \\ y \end{pmatrix}$ sur $\vec{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$.
+
+\[
+\text{L'image du carré unité est un segment, son aire vaut } 0.
+\]
+
+\[
+\det(A_p) = 0
+\]
+
+r) r est linéaire car 
+\[
+A_r = \begin{pmatrix} \cos(\alpha) & -\sin(\alpha) \\ \sin(\alpha) & \cos(\alpha) \end{pmatrix}
+\]
+est telle que 
+\[
+A_r \begin{pmatrix} x \\ y \end{pmatrix} = r(x,y).
+\]
+
+\[
+A_r \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} \cos(\alpha) & -\sin(\alpha) \\ \sin(\alpha) & \cos(\alpha) \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \cos(\alpha) - y \sin(\alpha) \\ x \sin(\alpha) + y \cos(\alpha) \end{pmatrix} = r(x,y)
+\]
+
+\[
+r(\vec{e_1}) = \begin{pmatrix} \cos(\alpha) \\ \sin(\alpha) \end{pmatrix}
+\quad
+r(\vec{e_2}) = \begin{pmatrix} -\sin(\alpha) \\ \cos(\alpha) \end{pmatrix}
+\]
+
+r est la rotation d'angle $\alpha$ autour de l'origine.
+
+\[
+\det(A_r) = \cos^2 \alpha + \sin^2 \alpha = 1
+\]
+
+\end{document}
+```

@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+
+\[
+\text{b)} \quad IQR = 95.75 - 67.5 = 28.25
+\]
+
+\[
+Q_1 - 1.5 \text{IQR} = 67.5 - 42.375 = 25.125
+\]
+
+\[
+Q_3 + 1.5 \text{IQR} = 95.75 + 42.375 = 138.125
+\]
+
+\end{document}

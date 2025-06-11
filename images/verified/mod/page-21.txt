@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+On suppose pour le reste de l'exercice qu'il y a en tout 1 milliard d'utilisatrices et utilisateurs d'InstaTikter. Le jour $t=0$, le compte @EasterRabbitOfficial poste un message disant que le Père Noël n'existe pas. Le même jour, la publication est lue par 1000 personnes, puis partagée. On suppose qu'en dehors de ces 1000 personnes, aucun·e utilisatrice ou utilisateur d'InstaTikter n'avait été confronté·e à cette rumeur.
+
+(c) Donner la fonction $F(t)$ qui modélise la situation décrite ci-dessus.
+
+(d) Dix jours après sa publication, un million de personnes avaient été en contact avec la rumeur. A combien s'élèvera ce nombre après 20 jours ?
+
+(e) Après combien de temps 95\% des utilisatrices et utilisateurs d'InstaTikter auront été confronté·e·s à la rumeur ?
+
+\[
+c) \quad P = 10^9, \quad F(0) = 1000 \implies F(0) = \frac{10^9}{1+L} = 1000 \implies L = 10^6 - 1
+\]
+
+\[
+\implies F(t) = \frac{10^9}{1 + (10^6 - 1) e^{-10^3 \cdot Ct}} \quad cf
+\]
+
+\[
+d) \quad F(10) = 10^6 = \frac{10^9}{1 + (10^6 - 1) e^{-10^3 \cdot C \cdot 10}} \implies 10^3 = 1 + (10^6-1)e^{-10^3 \cdot C \cdot 10}
+\]
+
+\[
+\implies \frac{10^3-1}{10^6-1} = e^{-10^{10} \cdot C} \implies C = -\frac{1}{10^{10}} \quad \ln \left( \frac{10^3-1}{10^6-1} \right) = \left( \frac{\ln(1001)}{10^{10}} \right)
+\]
+
+\[
+\implies F(20) = \frac{10^9}{1 + (10^6 - 1) e^{-10^{10} \cdot 2 \cdot \frac{\ln(1001)}{10^{10}}}}  = \frac{10^9}{1 + (10^6 - 1) e^{\ln (1001^{-2})}}
+\]
+
+\[
+= \frac{10^9}{1 + (10^6 - 1) \frac{1}{(10^3 + 1)^2}} = \frac{10^9}{1 + \frac{10^3-1}{10^3 + 1}} = \frac{10^9}{\frac{10^3 + 1 + 10^3 - 1}{10^3+1}}
+\]
+
+\[
+= \frac{10^6 (10^3 + 1)}{2} = \boxed{5005 \cdot 10^5}
+\]
+
+\end{document}

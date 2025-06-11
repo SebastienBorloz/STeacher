@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Exercice 2
+
+a) \quad $(p - 7)^2 \Rightarrow (p - 7)(p - 7) \Rightarrow p^2 - 7p - 7p + 49 \Rightarrow p^2 - 14p + 49$ \quad $\checkmark$
+
+b) \quad $(2x + 3)^2 = (2x + 3)(2x + 3) \Rightarrow 4x^2 + 6x + 6x + 9 \Rightarrow 4x^2 + 12x + 9$ \quad $\checkmark$
+
+c) \quad $(25p + 9q)^2 = (25p + 9q)(25p + 9q) = 625p^2 + 225pq + 225pq + 81q^2 = 625p^2 + 450pq + 81q^2$ \quad $\checkmark$
+
+d) \quad $(8u^2 - 9v^2)^2 = (8u^2 - 9v^2)(8u^2 - 9v^2) = 64u^4 - 72u^2v^2 - 72u^2v^2 + 81v^4 = 64u^4 - 144u^2v^2 + 81v^4$ \quad $\checkmark$
+
+e) \quad $(9p^3 + 8p)(9p^3 - 8p) = 81p^6 - 72p^4 + 72p^4 - 64p^2 = 81p^6 - 64p^2$ \quad $\checkmark$
+
+f) \quad $(2z^2 + 1)(1 - 2z^2) = 2z^2 - 4z^4 + 1 - 2z^2 = -4z^4 + 1$ \quad $\checkmark$
+
+g) \quad $(2x - 7)(4x + 14) = 8x^2 + 28x - 28x - 98 = 8x^2 - 98$ \quad $\checkmark$
+
+h) \quad $(2a + 3b + 1)(2a + 3b + 1) = 4a^2 + 6ab + 2a + 6ab + 9b^2 + 3b + 2a + 3b + 1 = 4a^2 + 12ab + 4a + 9b^2 + 6bx + 1$ \quad $\checkmark$
+
+i) \quad $(8u^2 + v^2)(8u^2 - v^2) = 64u^4 - 8u^2v^2 + 8u^2v^2 - v^4 = 64u^8 - 16u^4v^4 + v^8$ \quad
+\quad $(8u^2 - v^2)(8u^2 - v^2) = -64u^4 + 8u^2v^2 + 8u^2v^2 - v^4 = 16 u^2v^2 - 2v^4$ \quad $\checkmark$
+
+j) \quad $(a + b + c)(a + b + c) = a^2 + ab + ac + ab + b^2 + bc + ac + bc + c^2$ \\
+\quad $(a - b - c)(a - b - c) = a^2 - ab - ac - ab + b^2 + bc - ac + bc + c^2$\\
+\quad $\Rightarrow 4ab + 4ac$ \quad $\checkmark$
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{c) Après 5 min} \rightarrow \text{pas de requêtes}
+\]
+
+\[
+25 \text{ min } \quad 1 \text{ req par min}
+\]
+
+\[
+P(X=0) = \frac{5}{30} = \frac{1}{6}
+\]
+
+\[
+\text{proba que le nombre de raquettes soit = à zéro}
+\]
+
+\[
+\frac{1}{6} = \frac{\lambda^0}{1!} e^{-\lambda}
+\]
+
+\[
+\frac{1}{6} = e^{-\lambda}
+\]
+
+\[
+1 = 6 e^{-\lambda}
+\]
+
+\[
+\lambda = -\ln \left(\frac{1}{6}\right) = 1.79
+\]
+
+\end{document}

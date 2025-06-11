@@ -1,0 +1,31 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Théorème 1.} Soit $f$ une fonction définie sur un intervalle $I$ et dérivable sur $I$. Si $f'(x) > 0$ pour tout $x \in I$, alors $f$ est strictement croissante sur $I$.
+
+\bigskip
+
+\textbf{Démonstration.} Soient $a$ et $b$ deux réels tels que $a < b$ et $a,b \in I$. Par le théorème des accroissements finis, il existe $c \in ]a,b[$ tel que
+\[
+f(b) - f(a) = f'(c)(b - a).
+\]
+Or, $f'(c) > 0$ et $b - a > 0$, donc
+\[
+f(b) - f(a) > 0,
+\]
+ce qui implique que
+\[
+f(b) > f(a).
+\]
+Ainsi, $f$ est strictement croissante sur $I$.
+
+\bigskip
+
+\textbf{Remarque.} De même, si $f'(x) < 0$ pour tout $x \in I$, alors $f$ est strictement décroissante sur $I$.
+
+\end{document}
+```

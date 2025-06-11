@@ -1,0 +1,39 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+\textbf{j)} \quad e^{3x} + 4e^{2x} - e^x = 0, \quad e^x = y, \quad \mathcal{D} = \mathbb{R} \\
+
+\Rightarrow y^3 + 4y^2 - y = 0 \iff y(y^2 + 4y - 1) = 0 \\
+
+\Rightarrow y = 0 \quad \text{ou} \quad y^2 + 4y - 1 = 0 \\
+
+\Delta = 16 - 4 \times 1 \times (-1) = 16 + 4 = 20 = (2\sqrt{5})^2 \\
+
+\Rightarrow y = \frac{-4 \pm 2\sqrt{5}}{2} \quad \Longleftarrow \quad -2 \pm \sqrt{5} \\
+
+e^x = -2 + \sqrt{5} \Rightarrow x = \ln(-2 + \sqrt{5}) \\
+
+e^x = -2 - \sqrt{5} \Rightarrow x = \ln(0) \quad \Rightarrow \varnothing \\
+
+\Rightarrow S = \left\{ \ln(\sqrt{5} - 2) \right\} \\
+
+\textbf{h)} \quad \log_{10} x + \log_{10^2} x^2 + \log_{10^4} x^4 = 0 \\
+
+\Rightarrow \frac{\log_{10} x}{\log_{10} 10} + \frac{\log_{10} x^2}{\log_{10} 10^2} + \frac{\log_{10} x^4}{\log_{10} 10^4} = 0 \\
+
+\text{Soit } \log_{10} x = a \Rightarrow \frac{a}{1} + \frac{2a}{2} + \frac{4a}{4} = 0 \\
+
+\Rightarrow (1 + 1 + 1) a = 0 \\
+
+\Rightarrow 3a = 0 \Rightarrow a = 0 \\
+
+\Rightarrow \log_{10} x = 0 \Rightarrow x = 10^0 = 1 \\
+
+\Rightarrow S = \{1\} \\
+
+\text{(Note: The original handwritten text contains more complicated steps and some crossed out parts, but the above is the transcription as is.)}
+
+\end{document}
+```

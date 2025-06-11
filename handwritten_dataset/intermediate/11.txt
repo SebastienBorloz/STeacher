@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{Ex 2}
+\]
+
+\[
+\text{a) Événements indépendants si }P(A \cap B) = P(A) \cdot P(B)
+\]
+
+\[
+A = \text{"le résultat est inférieur au cgl à 2"}
+\]
+
+\[
+P(A) = \frac{2}{6} = \frac{1}{3}
+\]
+
+\[
+B = \text{"le résultat est un multiple de 3"}
+\]
+
+\[
+P(B) = \frac{2}{6} = \frac{1}{3}
+\]
+
+\[
+C = \text{le résultat est pair}
+\]
+
+\[
+P(C) = \frac{3}{6} = \frac{1}{2}
+\]
+
+\[
+P(A \cap B) = P(A) \cdot P(B)
+\]
+
+\[
+\Downarrow
+\]
+
+\[
+0 \neq \frac{1}{9} \text{A et B sont dép.}
+\]
+
+
+
+\end{document}

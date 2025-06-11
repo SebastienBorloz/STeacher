@@ -1,0 +1,110 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+$\delta, 2k^4 - 4k^2 + 1 < 0$, soit $y = k^2 \Rightarrow 2y^2 - 4y + 1 < 0$
+
+$\Delta = 16 - 4 \times 2 \times 1 = 8 = (2\sqrt{2})^2 \Rightarrow y = \frac{4 \pm 2\sqrt{2}}{4} = 1 \pm \frac{\sqrt{2}}{2} - k^2$
+
+$\Rightarrow k = \pm \sqrt{1 - \frac{\sqrt{2}}{2}}$
+
+$\Delta > 0 \Rightarrow 2y^2 - 4y + 1 = 2 \left( y + \frac{4 + 4\sqrt{2}}{4} \right) \left( y + \frac{4 - 4\sqrt{2}}{4} \right)$
+
+$\Rightarrow$ strictement négative : entre zéros $\Rightarrow S = \int 1 - \frac{\sqrt{2}}{2} \sqrt{2}, 1 + \frac{\sqrt{2}}{2}$
+
+\textit{quatre soi.} $\Rightarrow$ différent
+
+\[
+\begin{array}{cccccc}
+\textcircled{1} & \textcircled{2} & \textcircled{3} & \textcircled{4} & \textcircled{5} & x \\
+\frac{1}{\sqrt{1 - \sqrt{2}k}} & \frac{1}{\sqrt{1 - \frac{\sqrt{2}}{2}k}} & \frac{1}{\sqrt{1 - k^2}} & \frac{1}{\sqrt{1 + \frac{\sqrt{2}}{2}k}} & \frac{1}{\sqrt{1 + \sqrt{2}k}} &
+\end{array}
+\]
+
+On prend des valeurs dans chaque intervalle puis test
+
+\begin{itemize}
+\item $\textcircled{1} : -2 \Rightarrow 2 \cdot (-2)^4 - 4 \cdot (-2)^2 + 1 < 0 \Rightarrow 32 - 16 + 1 = 17 \not< 0$ non
+\item $\textcircled{2} : -1 \Rightarrow 2 \cdot (-1)^4 - 4 \cdot (-1)^2 + 1 < 0 \Rightarrow 2 - 4 + 1 = -1 < 0$ oui
+\item $\textcircled{3} : 1 \Rightarrow 2 - 4 + 1 < 0 \Rightarrow -1 < 0$ oui
+\item $\textcircled{4} : 0 \Rightarrow 1 < 0$ non
+\item $\textcircled{5} : 2 \Rightarrow 2^2 - 2^2 + 1 < 0 \Rightarrow 2^5 4 + 1 < 0$ non
+\end{itemize}
+
+$\Rightarrow S = \int \left[ \frac{1}{\sqrt{1 - \sqrt{2}k}}, \frac{1}{\sqrt{1 - \frac{\sqrt{2}}{2}k}} \right[ \cup \left] \frac{1}{\sqrt{1 - \frac{\sqrt{2}}{2}k}}, \frac{1}{\sqrt{1 + \frac{\sqrt{2}}{2}k}} \right[ \cup \left[ \frac{1}{\sqrt{1 + \frac{\sqrt{2}}{2}k}}, \frac{1}{\sqrt{1 + \sqrt{2}k}} \right]$
+
+\bigskip
+
+$g) (k^2 - k + 1)(k^2 + k + 1)(k^2 - 1) > 0$
+
+\[
+\textcircled{1} \quad \textcircled{2} \quad \textcircled{3}
+\]
+
+\[
+\begin{cases}
+\Delta < 0 \Rightarrow \text{aucun zéro} \\
+\Delta \geq 0 \Rightarrow \text{positif}
+\end{cases}
+\]
+
+Ainsi, on souhaite \textcircled{1} même signe que \textcircled{3}
+
+\[
+\textcircled{2} : \bigcirc \quad \bigcirc
+\]
+
+\begin{itemize}
+\item \textcircled{1} : positif
+\begin{itemize}
+\item $k \in \mathbb{R}$
+\item $\Delta = 1^2 - 4 \cdot (-1) \cdot 1 = 5$
+\item $k = \frac{-1 \pm \sqrt{5}}{2}$
+\end{itemize}
+
+\[
+\Rightarrow \frac{1}{2} \left[ -\sqrt{5}, \frac{1}{2} + \sqrt{5} \right]
+\]
+
+\[
+\Rightarrow \textcircled{1} \bigcirc \textcircled{2} = \mathbb{R} = \int \frac{1}{2} \sqrt{5}, \frac{1}{2} + \sqrt{5} [
+\]
+
+\item négatif
+\begin{itemize}
+\item strictement positif
+\item $\int ] -\infty, -\sqrt{5} [ \cup ] \frac{1}{2} + \sqrt{5}, +\infty [$ 
+\end{itemize}
+
+\[
+\Rightarrow \textcircled{1} \bigcirc \textcircled{2} = \int ] -\infty, \frac{1}{2} \sqrt{5} [ \cup ] \frac{1}{2} + \sqrt{5}, +\infty [
+\]
+
+\item \textcircled{3} :
+\[
+\Delta = 1^2 - 4 \cdot 1 \cdot (-1) = 5
+\]
+
+\[
+k = \frac{-1 \pm \sqrt{5}}{2}
+\]
+
+forme
+
+\[
+\text{pos} : ] -\infty, \frac{1}{2} - \sqrt{5} [ \cup ] \frac{1}{2} + \sqrt{5}, +\infty [
+\]
+
+\[
+\text{neg} : ] \frac{1}{2} - \sqrt{5}, \frac{1}{2} + \sqrt{5} [
+\]
+\end{itemize}
+
+\end{itemize}
+
+\end{document}
+```

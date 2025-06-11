@@ -1,0 +1,53 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+2. Pour les équations différentielles suivantes, esquisser le champ de directions pour $(t,y) \in [-2,2] \times [-2,2]$. Tracer ensuite les deux courbes $y(t)$ satisfaisant aux conditions initiales données, ainsi que les solutions constantes éventuelles. Ne pas résoudre les équations !
+
+(a) L'équation
+\[
+y' = \frac{y}{t} \quad \to \quad \text{pas de solution constante}
+\]
+Pour $y(0) = 1$ et $y(0) = -1$.
+
+(b) L'équation
+\[
+y'(t) = t^2 - y^2 = (t+y)(t-y) \quad \to \quad \text{Pas de solution constante.}
+\]
+Pour $y(-2) = 2$ et $y(0) = 0$.
+
+(c) L'équation
+\[
+y' = ty^2 - t = (t+y)(t-y)
+\]
+Pour $y(-2) = 0$ et $y(0) = -2$. \quad Solution constante : 
+\[
+y = 7 \quad y = -7
+\]
+
+\vspace{1cm}
+
+\textbf{a)} \\
+$t = c \Rightarrow y$ \\
+$y(10)$ pas défini. \\
+$y = c$
+
+\vspace{1cm}
+
+\textbf{b)} \\
+$y(-2) = 2$ \\
+$y(10) = 0$
+
+\vspace{1cm}
+
+\textbf{c)} \\
+$y = 7$ \\
+$y = -7$ \\
+$y(-2) = 0$ \\
+$y(10) = -2$
+
+\end{document}
+```

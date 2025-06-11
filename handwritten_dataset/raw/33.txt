@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+c) Après 5 min $\to$ pas de requêtes \\
+25 min 1 req par min \\
+
+$P(x=0) \quad \frac{5}{30} = \frac{1}{6}$ \\
+
+proba que \\
+le nombre \\
+de requêtes \\
+soit = à zéro \\
+
+$\frac{1}{6} = \frac{\lambda^0}{1!} e^{-\lambda}$ \\
+
+$\frac{1}{6} = e^{-\lambda} \quad 1 = 6 e^{-\lambda} \quad \lambda = -\ln \left(\frac{1}{6}\right) = 1.79$ \\
+
+Ex 3 \\
+
+$E(x) = \mu \quad Var(x) = \sigma^2$ \\
+
+$P(|x - \mu| \geq \alpha) \leq \frac{\sigma^2}{\alpha^2}$
+
+\end{document}

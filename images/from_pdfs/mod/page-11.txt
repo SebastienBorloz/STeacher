@@ -1,0 +1,52 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+3. Soient deux espèces $X$ (dont la population au temps $t$ est $x(t)$) et $Y$ (dont la population au temps $t$ est $y(t)$) vivant dans le même écosystème, telles qu’une des espèces est prédatrice de l’autre. La dynamique de leurs interactions est décrite par un modèle proie-prédateur (ou modèle de Lotka-Volterra). \\
+Dans cet exercice, on considère le modèle proie-prédateur donné par
+\[
+\left\{
+\begin{array}{rcl}
+x' & = & -12x \quad + \quad 3xy \\
+y' & = & 15y \quad - \quad 5xy
+\end{array}
+\right.
+\]
+
+Une manière simple de représenter l’évolution des deux populations simultanément est de représenter $x(t)$ et $y(t)$ par le point $(x(t),y(t))$ du plan. Il n’y a donc pas d’axe des $t$, mais le point $(x(t),y(t))$ bouge en fonction du temps.
+
+(a) Dans le modèle ci-dessus, déterminer quelle espèce est prédatrice, et quelle espèce est proie. Justifier.
+
+(b) Dessiner dans le quadrant $\mathbb{R}_+^2$ les droites $\{(x,y) \mid x' = 0\}$ et $\{(x,y) \mid y' = 0\}$. Qu’est-ce que ces droites représentent ?
+
+(c) Trouver les points d’équilibres de ce système, c’est-à-dire les points $(x,y)$ tels que les populations restent constantes.
+
+(d) Identifier les quatre régions du quadrant $\mathbb{R}_+^2$ correspondant aux quatres dynamiques possibles ($X$ croit / décroît, resp. $Y$ croit / décroît).
+
+(e) Esquisser quelques trajectoires (= courbes solutions) $(x(t),y(t))$ en fonction de populations initiales $(x(0),y(0))$. Quelles sont les dynamiques de ces courbes ? Expliquer.
+
+\vspace{0.5cm}
+
+\noindent
+a) $x'$ positif pour $x$ et $x' < 0$ si $4 < 4 \Rightarrow$ prédateur \\
+$x'$ négatif pour $y$ et $y' < 0$ si $x > 3 \Rightarrow$ proie
+
+\vspace{0.5cm}
+
+\noindent
+b) $\{(x,y) \mid x' = 0\} = \{x=0\} \cup \{y=4\}$ \\
+$\{(x,y) \mid y' = 0\} = \{y=0\} \cup \{x=3\}$
+
+\vspace{0.5cm}
+
+\noindent
+c) $(x,y) = (0,0)$ et $(x,y) = (3,4)$ \\
+$\Rightarrow$ pas d’espèces \hspace{1cm} équilibre entre naissances et mort.
+
+\end{document}
+```

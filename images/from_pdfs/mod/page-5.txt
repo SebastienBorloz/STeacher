@@ -1,0 +1,42 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+3. Les équations différentielles peuvent être utilisées pour modéliser la métabolisation d’un médicament administré par voie orale. Dans cet exercice, on s’intéresse à trois d’entre elles. \\
+Dans ce qui suit, on désigne par $c = c(t)$ la concentration du médicament dans l’organisme au temps $t$ (exprimée en mg/mL). Les équations s’intéressent à de faibles concentrations initiales, typiquement $c(0) = 0$, puis décrivent comment la concentration augmente juste après l’ingestion du médicament. \\
+
+(a) \textit{L’équation cinétique d’ordre zéro} dit que la dynamique du processus est décrite par
+\[
+\frac{dc}{dt} = k,
+\]
+où $k \geq 0$ est une constante. \\
+(i) Qu’est-ce que cette équation dit du processus ? \\
+(ii) Donner la solution de cette équation qui satisfait la condition $c(0) = 0$. \\
+
+i) Sa vitesse de processus est constante : à chaque instant, la même quantité $k$ est ajoutée à la concentration. \\
+
+ii) $C' = k \implies C(t) = k \cdot t + c \quad c(0) = 0 \implies c = 0 \implies C(t) = k t$ \\
+solution constante : $C'(t) = 0 \implies k = 0$ \\
+
+(b) \textit{L’équation de Noyes-Whitney} dit que la dynamique du processus est décrite par
+\[
+\frac{dc}{dt} = k (C_s - c),
+\]
+où $k, C_s \geq 0$ sont des constantes. \\
+(i) Qu’est-ce que cette équation dit du processus ? \\
+(ii) Vérifier que $c = C_s (1 - e^{-k t})$ est une solution de l’équation différentielle satisfaisant la condition initiale $c(0) = 0$. \\
+
+i) L’augmentation de la concentration est proportionnelle à $(C_s - c)$ \\
+$C_s$ est un seuil \\
+$C = C_s \implies C' = 0$, \quad $c > C_s \implies C' < 0$ conc. $\downarrow$, \quad $c < C_s \implies C' > 0$ conc. $\uparrow$ \\
+
+ii) $c(t) = C_s (1 - e^{-k t}) \implies c'(t) = C_s k e^{-k t}$ \\
+$k (C_s - c(t)) = k C_s (1 - (1 - e^{-k t})) = k C_s e^{-k t} \quad \checkmark$ \\
+
+$c(0) = C_s (1 - e^0) = 0 \quad \checkmark$ \\
+
+\end{document}
+```

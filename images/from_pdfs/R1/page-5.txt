@@ -1,0 +1,101 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\textbf{1) } 
+\[
+\int \frac{1}{(x+1)^2} dx = \int \frac{1}{(x+1)^2} dx
+= - \frac{1}{x+1} + C
+\]
+
+\textbf{2) } 
+\[
+f(x) = \sin(x) \implies f'(x) = \cos(x)
+\]
+
+\textbf{3) } 
+\[
+f(x) = \arccos(x) \implies f'(x) = -\frac{1}{\sqrt{1-x^2}}
+\]
+
+\textbf{4) } 
+\[
+f(x) = \cos^2(\arccos(x))
+= 2 \cdot \cos(\arccos(x)) \cdot (-\sin(\arccos(x)))
+\]
+
+\[
+= 2 \sqrt{1-x^2} \cdot \left(-\frac{1}{\sqrt{1-x^2}}\right)
+= 2 \sqrt{1-x^2} \cdot \frac{-1}{\sqrt{1-x^2}} = -2x
+\]
+
+\[
+= 2 \sqrt{1-x^2} \cdot (-1) \cdot \frac{1}{\sqrt{1-x^2}} = -2x
+\]
+
+\[
+= \frac{-2x}{\sqrt{1-x^2}} \cdot \frac{\sqrt{1-x^2}}{\sqrt{1-x^2}} = \frac{-2x}{\sqrt{1-x^2}}
+\]
+
+\[
+= \sin(\arccos(x)) \cdot \frac{1}{\sqrt{1-x^2}}
+\]
+
+\vspace{0.5cm}
+
+\textbf{2. Dériver les fonctions suivantes:}
+
+\begin{itemize}
+\item[(a)] $x \mapsto \ln \left( \sqrt{\frac{1-x}{1+x}} \right)$
+\item[(b)] $x \mapsto \ln(\sin(x))$
+\item[(c)] $x \mapsto \sin(\ln(x))$
+\item[(d)] $x \mapsto \ln \left( \ln \left( \ln(x) \right) \right) - \ln(x)$
+\item[(e)] $x \mapsto e^{-1/x^2}$
+\item[(f)] $x \mapsto x^{1/x}$
+\item[(g)] $x \mapsto e^{\ln(x) + \ln(x+1) + \ln(x^2)}$
+\item[(h)] $x \mapsto x^{\sin(x)}$
+\item[(i)] $x \mapsto x^{x^x}$
+\end{itemize}
+
+\vspace{0.5cm}
+
+\[
+f(x) = \ln \left( \sqrt{\frac{1-x}{1+x}} \right)
+= \frac{1}{2} \ln \left( \frac{1-x}{1+x} \right)
+\]
+
+\[
+f'(x) = \frac{1}{2} \left( \frac{1-x}{1+x} \right)'
+= \frac{1}{2} \left( \frac{(1+x)(-1) - (1-x)(1)}{(1+x)^2} \right)
+= \frac{1}{2} \left( \frac{-1 - x - 1 + x}{(1+x)^2} \right)
+= \frac{1}{2} \left( \frac{-2}{(1+x)^2} \right)
+= \frac{-1}{(1+x)^2}
+\]
+
+\vspace{0.5cm}
+
+\textbf{a) } $P(x) = 5x - 6$ tangente à $P(x)$ en $x=3$
+
+\[
+\text{On trouve que } P'(x) = 5
+\]
+
+\[
+P'(3) = 5 \quad \Rightarrow \quad y = 5(x-3) + P(3)
+\]
+
+\[
+P(3) = 5 \cdot 3 - 6 = 15 - 6 = 9
+\]
+
+\[
+y = 5(x-3) + 9 = 5x - 15 + 9 = 5x - 6
+\]
+
+\[
+\Rightarrow \text{La tangente est } y = 5x - 6
+\]
+
+\end{document}
+```

@@ -1,0 +1,59 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+(d) Soit
+\[
+V = \begin{pmatrix}
+1 & 1 & 1 \\
+a & b & c \\
+a^2 & b^2 & c^2
+\end{pmatrix}.
+\]
+
+i. Montrer que \(\det(V) = (b - a)(c - a)(c - b)\).
+
+ii. Pour quelles valeurs de \(a, b, c\) le déterminant est-il différent de zéro ?
+
+i) \((b - a)(c - a)(c - b) = (b c - a c - a b + a^2)(c - b)\)
+
+\[
+= b c^2 - a c^2 - a b c + a^2 c - b^2 c + a b^2 + a^2 b - a^2 b
+\]
+
+\[
+|\!V\!| = \begin{vmatrix}
+1 & 1 & 1 \\
+a & b & c \\
+a^2 & b^2 & c^2
+\end{vmatrix} = b c^2 + a^2 c + a b^2 - a^2 b - b c^2 - a c^2 \quad \checkmark
+\]
+
+ii) \(\det(V) \neq 0 \quad s: b \neq a, \quad a \neq c \quad et \quad c \neq b.\)
+
+2. Déterminer toutes les valeurs propres de la matrice
+\[
+A = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 2 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 3 & 0
+\end{pmatrix}.
+\]
+
+\[
+\chi_A(\lambda) = \begin{vmatrix}
+1 - \lambda & 0 & 0 & 0 \\
+0 & 2 - \lambda & 0 & 0 \\
+0 & 0 & -\lambda & 1 \\
+0 & 0 & 3 & -\lambda
+\end{vmatrix} = (1 - \lambda)(2 - \lambda)(\lambda^2 - 3)
+\]
+
+\[
+\chi_A(\lambda) = 0 \implies \lambda_1 = 1, \quad \lambda_2 = 2, \quad \lambda_3 = \sqrt{3}, \quad \lambda_4 = -\sqrt{3}
+\]
+
+\end{document}
+```

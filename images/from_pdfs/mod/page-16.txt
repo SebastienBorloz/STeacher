@@ -1,0 +1,64 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+(c) Interpréter l'équation (1) en termes de dynamique (solutions constantes, croissance/décroissance de $p_1$, etc.), en fonction du signe de $R$.
+
+(d) Esquisser le champ de directions de l'équation (1) pour $r_1 = 5$ et $r_2 = 3$. Calculer les solutions constantes et les représenter. Représenter également quelques courbes solutions.
+
+(e) Déduire des interprétations obtenues en (a) et en (c) une équation différentielle similaire à (1) pour
+\[
+p_2(t) = \frac{N_2(t)}{N_1(t) + N_2(t)}.
+\]
+
+Remarque : on peut le faire sans calculer explicitement la dérivée de $p_2$ ; voyez-vous comment ?
+
+\medskip
+
+\[
+c) \quad p_1' = 0 \implies R = 0 \quad (\text{proportion constante})
+\]
+\[
+\implies p_1 = 0 \quad (\mu_1 = 0 \Rightarrow \text{pas de bactérie 1})
+\]
+\[
+\implies p_1 = 1 \quad (\mu_2 = 0 \Rightarrow \text{pas de bactérie 2})
+\quad \} \text{ solutions constantes}
+\]
+
+\[
+p_1 > 0 \implies r - p_1 > 0 \text{ car } p_1 \in [0,1] \Rightarrow p_1' \text{ a le même signe que } R !
+\]
+\[
+p_1' \implies r_1 > r_2 \quad \text{la proportion augmente si la bactérie 1 croît plus vite}
+\]
+\[
+p_1' \implies r_1 < r_2 \quad \text{diminue ... lentement}
+\]
+
+\[
+d) \quad p_1' = 2 p_1 (1 - p_1)
+\]
+Solutions constantes : $p_1 = 0$
+\[
+p_1 = 1
+\]
+
+\[
+p_1' > 0 \implies p_1' 
+\]
+$\triangle$ les pentes ne dépendent PAS de t !
+
+\[
+e) \quad p_1 + p_2 = 1 \implies p_2 = 1 - p_1
+\]
+
+\[
+\implies p_2' = (1 - p_1)' = - p_1' = - R p_1 (1 - p_1) = - R (1 - p_2) p_2
+\]
+
+\end{document}
+```

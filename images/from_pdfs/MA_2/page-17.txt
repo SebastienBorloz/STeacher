@@ -1,0 +1,135 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+2. On considère les applications linéaires suivantes.
+
+\[
+f : \mathbb{R}^3 \to \mathbb{R}^3 \quad \text{est la symétrie par rapport au plan } yz,
+\]
+\[
+g : \mathbb{R}^3 \to \mathbb{R}^3 \quad \text{est la symétrie par rapport au plan } xz,
+\]
+
+(a) Déterminer les images par $f$ et $g$ des vecteurs $\vec{e}_1$, $\vec{e}_2$ et $\vec{e}_3$ de la base canonique de $\mathbb{R}^3$.
+
+(b) Déduire de (a) les matrices $A_f$ et $A_g$ de ces applications.
+
+(c) Déterminer les matrices des applications
+\[
+f \circ f, \quad g \circ g, \quad f^{-1}, \quad g^{-1}, \quad g \circ f \quad \text{et} \quad (g \circ f)^{-1}
+\]
+et interpréter géométriquement les résultats.
+
+\medskip
+
+a) 
+\[
+f(\vec{e}_1) = -\vec{e}_1 \quad\quad g(\vec{e}_1) = \vec{e}_1
+\]
+\[
+f(\vec{e}_2) = \vec{e}_2 \quad\quad g(\vec{e}_2) = -\vec{e}_2
+\]
+\[
+f(\vec{e}_3) = \vec{e}_3 \quad\quad g(\vec{e}_3) = \vec{e}_3
+\]
+
+b)
+\[
+A_f = \begin{pmatrix}
+-1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\quad
+A_g = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\]
+
+c) i)
+\[
+A_f^2 = A_f A_f = \begin{pmatrix}
+-1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+-1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\quad \text{en faisant deux fois la même symétrie, on revient à notre point de départ.}
+\]
+
+ii)
+\[
+A_g^2 = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\]
+
+iii)
+\[
+\hat{\rho}^2 = A_f^{-1} = A_f \quad \text{car} \quad A_f^2 = I_3
+\]
+\[
+\hat{\sigma}^2 = A_g^{-1} = A_g \quad \text{car} \quad A_g^2 = I_3
+\]
+
+iv)
+\[
+A_g \rho = A_g A_f = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+-1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+-1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\quad
+\begin{array}{l}
+\vec{e}_1 \\
+\vec{e}_2
+\end{array}
+\quad
+\overset{\rho \circ}{\longrightarrow} \text{rotation de } 180^\circ
+\]
+
+v)
+\[
+(A_g \rho)^{-1} = \begin{pmatrix}
+-1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}^{-1}
+= \begin{pmatrix}
+-1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} = A_g \rho
+\quad |(A_g \rho)^{-1}| \text{ est en fait une rotation de } -180^\circ \text{ autour de l'axe des } z.
+\]
+
+\end{document}
+```

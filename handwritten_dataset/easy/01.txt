@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+
+\[
+\text{a)} \quad \frac{20+3}{4} = 5.75 \implies Q_1 = \frac{60 + 3 \cdot 70}{4} = 67.5
+\]
+
+\[
+Q_2 = 90,5
+\]
+
+\[
+\frac{60 + 1}{4} = 15.25 \implies Q_3 = \frac{95 \cdot 3 + 98}{4} = 95.75
+\]
+
+\[
+\bar{x} = \frac{1700}{20} = 85
+\]
+
+\end{document}

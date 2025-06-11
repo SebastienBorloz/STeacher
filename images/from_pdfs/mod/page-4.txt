@@ -1,0 +1,72 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Exercice 2}
+
+Soit $f$ une fonction définie sur $\mathbb{R}$, dérivable, telle que
+\[
+f'(x) = f(x) + e^x.
+\]
+
+\textbf{1.} Trouver la solution générale de cette équation différentielle.
+
+\textbf{2.} Trouver la solution particulière telle que $f(0) = 1$.
+
+\textbf{3.} Étudier le comportement de la solution particulière lorsque $x \to +\infty$.
+
+\bigskip
+
+\textbf{Solution:}
+
+1. L'équation différentielle est
+\[
+f'(x) - f(x) = e^x.
+\]
+
+C'est une équation linéaire du premier ordre. Le coefficient de $f$ est $-1$.
+
+Le facteur intégrant est
+\[
+\mu(x) = e^{-\int 1 \, dx} = e^{-x}.
+\]
+
+On multiplie l'équation par $\mu(x)$ :
+\[
+e^{-x} f'(x) - e^{-x} f(x) = e^{-x} e^x = 1.
+\]
+
+La partie gauche est la dérivée de $e^{-x} f(x)$, donc
+\[
+\frac{d}{dx} \left( e^{-x} f(x) \right) = 1.
+\]
+
+En intégrant,
+\[
+e^{-x} f(x) = x + C,
+\]
+donc
+\[
+f(x) = e^{x} (x + C).
+\]
+
+2. Pour $f(0) = 1$,
+\[
+f(0) = e^{0} (0 + C) = C = 1.
+\]
+
+Donc la solution particulière est
+\[
+f(x) = e^{x} (x + 1).
+\]
+
+3. Lorsque $x \to +\infty$,
+\[
+f(x) = e^{x} (x + 1) \to +\infty.
+\]
+
+\end{document}
+```

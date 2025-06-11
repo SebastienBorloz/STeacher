@@ -1,0 +1,37 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+(c) \textit{L'équation de Weibull} dit que la dynamique du processus est décrite par
+\[
+\frac{dc}{dt} = \frac{k}{t^{6}} (C_s - c),
+\]
+où k, $C_s$, b $\geq 0$ sont des constantes, et $b < 1$ (on remarque que cette équation n'est pas définie pour $t=0$).
+
+(i) Qu'est-ce que cette équation dit du processus ? 
+
+(ii) Vérifier que pour $\alpha = \frac{k}{1-b}$, la fonction $c = C_s (1 - e^{-\alpha t^{1-b}})$ est une solution de l'équation différentielle pour $t > 0$.
+
+\medskip
+
+(i) La variation est proportionnelle à $(C_s - c)$ et inversement proportionnelle à $t^{6}$ (t augmente $\rightarrow$ c' diminue).
+
+\medskip
+
+(ii) 
+\[
+c(t) = C_s \left( 1 - e^{-\alpha t^{1-b}} \right)
+\]
+\[
+c'(t) = C_s \left( - e^{-\alpha t^{1-b}} \right) \cdot \left( - \alpha t^{1-b} \right)' = C_s \alpha (1-b) t^{-b} e^{-\alpha t^{1-b}}
+\]
+\[
+\alpha = \frac{k}{1-b} \implies c'(t) = C_s \frac{k}{1-b} (1-b) t^{-b} e^{-\alpha t^{1-b}} = \frac{C_s k}{t^{b}} e^{-\alpha t^{1-b}}
+\]
+\[
+\frac{k}{t^{b}} (C_s - c) = \frac{k}{t^{b}} \left( C_s - C_s + C_s e^{-\alpha t^{1-b}} \right) = \frac{C_s k}{t^{b}} e^{-\alpha t^{1-b}} \quad \checkmark
+\]
+
+\end{document}
+```

@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+Série 1 \\
+Ex 1 : \\
+
+a) \quad $\Omega = \{1p, 1f, 2p, 2f, \dots \}$ \\
+
+\quad $|\Omega| = 12$ \\
+\quad $p = \frac{1}{12}$ \quad \text{(tout les états sont équiprobable)} \\
+
+c) \quad $1 \quad 2 \quad 3 \quad 4 \quad 5 \quad 6$ \\
+
+\quad $\Omega = \{12, 13, 14, 15, 16, 23, 24, 25, 26, 34, 35, 36,$ \\
+\quad \quad $45, 46, 56 \}$ \\
+
+\quad $|\Omega| = 15 \quad \binom{6}{2,2,2} \cdot \frac{1}{3!}$ \\
+
+\quad $p = \frac{1}{15}$ \\
+
+b) \quad $\Omega = [50, \infty[$ \\
+\quad $= \{50, 51, \dots \}$
+
+\end{document}

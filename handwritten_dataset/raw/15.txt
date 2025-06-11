@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\begin{document}
+
+3. (a) Déterminer la distance du point $P = (0,1,-1,2)$ à l'hyperplan d'équation
+
+\[
+\mathcal{H} : \quad x_1 - x_2 + 3x_3 + x_4 = 2.
+\]
+
+(b) Déterminer l'angle entre les hyperplans
+
+\[
+\mathcal{H}_1 : \quad x_1 - 3x_2 + x_3 - 2x_4 - x_5 = 2 \quad \text{et} \quad
+\mathcal{H}_2 : \quad 2x_1 - 2x_2 - 3x_3 + 2x_4 + 2x_5 = -1.
+\]
+
+\[
+\text{a) } \operatorname{disf}(\mathcal{H},P) = \frac{|0 - 1 - 3 + 2 - 2|}{\sqrt{1^2 + 1^2 + 3^2 + 1^2}} = \frac{4}{\sqrt{12}} = \frac{2}{\sqrt{3}}
+\]
+
+\[
+\text{b) } \vec{n}_1 = \begin{pmatrix} 1 \\ -3 \\ 1 \\ -2 \\ -1 \end{pmatrix}, \quad
+\vec{n}_2 = \begin{pmatrix} 2 \\ -2 \\ -3 \\ 2 \\ 2 \end{pmatrix} \implies \sphericalangle (\mathcal{H}_1, \mathcal{H}_2) = \sphericalangle (\vec{n}_1, \vec{n}_2)
+\]
+
+\[
+\implies \varphi = \arccos \frac{\vec{n}_1 \cdot \vec{n}_2}{\|\vec{n}_1\| \|\vec{n}_2\|} = \arccos \frac{2 + 6 - 3 - 4 - 2}{\sqrt{16} \sqrt{25}} = \arccos \frac{-1}{20} \simeq 92.86
+\]
+
+4. (a) Vérifier que
+
+\[
+\vec{v}_1 = \frac{1}{\sqrt{14}} \begin{pmatrix} 1 \\ 3 \\ 2 \end{pmatrix}, \quad
+\vec{v}_2 = \frac{1}{\sqrt{19}} \begin{pmatrix} 3 \\ 1 \\ -3 \end{pmatrix}, \quad
+\vec{v}_3 = \frac{1}{\sqrt{266}} \begin{pmatrix} 11 \\ -9 \\ 8 \end{pmatrix}
+\]
+
+forment une base orthonormée de $\mathbb{R}^3$.
+
+(b) Calculer la longueur de $3\vec{v}_1 - 2\vec{v}_2 + 5\vec{v}_3$.
+
+(c) Ecrire $\vec{v} = \begin{pmatrix} -1 \\ 2 \\ 3 \end{pmatrix}$ comme combinaison linéaire de $\vec{v}_1, \vec{v}_2, \vec{v}_3$.
+
+\[
+\text{a) } \|\vec{v}_1\| = \frac{1}{\sqrt{14}} \sqrt{9 + 1 + 4} = 1, \quad \|\vec{v}_2\| = \frac{1}{\sqrt{19}} \sqrt{9 + 1 + 9} = 1, \quad \|\vec{v}_3\| = \frac{1}{\sqrt{266}} \sqrt{121 + 81 + 66} = 1
+\]
+
+\[
+\vec{v}_1 \cdot \vec{v}_2 = \frac{1}{\sqrt{14}} \frac{1}{\sqrt{19}} (3 + 3 - 6) = 0, \quad \vec{v}_1 \cdot \vec{v}_3 = \frac{1}{\sqrt{14}} \frac{1}{\sqrt{266}} (11 - 27 + 16) = 0
+\]
+
+\[
+\vec{v}_2 \cdot \vec{v}_3 = \frac{1}{\sqrt{19}} \frac{1}{\sqrt{266}} (33 - 9 - 24) = 0 \implies \text{BON de } \mathbb{R}^3
+\]
+
+\[
+\text{b) Longueur de } 3\vec{v}_1 - 2\vec{v}_2 : \sqrt{3^2 + 2^2} = \sqrt{13} \quad \text{car BON}
+\]
+
+\[
+\text{Longueur de } 3\vec{v}_1 - 2\vec{v}_2 + 5\vec{v}_3 = \sqrt{\sqrt{13}^2 + 5^2} = \sqrt{38}
+\]
+
+\end{document}

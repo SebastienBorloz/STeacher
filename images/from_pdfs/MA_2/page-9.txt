@@ -1,0 +1,88 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+Mathématiques appliquées 2 - Série 3
+
+1. (a) Calculer le déterminant de la matrice
+\[
+A = \begin{pmatrix}
+\cos(\alpha) & -\sin(\alpha) \\
+\sin(\alpha) & \cos(\alpha)
+\end{pmatrix}, \quad \alpha \in \mathbb{R}.
+\]
+
+\[
+|A| = \cos^2(\alpha) + \sin^2(\alpha) = 1 \quad \forall \alpha \in \mathbb{R}
+\]
+
+(b) Calculer le déterminant de
+\[
+A = \begin{pmatrix}
+2 & 0 & 0 & 0 \\
+25 & 8 & 0 & 0 \\
+2 & 3 & -1 & 0 \\
+7 & 5 & 6 & -1
+\end{pmatrix}
+\]
+
+i. en développant suivant la 1ère colonne. \\
+ii. en développant suivant la 1ère ligne.
+
+i) 
+\[
+|A| = 2 \begin{vmatrix}
+8 & 0 & 0 \\
+3 & -1 & 0 \\
+5 & 6 & -1
+\end{vmatrix}
+- 25 \begin{vmatrix}
+0 & 0 & 0 \\
+3 & -1 & 0 \\
+6 & 7 & -
+\end{vmatrix}
++ 2 \begin{vmatrix}
+0 & 0 & 0 \\
+8 & 0 & 0 \\
+6 & 7 & -
+\end{vmatrix}
+- 7 \begin{vmatrix}
+0 & 0 & 0 \\
+8 & 0 & 0 \\
+3 & -7 & 0
+\end{vmatrix} = -16
+\]
+
+ii) 
+\[
+|A| = 2 \begin{vmatrix}
+8 & 0 & 0 \\
+3 & -1 & 0 \\
+5 & 6 & -1
+\end{vmatrix} = -16
+\]
+
+(c) Les vecteurs
+\[
+\vec{u} = \begin{pmatrix} 2 \\ 2 \\ -1 \end{pmatrix}, \quad
+\vec{v} = \begin{pmatrix} 1 \\ -2 \\ -2 \end{pmatrix}, \quad
+\vec{w} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}
+\]
+
+sont-ils linéairement indépendants ?
+
+\[
+\begin{vmatrix}
+2 & 1 & 2 \\
+2 & -2 & -1 \\
+-1 & -2 & 2
+\end{vmatrix} = -8 + 4 - 8 - 4 - 4 - 4 = -27 \neq 0 \quad \text{donc les vecteurs}
+\]
+
+sont linéairement indépendants.
+
+\end{document}
+```

@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+2. On effectue un test pour détecter une maladie qui touche 0.1 \% de la population. La probabilité que le test donne un résultat positif si une personne est malade est de 0.95. Si la personne n’est pas malade, la probabilité que le test donne un résultat négatif est également de 0.95.
+
+(a) Pour une personne prise au hasard dans la population, on considère les événements : \\
+$M =$ "la personne est malade" \\
+$A =$ "le test est positif". \\
+Déterminer $P(M)$, $P(\overline{M})$, $P(A|M)$ et $P(A|\overline{M})$.
+
+\bigskip
+
+(a) \quad $P(M) = 0.1\% = 0.001$, \quad $P(\overline{M}) = 0.999$ \\
+\quad $P(A|M) = 0.95$ \\
+\quad $P(\overline{A}|\overline{M}) = 0.95$
+
+\bigskip
+
+(b) Calculer la probabilité que le test soit positif, sachant que la personne n’est pas malade et en déduire $P(A)$.
+
+\bigskip
+
+(c) Calculer la probabilité que la personne soit malade, sachant que le test a donné un résultat positif.
+
+\bigskip
+
+(b) On cherche $P(A|\overline{M}) = 1 - \frac{P(\overline{M})}{P(\overline{M})} = \frac{P(A \cap \overline{M}) + P(\overline{A} \cap \overline{M})}{P(\overline{M})} = P(A|\overline{M}) + P(\overline{A}|\overline{M})$
+
+\[
+\Rightarrow P(A|\overline{M}) = 1 - P(\overline{A}|\overline{M}) = 0.05
+\]
+
+\[
+P(A) = P(A| \overline{M}) P(\overline{M}) + P(A|M) P(M) = 0.05 \cdot 0.999 + 0.95 \cdot 0.001
+\]
+
+\[
+= 0.0509
+\]
+
+(c) \quad $P(M|A) = \frac{P(A|M) P(M)}{P(A)} = \frac{0.95 \cdot 0.001}{0.0509} = 0.0187$
+
+\end{document}

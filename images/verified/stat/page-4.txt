@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+
+\begin{document}
+
+4. L'indice d'iode ($x$, en gI/100g) et le nombre de cétane ($y$, sans dimension) ont été mesurés pour différents biodiesels. Les valeurs sont reportées dans le tableau suivant.
+
+\[
+\begin{array}{c|ccccc}
+x & 60 & 70 & 80 & 90 & 100 \\
+y & 64 & 61 & 58 & 56 & 54 \\
+\end{array}
+\]
+
+(a) Calculer $\overline{x}$, $\overline{y}$, $s_x$, $s_y$, $\mathrm{Cov}(x,y)$ et $\mathrm{Corr}(x,y)$. \\
+(b) Y a-t-il une relation linéaire entre $x$ et $y$ ? \\
+(c) Déterminer l'équation de la droite de régression. Dessiner les valeurs mesurées et la droite de régression sur un même graphique.
+
+\vspace{0.5cm}
+
+(a) $\quad \overline{x} = 80$, \quad $\overline{y} = 58,6$, \quad $s_x = \sqrt{250} \approx 15.811$, \quad $s_y = \sqrt{15.8} \approx 3.975$ \\
+
+\[
+\mathrm{Cov}(x,y) = \frac{1}{4} \sum_{i=1}^5 (x_i - 80)(y_i - 58.6) = -62.5, \quad \mathrm{Corr}(x,y) = \frac{-62.5}{62.85} = 0.9944
+\]
+
+(b) Oui car $\mathrm{Corr}(x,y)$ est très proche de $-1$. \\
+
+(c) 
+\[
+A = \begin{pmatrix}
+60 & 1 \\
+70 & 1 \\
+80 & 1 \\
+90 & 1 \\
+100 & 1
+\end{pmatrix}, \quad
+B = \begin{pmatrix}
+64 \\
+61 \\
+58 \\
+56 \\
+54
+\end{pmatrix}, \quad
+X = \begin{pmatrix}
+m \\
+q
+\end{pmatrix}
+\]
+
+\[
+A^T A = \begin{pmatrix}
+60 & 70 & 80 & 90 & 100 \\
+1 & 1 & 1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+60 & 1 \\
+70 & 1 \\
+80 & 1 \\
+90 & 1 \\
+100 & 1
+\end{pmatrix}
+= \begin{pmatrix}
+33000 & 400 \\
+400 & 5
+\end{pmatrix}
+\]
+
+\[
+(A^T A)^{-1} = \begin{pmatrix}
+5 & -400 \\
+-400 & 33000
+\end{pmatrix} 
+\frac{1}{5000}
+\]
+
+\[
+A^T B = \begin{pmatrix}
+60 & 70 & 80 & 90 & 100 \\
+1 & 1 & 1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+64 \\
+61 \\
+58 \\
+56 \\
+54
+\end{pmatrix}
+= \begin{pmatrix}
+23190 \\
+293
+\end{pmatrix}
+\]
+
+\[
+\Rightarrow
+\begin{pmatrix}
+m \\
+q
+\end{pmatrix}
+= \frac{1}{5000}
+\begin{pmatrix}
+5 & -400 \\
+-400 & 33000
+\end{pmatrix}
+\begin{pmatrix}
+23190 \\
+293
+\end{pmatrix}
+= \frac{1}{5000}
+\begin{pmatrix}
+-1250 \\
+-393000
+\end{pmatrix}
+= \begin{pmatrix}
+-0.25 \\
+78.6
+\end{pmatrix}
+\]
+
+\vspace{0.5cm}
+
+\textit{(Le graphique est une droite décroissante passant par les points mesurés, avec $y$ en ordonnée et $x$ en abscisse.)}
+
+\end{document}

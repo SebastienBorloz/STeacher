@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[ 
+1700 \to \text{Vrai sdam} 
+\]
+
+\[
+\to \quad 1360/1700 \quad \text{contenaient des mots de la liste}
+\]
+
+\[
+\text{Dans les messages qui n'étaient pas des spam 300 contenaient des mots de la liste}
+\]
+
+\end{document}

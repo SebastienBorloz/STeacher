@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{2. On considère les histogrammes suivants représentant la distribution de la taille (en $\mu$m) des particules d'une poudre.}
+
+\textbf{(a) Associer chacun des boxplots suivants à l'histogramme qui lui correspond.}
+
+\textbf{(b) Que peut-on dire de la poudre représentée par l'histogramme C ?}
+
+a) \quad
+\begin{itemize}
+    \item $A \rightarrow (II)$ médiane $\simeq 50$
+    \item $B \rightarrow (III)$ médiane $\simeq 30$
+    \item $C \rightarrow (I)$ médiane $\simeq 50$, $Q_1 \simeq 35$, $Q_3 \simeq 65$
+\end{itemize}
+
+b) \quad La poudre C est probablement un mélange 
+\[
+\rightarrow C1 \quad \mu \simeq 35
+\]
+\[
+\rightarrow C2 \quad \mu \simeq 65
+\]
+
+\end{document}

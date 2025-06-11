@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Série 6
+
+Ex 1
+
+\[
+f(x) = \begin{cases}
+\frac{k}{x^3} & x \geq 1 \\
+0 & x < 1
+\end{cases}
+\]
+
+a) Valeur de k
+
+\[
+\int_{-\infty}^{+\infty} f(x) \, dx = \int_1^{+\infty} \frac{k}{x^3} \, dx - \int_{-\infty}^0 0 \, dx
+\]
+
+\[
+= -k \left[ \frac{1}{\frac{x^2}{-2}} \right]_1^{+\infty} - 0
+\]
+
+\[
+= k \cdot 0 + k \cdot \frac{1}{2} = \frac{k}{2}
+\]
+
+\[
+F(x) = \frac{k}{2} \implies 1 = \frac{k}{2} \implies k = 2
+\]
+
+
+F(x) est sensé d'être égal à 1
+
+\end{document}

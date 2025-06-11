@@ -1,0 +1,105 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+(ii) \\
+\[
+y' \cos(t) + y \sin(t) = \tan(t), \quad y' = -\frac{\sin(t)}{\cos(t)} + \frac{6(t)}{\cos(t)}
+\]
+\[
+\Rightarrow a(t) = -\frac{\sin(t)}{\cos(t)} = A(t), \quad b(t) = \frac{6(t)}{\cos(t)}
+\]
+\[
+y = \gamma_p e^{\int a(t)} = e^{\int \frac{-\sin(t)}{\cos(t)}} = e^{\ln(|\cos(t)|)} = \gamma_p = C \cdot \cos(t), \quad C \in \mathbb{R}
+\]
+
+2. \[
+\int \frac{\sin(t)}{\cos^2(t)} \frac{1}{\cos(t)} dt = - \int \frac{\sin(t)}{\cos^3(t)} dt = \frac{1}{2} \cos^{-2}(t) \Rightarrow \gamma_p = \frac{1}{2} \cdot \frac{\tau}{2 \cos^2(t)} \cdot \cos(t) = \frac{\tau}{2 \cos(t)}
+\]
+
+3. \[
+y(t) = C \cdot \cos(t) - \frac{1}{2 \cos(t)}, \quad C \in \mathbb{R}
+\]
+
+(b) Résoudre les problèmes initiaux suivants : \\
+
+(i) \\
+\[
+\begin{cases}
+t^2 y' + 2 t y = 3 \\
+y(1) = -2
+\end{cases}
+\]
+\[
+y' = \frac{3}{t^2} - \frac{2}{t} y, \quad a(t) = -\frac{2}{t} \Rightarrow A(t) = -2 \ln |t|
+\]
+\[
+\Rightarrow e^{A(t)} = e^{\ln t^{-2}} = \frac{1}{t^2}
+\]
+\[
+\Rightarrow \gamma_p e^A < \frac{3}{t^2}, \quad C \in \mathbb{R}
+\]
+
+2. \[
+\int \frac{3}{t^2} dt = \int 3 dt = 3 t = \gamma_p = 3 t \cdot \frac{\tau}{t^2} = \frac{3}{t}
+\]
+
+3. \[
+y(t) = C \cdot \frac{1}{t^2} + \frac{3}{t}, \quad C \in \mathbb{R}
+\]
+\[
+y(1) = C + 3 = -2 \Rightarrow C = -5
+\]
+\[
+\Rightarrow y(t) = \frac{-5}{t^2} + \frac{3}{t}
+\]
+
+(ii) \\
+\[
+\begin{cases}
+y' + y \cos(t) = \sin(t) \cos(t) \\
+y\left(\frac{\pi}{6}\right) = 1
+\end{cases}
+\]
+\[
+y' = -y \cos(t) + \sin(t) \cos(t)
+\]
+\[
+a(t) = -\cos(t), \quad b(t) = \sin(t)
+\]
+\[
+\Rightarrow a(t) = -\cos(t) \Rightarrow A(t) = -\sin(t)
+\]
+\[
+\Rightarrow e^{A(t)} = e^{-\sin(t)}
+\]
+\[
+\Rightarrow \gamma_p = C e^{\sin(t)}, \quad C \in \mathbb{R}
+\]
+
+2. \[
+\int \frac{\sin(t) \cos(t)}{e^{-\sin(t)}} dt = \int \sin(t) \cos(t) e^{\sin(t)} dt
+\]
+\[
+= \sin(t) e^{\sin(t)} - \int \cos(t) e^{\sin(t)} dt = \sin(t) e^{\sin(t)} - \int \cos(t) e^{\sin(t)} dt
+\]
+\[
+= e^{\sin(t)} (\sin(t) - \tau) \Rightarrow \gamma_p = e^{\sin(t)} (\sin(t) - \tau) e^{-\sin(t)} = \frac{\sin(t) - 7}{}
+\]
+
+3. \[
+y(t) = C e^{-\sin(t)} + \sin(t) - 7, \quad C \in \mathbb{R}
+\]
+
+4. \[
+y\left(\frac{\pi}{6}\right) = C e^{-\frac{1}{2}} - \frac{7}{2} = 1 \Rightarrow C = \frac{3}{2} e^{\frac{1}{2}}
+\]
+\[
+\Rightarrow y(t) = \frac{3}{2} e^{\frac{1}{2}} e^{-\sin(t)} + \sin(t) - 7
+\]
+
+24
+
+\end{document}
+```

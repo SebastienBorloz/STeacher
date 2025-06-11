@@ -1,0 +1,96 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Modélisation Mathématique - Série 11
+
+Equations différentielles: Equations linéaires d'ordre 1
+
+1. Pour chacune des équations suivantes, dire si elle est séparable, linéaire, 
+les deux, ou aucune des deux. Ne pas résoudre les équations !
+
+(a) \quad y' = y + t.
+
+(b) \quad y' = 3y - 2t + 6ty - 1.
+
+(c) \quad y' = te^{-\sin t} - y \cos t.
+
+(d) \quad y' = \sin y + t.
+
+(e) \quad 2ye^{y^2} y' = 2t + 3 \sqrt{t}.
+
+(f) \quad y' + y = t^2 - 1.
+
+(g) \quad y' = 1 - t + y - ty.
+
+(h) \quad t^2 y y' - y^2 = 2t^3 e^{-1/t}.
+
+(a) Pas séparable
+
+Lin\'eaire : a(t) = 7 et b(t) = t
+
+(b) y' = 7 \cdot 3 (1 + 2t) - (1 + 2t) \quad \Rightarrow \quad linéaire
+
+= (3y - 7)(1 + 2t) \Rightarrow séparable
+
+(c) Pas séparable
+
+Lin\'eaire : a(t) = - \cos(t)
+
+b(t) = t e^{-\sin(t)}
+
+(d) Pas linéaire
+
+Pas séparable
+
+(e) y' = \frac{12t + 3 \sqrt{t}}{2 y e^{y^2}} \Rightarrow séparable
+
+Pas linéaire
+
+(f) t^2 y' = t^2 - 1 \quad \Rightarrow \quad linéaire
+
+Pas séparable
+
+(g) y' = (1 - t) - y (1 - t) \Rightarrow linéaire
+
+= (1 - t)(1 - y) \Rightarrow séparable
+
+(h) y' = \frac{y^2 + 2 t e^{-\frac{1}{t}}}{t^2 y}
+
+Pas séparable
+
+Pas linéaire
+
+2. (a) Résoudre les équations différentielles suivantes :
+
+(i)
+
+\[
+y' = t^2 - y.
+\]
+
+\[
+\text{a. } a(t) = -1 \Rightarrow A(t) = -t
+\]
+
+\[
+\Rightarrow y_p = C e^{-t} \quad C \in \mathbb{R}
+\]
+
+\[
+2 \int \frac{t^2}{e^{-t}} dt \quad e^t \quad e^t = e^{2t} - 2 \left( t e^t \right)' + e^t - 2 \left( t e^t - (t e^t)' \right) = (t^2 e^t - 2 t e^t + 2 e^t)
+\]
+
+\[
+= e^t \left( t^2 - 2 t + 2 \right) \Rightarrow y_p = e^t \left( t^2 - 2 t + 2 \right) e^{-t} = \boxed{t^2 - 2 t + 2}
+\]
+
+\[
+y_1(t) = C e^{-t} + t^2 - 2 t + 2, \quad C \in \mathbb{R}
+\]
+
+\end{document}
+```

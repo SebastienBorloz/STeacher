@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{a) 1)} \quad P(N|CS) = P(CS|N) \cdot P(N) / P(CS)
+\]
+
+\[
+= \frac{3}{16}
+\]
+
+\end{document}

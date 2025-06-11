@@ -1,0 +1,89 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+Modélisation Mathématique - Série 9
+
+Equations différentielles: ordre 1 sous forme explicite, champs de directions
+
+1. (a) Faire correspondre les équations différentielles (i) - (v) aux champs de directions I - IV ci-dessous. Justifier votre choix.
+
+(i) \quad $y' = t(2 - y)$ \hspace{3cm} (iv) \quad $y' = \sin(t) \sin(y)$
+
+(ii) \quad $y' = t + y - 1$ \hspace{3cm} (v) \quad $y' = t^2 - 2y + 1$
+
+(iii) \quad $y' = 2 - y$
+
+I $\to$ i)
+
+Sol cst $y=2$
+
+$y' = 0$ si:
+
+$t=0$
+
+$t>0, y<2$
+
+$\Rightarrow y' >$
+
+$t<0, y>2$
+
+$\Rightarrow y' < $
+
+II $\to$ v)
+
+Sol cst $y = k \pi$
+
+$[-\pi, 0, \pi]$
+
+$t=0 \Rightarrow y' = 0$
+
+$t \in [0, \pi] \Rightarrow$
+
+$t \in [-\pi, 0] \to y' < 0$
+
+$t \in [\pi, 2\pi] \to y' > 0$
+
+III $\to$ iii)
+
+Sol cst $y=2$
+
+Ne dépend
+
+pas de t
+
+(la pente reste la même horizontalement)
+
+IV $\to$ ii)
+
+Pas de sol cst
+
+$t - y = y' = -t$
+
+pente 0 pour
+
+$t \quad y = t - t$
+
+Pas de sol cst (I, II, IV)
+
+$y' = 1$ lorsque
+
+$t = y = 0$ (IV)
+
+(b) Pour chacune des équations dans (a), calculer algébriquement les solutions constantes éventuelles, puis dessiner, en se servant des champs de directions, quelques courbes solutions, ainsi que les solutions constantes.
+
+i) \quad $y' = 0 \Rightarrow (2 - y) = 0 \Rightarrow y = 2$
+
+ii) \quad $y' = 0 \Rightarrow t + y - 1 = 0 \Rightarrow$ pas de sol cst
+
+iii) \quad $y' = 0 \Rightarrow 2 - y = 0 \Rightarrow y = 2$
+
+iv) \quad $y' = 0 \Rightarrow \sin(t) \sin(y) = 0 \Rightarrow y = k \pi \quad k \in \mathbb{Z}$
+
+v) \quad $y' = 0 \Rightarrow t^2 - 2y + 1 \Rightarrow$ pas de solution constante
+
+\end{document}
+```

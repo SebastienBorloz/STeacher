@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{e) On cherche } $F(t) = 9.5 \cdot 10^8 = \frac{19}{2} \cdot 10^8$
+\]
+
+\[
+\implies \frac{10^9}{1 + (10^6 - 1) e^{-10^9 \cdot \frac{\ln (10^3 + 1)}{10^0} t}} = \frac{19}{2} \cdot 10^8
+\]
+
+\[
+\implies \frac{20}{19} = 1 + (10^6 - 1) e^{-\frac{\ln (10^3 + 1)}{10} t}
+\]
+
+\[
+\implies \ln (\frac{1}{19} - \frac{1}{10^6-1} ) = - \ln \frac{(10^3 + 1)}{10} t
+\]
+
+\[
+\implies t = - 10 \frac{\ln (\frac{1}{19 \cdot (10^6 - 1)} )}{\ln (10^3 + 1)}
+\]
+
+\[
+\implies t = 10 \frac{\ln \left(19 ( 10^6 - 1 \right)}{\ln (10^3 + 1)} \approx 24,26 \text{ jours donc } 25 \text{ jours}
+\]
+
+\end{document}

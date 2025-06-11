@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{a) f est linéaire avec}
+\]
+
+\[
+A_p = \begin{pmatrix}
+0 & 0 & 1 \\
+2 & -3 & 0 \\
+1 & 1 & 0
+\end{pmatrix}
+\quad \text{on a bien } A_p \begin{pmatrix} x \\ y \\ z \end{pmatrix} = f(\vec{x})
+\]
+
+\[
+6) \quad 2^3 \cdot \det(A) = 2^3 \left| \begin{matrix} 
+0 & 0 & 1 \\
+2 & -3 & 0 \\
+1 & 1 & 0
+\end{matrix} \right| = 2^3 \cdot 5 = 40
+\]
+
+\end{document}

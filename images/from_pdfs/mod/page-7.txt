@@ -1,0 +1,49 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+Modélisation Mathématique - Série 8
+
+Equations différentielles: généralités, équation logistique
+
+1. (a) Soit l'équation différentielle
+
+\[
+y' = ty^3.
+\]
+
+(i) Que pouvez-vous dire du graphe d'une solution de l'équation différentielle quand $t \approx 0$ ? Et quand $t \to +\infty$ ?
+
+(ii) Vérifier que tous les membres de la famille de fonctions
+
+\[
+y = \frac{1}{\sqrt{C - t^2}}, \quad C \in \mathbb{R}_+^*,
+\]
+
+sont des solutions de l'équation différentielle.
+
+(iii) Donner une solution de l'équation différentielle qui ne fait pas partie de la famille de fonctions décrite en (ii).
+
+(iv) Donner une solution de l'équation différentielle telle que $y(0) = 2$.
+
+(v) Représenter quelques fonctions de la famille décrite en (ii), ainsi que les fonctions trouvées en (iii) et (iv), sur un même système d'axes.
+
+i) Si $t < 0$, alors $y' = 0$. Dans pour tout $y_0$ la pente sera 0 autour de $t=0$.
+
+Si $t \to -\infty$, alors : $\to$ Si $y_0 > 0 \Rightarrow y'_0 > 0 \Rightarrow y$ fonction croissante.
+
+$\to$ Si $y_0 < 0 \Rightarrow y'_0 < 0 \Rightarrow y$ fonction décroissante.
+
+$\to$ Si $y_0 = 0 \Rightarrow y'_0 = 0 \Rightarrow$ fonction constante.
+
+La pente s'accélère lorsque $t \to +\infty$, $y > 0$ et s'accélère négativement lorsque $t \to +\infty$, $y < 0$.
+
+ii) $y' = \left(1 - (C - t^2)^{-\frac{1}{2}}\right)' = -\frac{1}{2} |C - t^2|^{-\frac{3}{2}} (-2t) = t (1 - t^2)^{-\frac{3}{2}} = t ((1 - (C - t^2)^{-\frac{1}{2}})^3 = (y)^3$
+
+iii) Solution constante : $y' = 0 \Rightarrow (y^3 = 0) \Rightarrow y(t) = 0$
+
+iv) $y(0) = 2 = \frac{1}{\sqrt{C - 0^2}} \Rightarrow 0 = C - \frac{1}{4} \Rightarrow C = \frac{1}{4} \Rightarrow y(t) = \frac{1}{\sqrt{\frac{1}{4} - t^2}} = \frac{2}{\sqrt{1 - 4t^2}}$
+
+\end{document}
+```

@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{a) } A \to (II) \text{ médiane } \simeq 50
+\]
+
+\[
+B \to (III) \text{ médiane } \simeq 30
+\]
+
+\[
+C \to (I) \text{ médiane } \simeq 50, \quad Q_1 \simeq 35, \quad Q_2 \simeq 65
+\]
+
+\[
+\text{b) La poudre C est probablement un mélange} \to C_1 \mu \simeq 35
+\]
+
+\[
+\to C_2 \mu \simeq 65
+\]
+
+\end{document}

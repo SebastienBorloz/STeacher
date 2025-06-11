@@ -1,0 +1,62 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+(b) Associer à chacune des équations différentielles
+
+\[
+\begin{cases}
+\text{(i)} & y' = 1 + t^2 + y^2 \\
+\text{(ii)} & y' = \frac{1}{1 + e^{t^2 + y^2}} \\
+\text{(iii)} & y' = te^{-t^2 - y^2} \\
+\text{(iv)} & y' = \sin(ty) \cos(ty)
+\end{cases}
+\]
+
+le graphe I-II-III-IV qui représente une de ses solutions:
+
+\bigskip
+
+I \hspace{3cm} II
+
+\[
+\begin{array}{c@{\hspace{4cm}}c}
+\begin{array}{c}
+\includegraphics[height=3cm]{graph_I.png}
+\end{array}
+&
+\begin{array}{c}
+\includegraphics[height=3cm]{graph_II.png}
+\end{array}
+\end{array}
+\]
+
+III \hspace{3cm} IV
+
+\[
+\begin{array}{c@{\hspace{4cm}}c}
+\begin{array}{c}
+\includegraphics[height=3cm]{graph_III.png}
+\end{array}
+&
+\begin{array}{c}
+\includegraphics[height=3cm]{graph_IV.png}
+\end{array}
+\end{array}
+\]
+
+\bigskip
+
+\begin{tabbing}
+i) \quad \= $y' \neq 0 \Rightarrow$ Pas I, Pas II \quad \= $y' \to +\infty$ si $f \to +\infty \Rightarrow$ Pas IV \quad \= Donc III \\
+ii) \> $y' \neq 0 \Rightarrow$ Pas I, Pas II \> $\Rightarrow$ IV \\
+iii) \> $y' = 0 \Rightarrow te^{-t^2 - y^2} = 0 \Rightarrow$ Pas de solution $\forall t \Rightarrow$ I \\
+\> $y'$ a le même signe que $t y$ \\
+iv) \> II est colére et $y(1) = 0 \Rightarrow \sin(1 \cdot 0) \cos(1 \cdot 0) = 0$
+\end{tabbing}
+
+\end{document}
+```

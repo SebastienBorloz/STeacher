@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+Modélisation Mathématique - Série 10
+
+Equations différentielles: Equations d’ordre 1 séparables
+
+1. (a) Déterminer la solution générale de l’équation différentielle
+
+\[
+y' = \frac{1+y^2}{1+t^2}
+\]
+
+1) \( y' = \frac{1}{1+t^2} (1+y^2) \Rightarrow \) séparable
+
+2) Solutions constantes: \( h(y) = 0 \Rightarrow 1 + y^2 = 0 \Rightarrow \) aucune solution constante.
+
+3) \(\int \frac{1}{1+y^2} dy = \int \frac{1}{1+t^2} dt \Rightarrow \arctan(y) = \arctan(t) + c \Rightarrow y = \tan(\arctan(t) + c)\)
+
+\[
+\Rightarrow y = \frac{t + \tan(c)}{1 - t \tan(c)} = \frac{t + D}{1 - t \cdot D} \quad D = \tan(c) \in \mathbb{R}
+\]
+
+(b) Déterminer la solution du problème initial
+
+\[
+\begin{cases}
+y' = \frac{\ln t}{t y} \\
+y(1) = 2
+\end{cases}
+\]
+
+1) \( y' = \frac{\ln(t)}{t} \frac{1}{y} \Rightarrow \) séparable
+
+2) \( h(y) = 0 \Rightarrow \frac{1}{4} = 0 \)
+
+3) \(\int y \, dy = \int \frac{\ln(t)}{t} dt\)
+
+\[
+\Rightarrow \frac{y^2}{2} = \frac{1}{2} (\ln(t))^2 + c \Rightarrow y = \pm \sqrt{(\ln(t))^2 + D} \quad D =2C
+\]
+
+\( y(1) = 2 = \pm \sqrt{(\ln(1))^2 + D} \Rightarrow 2 = \pm \sqrt{D} \Rightarrow D = 4 \Rightarrow y(t) = \sqrt{(\ln(t))^2 + 4} \)
+
+\end{document}

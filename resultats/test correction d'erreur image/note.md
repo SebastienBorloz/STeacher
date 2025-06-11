@@ -104,6 +104,6 @@ En résumé, il faut revoir les calculs de variance, covariance et corrélation,
 ```
 
 
-Bon, je me fais un peu engueuler parce que j'ai inversé les notions de covariance et d'ecart type dans ma retranscription de la consigne, ca faisait un moment que je n'avais pas eu ces notions sous les yeux.
+Bon, je me fais un peu engueuler parce que j'ai inversé la covariance et l'ecart type dans ma retranscription de la consigne, ca faisait un moment que je n'avais pas eu ces notions sous les yeux.
 
 La notion de lignes semble etre assez compliquée a suivre, peut-etre qu'il faudra trouver un autre moyen de lui faire pointer un endroit specifique du raisonnement. Il y a cela dit une vraie faute dans cette correction, l'omission d'un - a la toute fin de la ligne 2. Il a également annoncé faux le resultat de (-0.25, 78.6) qu'il a lu juste.

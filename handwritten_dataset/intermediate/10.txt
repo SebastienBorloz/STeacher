@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+\[
+Série 2
+Ex 1
+\]
+
+
+\[
+\text{a)} P(A \mid B) = \frac{P(A \cap B)}{P(B)} = \frac{20 + 54}{20 + 54 + 16 + 9} = \frac{74}{99}
+\]
+
+\[
+P(\overline{A} \mid B) = 1 - P(A \mid B) = 1 - \frac{74}{99}
+\]
+
+
+\[
+\text{b) } P(B \mid A) = \frac{P(B \cap A)}{P(A)} = \frac{74}{20 + 54 + 2 + 8} = \frac{74}{84}
+\]
+
+\[
+P(B \mid \overline{A}) = 1 - P(B \mid A) = 1 - \frac{74}{84}
+\]
+
+
+\[
+\text{c) }P\left(\overline{C} \mid A \cap B \right) = 1 - P\left(C \mid A \cap B \right)
+= 1 - \frac{P(C \cap A \cap B)}{P(A \cap B)} = 1 - \frac{54}{74}
+= \frac{20}{74}
+\]
+
+\end{document}

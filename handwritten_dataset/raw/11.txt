@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+(b) Résoudre l'équation différentielle du point (a).
+
+Equation logistique 1) \quad F' = C \cdot F \cdot (P - F) \quad séparable
+
+2) \quad h(F) = 0 \implies F(P - F) = 0 \implies F = 0 \text{ et } F = P \quad \text{(tout le monde exposé)}
+
+3) \quad \left(\frac{1}{F(P-F)}\right) dF = \int C \, dt \implies \int \frac{1}{P} \left(\frac{1}{F} + \frac{1}{p-F}\right) dF = \int c \, dt
+
+\implies \frac{1}{P} \left( \left| \ln |F| - \ln |P-F| \right| \right) = Ct + D \in \mathbb{R}
+
+\ln \left| \frac{F}{P-F} \right|
+
+\implies - \ln \left| \frac{F}{P-F} \right| = -PCt + E \quad \text{(=-PD)}
+
+\implies \frac{P-F}{F} = L e^{PCt} \quad (L = \pm e^E \in \mathbb{R}^*)
+
+\implies \frac{P}{F} = 1 + L e^{-PCt}
+
+\implies \boxed{F(t) = \frac{p}{1 + L e^{-PCt}}} \quad L \in \mathbb{R} \quad F(t) = P \implies L = 0 \quad \text{solution constante}
+
+\end{document}

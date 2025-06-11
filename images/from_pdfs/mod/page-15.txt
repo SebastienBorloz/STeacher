@@ -1,0 +1,45 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+3. Dans cet exercice on va s'intéresser à la croissance de deux populations de bactéries, la souche 1 et la souche 2. Soient $N_1(t)$, resp. $N_2(t)$, le nombre de bactéries de la souche 1, resp. 2, au temps $t$.
+On suppose que les populations 1 et 2 croissent selon les équations
+\[
+\frac{dN_1}{dt} = r_1 \cdot N_1 \quad \text{et} \quad \frac{dN_2}{dt} = r_2 \cdot N_2,
+\]
+pour des taux de croissance $r_1 > 0$ et $r_2 > 0$, tels que $r_1 \neq r_2$.
+
+(a) Interpréter la quantité
+\[
+p_1(t) = \frac{N_1(t)}{N_1(t) + N_2(t)}.
+\]
+
+\[
+p_1(t) \text{ est la proportion de bactéries de type 1 au temps } t.
+\]
+
+(b) Montrer que $p_1(t)$ obéit à l'équation différentielle
+\[
+p_1' = R \cdot p_1 \cdot (1 - p_1),
+\]
+où $R := r_1 - r_2$.
+
+\[
+p_1' = \left(\frac{N_1}{N_1 + N_2}\right)' = \frac{N_1'(N_1 + N_2) - (N_1 + N_2)' N_1}{(N_1 + N_2)^2} = \frac{r_1 N_1 (N_1 + N_2) - (r_1 N_1 + r_2 N_2) N_1}{(N_1 + N_2)^2}
+\]
+
+\[
+= \frac{r_1 N_1^2 + r_1 N_1 N_2 - r_1 N_1^2 - r_2 N_1 N_2}{(N_1 + N_2)^2} = \frac{r_1 N_1 N_2 - r_2 N_1 N_2}{(N_1 + N_2)^2} = p_1 \frac{N_2}{N_1 + N_2} (r_1 - r_2)
+\]
+
+de plus $p_1 = \frac{N_1}{N_1 + N_2} = 1 - \frac{N_2}{N_1 + N_2}$
+
+\[
+\Rightarrow p_1' = R p_1 (1 - p_1) \quad \checkmark
+\]
+
+\end{document}
+```

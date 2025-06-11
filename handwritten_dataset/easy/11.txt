@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{1d) } E(x) = \int_{-\infty}^{\infty} x f(x)
+\]
+
+\[
+= \int_1^{\infty} x \cdot \frac{2}{x^3} 
+\]
+
+\[
+= -\frac{2}{x} \Big|_1^{\infty} = 0 - (-2) = 2
+\]
+
+\end{document}

@@ -1,0 +1,75 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+Mathématiques appliquées 2 - Série 4
+
+1. Les applications suivantes de $\mathbb{R}^2$ dans $\mathbb{R}^2$ sont-elles linéaires ?
+
+(a) 
+\[
+f(x,y) = (-y,-x)
+\]
+
+(b) 
+\[
+g(x,y) = (x-1,y-x)
+\]
+
+(c) 
+\[
+h(x,y) = \left(\sqrt{x^2+y^2}, \sin(x) + \sin(y)\right)
+\]
+
+(d) 
+\[
+i(x,y) = (2x - y, y + 3x)
+\]
+
+(e) 
+\[
+p(\vec{x}) = \left(\frac{\vec{a} \cdot \vec{x}}{\vec{a} \cdot \vec{a}}\right) \vec{a}, \quad \text{où } \vec{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} \text{ est un vecteur fixe } \neq \vec{0}.
+\]
+
+(f) 
+\[
+r(x,y) = (x \cos(\alpha) - y \sin(\alpha), x \sin(\alpha) + y \cos(\alpha))
+\]
+
+Si oui, déterminer la matrice $A$ de l'application et esquisser l'image de $\vec{e_1}$ et $\vec{e_2}$. Interpréter ensuite géométriquement l'application et $\det(A)$.
+
+a) $f$ est linéaire car 
+\[
+A_p = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}
+\]
+est une matrice telle que
+\[
+A_p \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} -y \\ -x \end{pmatrix} = p(x,y)
+\]
+
+\[
+p(\vec{e_1}) = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ -1 \end{pmatrix} = -\vec{e_2}
+\]
+
+\[
+p(\vec{e_2}) = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} -1 \\ 0 \end{pmatrix} = -\vec{e_1}
+\]
+
+\[
+\det(A) = -1
+\]
+
+$p$ est la symétrie par rapport à la droite $y = -x$. $p$ conserve les longueurs, mais inverse l'orientation.
+
+b) $g(0,0) = (-1,0) \neq (0,0) \implies g$ n'est pas linéaire.
+
+c) 
+\[
+h((\frac{\pi}{2},0)) = h\left(\frac{\pi}{2},0\right) = \left(\frac{\pi}{2}, \sin\left(\frac{\pi}{2}\right) + \sin(0)\right) = \left(\frac{\pi}{2}, 1\right) \neq \frac{\pi}{2} h(1,0) + 0 h(0,1) = \frac{\pi}{2} (1, \sin(1)) + 0 (0, \sin(\pi)) = \left(\frac{\pi}{2}, \frac{\pi}{2} \sin(1)\right)
+\]
+
+\end{document}
+```

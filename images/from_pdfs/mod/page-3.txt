@@ -1,0 +1,29 @@
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+2. (a) Pour chacune des fonctions suivantes, expliquer pourquoi elle ne peut \textbf{pas} être solution de l'équation différentielle
+\[
+y' = e^{t}(y-1)^2.
+\]
+
+\[
+\begin{array}{cc}
+\text{(i)} & \text{(ii)} \\
+\includegraphics[height=4cm]{graph1.png} & \includegraphics[height=4cm]{graph2.png}
+\end{array}
+\]
+
+i) \quad $e^{t} > 0 \quad \forall t$
+
+\[
+(y-1)^2 \geq 0 \quad \forall y \implies y'(t) \geq 0 \quad \forall t, f \quad \text{mais le graphe est décroissant à certains endroits } t
+\]
+
+ii) \quad Lorsque $y(t) = 1$ on a $y'(t) = 0$ mais $y(t) = 1$ la pente n'est pas zéro.
+
+\end{document}
+```

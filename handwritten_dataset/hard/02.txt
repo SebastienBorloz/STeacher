@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{(b) Déduire de (a) une expression pour V(t) en fonction de la quantité initiale V_0 d’oxygène dans les poumons.}
+\]
+
+\[
+\text{1) } V' = \frac{3 - V}{300} = \frac{1}{300} \cdot (3 - V)  \text{séparable}
+\]
+
+\[
+\text{2) } h(y) = 0 \implies V = 3 \text{(les poumons sont pleins d’oxygène pur)}
+\]
+
+3) 
+\[
+\int \frac{1}{3 - V} dV = \int \frac{1}{300} dt = - \ln |3 - V| = \frac{1}{300} t + c \implies 3 - V = D e^{-\frac{1}{300} t}
+\]
+
+\[
+\implies V = 3 + D e^{-\frac{1}{300}t} \quad V = 3 \implies D = 0
+\]
+
+\[
+V(0) = V_0 \implies V_0 = 3 + D \implies D = V_0 - 3 \implies V(t) = 3 + (V_0 - 3) e^{-\frac{t}{300}}
+\]
+
+\[
+\text{(c) Quelle sera la quantité d’oxygène dans les poumons au temps t si les poumons contenaient initialement 20\% d’oxygène ?}
+\]
+
+\[
+\text{(d) Déduire de (c) le temps nécessaire au processus d’oxygénation pour que les poumons contiennent 80\% d’oxygène.}
+\]
+
+\[
+\text{c) }  20\% = 0,2 / 1l = 0,6 / 3l \implies V_0 = 0,6 \implies V(t) = 3 - 2,4 e^{-\frac{t}{300}}
+\]
+
+\[
+\text{d) } 80\% = 0.8 / 1l = 2.4 / 3l \implies V(t) = 2.4 \implies 2,4 = 3 - 2.4 e^{-\frac{t}{300}}
+\]
+
+\[
+\implies \frac{1}{4} = e^{-\frac{t}{300}} \implies t = -300 \ln \left(\frac{1}{4}\right) = 300 \ln(4) = 476 \text{ secondes}
+\]
+
+\[
+= 6 \text{ minutes } 56 \text{ secondes}
+\]
+
+\[
+\text{3. Le but de cet exercice est d’étudier la diffusion d’une rumeur sur le réseau social InstaTikter. On désigne par F(t) le nombre d’utilisateurs et utilisatrices d’InstaTikter qui ont été exposé·e·s à cette rumeur t jours après sa première diffusion.}
+\]
+
+\[
+\text{(a) Expliquer pourquoi l’équation différentielle}
+\]
+
+\[
+F' = C \cdot F \cdot (P - F)
+\]
+
+\[
+\text{où P est le nombre total d’utilisateurs et utilisatrices d’InstaTikter, et C est une constante positive, pourrait être utilisée pour modéliser cette situation.}
+\]
+
+\[
+\text{Voyez-vous des limitations à ce modèle, c’est-à-dire des présupposés qu’il induit et qui vous semblent critiquables ?}
+\]
+
+\end{document}

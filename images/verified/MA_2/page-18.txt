@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+3. Soit 
+\[
+A = \begin{pmatrix} -1 & 4 \\ 4 & 5 \end{pmatrix}
+\]
+la matrice d'une application linéaire \( f : \mathbb{R}^2 \to \mathbb{R}^2 \).
+
+(a) Calculer les valeurs propres de \( A \).
+
+(b) On considère les vecteurs \(\overrightarrow{v_1} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\) et \(\overrightarrow{v_2} = \begin{pmatrix} 2 \\ -1 \end{pmatrix}\).
+
+Calculer \( f(\overrightarrow{v_1}) \) et \( f(\overrightarrow{v_2}) \) et les écrire comme combinaisons linéaires de \(\overrightarrow{v_1}\) et \(\overrightarrow{v_2}\). Que remarquez-vous ?
+
+(c) On définit la matrice \( V = (\overrightarrow{v_1} \quad \overrightarrow{v_2}) \).
+
+Résoudre l'équation \( A V = V X \), où l'inconnue \( X \) est une matrice.
+
+(d) Calculer \( A^{25} \).
+
+\vspace{0.5cm}
+
+a) 
+\[
+\chi_A(\lambda) = \begin{vmatrix} -1-\lambda & 4 \\ 4 & 5-\lambda \end{vmatrix} = (-1-\lambda)(5-\lambda) - 16 = \lambda^2 - 4\lambda - 21 = (\lambda - 7)(\lambda + 3)
+\]
+
+\[
+\chi_A(\lambda) = 0 \implies (\lambda - 7)(\lambda + 3) = 0 \implies \lambda_1 = 7 \quad \lambda_2 = -3
+\]
+
+b) 
+\[
+f(\overrightarrow{v_1}) = \begin{pmatrix} -1 & 4 \\ 4 & 5 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 7 \\ 14 \end{pmatrix} = 7 \begin{pmatrix} 1 \\ 2 \end{pmatrix}
+\]
+
+\[
+f(\overrightarrow{v_2}) = \begin{pmatrix} -1 & 4 \\ 4 & 5 \end{pmatrix} \begin{pmatrix} 2 \\ -1 \end{pmatrix} = \begin{pmatrix} -6 \\ 3 \end{pmatrix} = -3 \begin{pmatrix} 2 \\ -1 \end{pmatrix}
+\]
+
+\(7\) et \(-3\) sont les valeurs propres de \( A \).
+
+c) 
+\[
+A V = V X \implies X = V^{-1} A V, \quad V = \begin{pmatrix} 1 & 2 \\ 2 & -1 \end{pmatrix} \implies V^{-1} = -\frac{1}{5} \begin{pmatrix} -1 & -2 \\ -2 & 1 \end{pmatrix}
+\]
+
+\[
+X = -\frac{1}{5} \begin{pmatrix} -1 & -2 \\ -2 & 1 \end{pmatrix} \begin{pmatrix} -1 & 4 \\ 4 & 5 \end{pmatrix} \begin{pmatrix} 1 & 2 \\ 2 & -1 \end{pmatrix} = -\frac{1}{5} \begin{pmatrix} -7 & -14 \\ 6 & -3 \end{pmatrix} \begin{pmatrix} 1 & 2 \\ 2 & -1 \end{pmatrix}= -\frac{1}{5} \begin{pmatrix} -35 & 0 \\ 0 & 15 \end{pmatrix} = \begin{pmatrix} 7 & 0 \\ 0 & -3 \end{pmatrix}
+\]
+
+d) 
+\[
+A^{25} = (V X V^{-1})^{25} = V X^{25} V^{-1} 
+\]
+
+\[
+= -\frac{1}{5} \begin{pmatrix} 1 & 2 \\ 2 & -1 \end{pmatrix} \begin{pmatrix} 7^{25} & 0 \\ 0 & -3^{25} \end{pmatrix} \begin{pmatrix} -1 & -2 \\ -2 & 1 \end{pmatrix}
+\]
+
+\[
+= -\frac{1}{5} \begin{pmatrix} 7^{25} & -2 \cdot 3^{25} \\ 2 \cdot 7^{25} & 3^{25} \end{pmatrix} \begin{pmatrix} -1 & -2 \\ -2 & 1 \end{pmatrix}
+\]
+
+\[
+= -\frac{1}{5} \begin{pmatrix} -7^{25} + 4 \cdot 3^{25} & -2 \cdot 7^{25} - 2 \cdot 3^{25} \\ -2 \cdot 7^{25} + 2 \cdot 3^{25} & -4 \cdot 7^{25} + 3^{25} \end{pmatrix}
+\]
+
+\end{document}

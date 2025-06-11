@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\text{On garde son choix} \\
+\[
+P(G_1 \mid O_3) = \frac{P(O_3 \mid G_1) P(G_1)}{P(O_3)} = \frac{\frac{1}{6}}{\frac{1}{2}} = \boxed{\frac{1}{3}} \\
+\]
+\text{On change de porte} \\
+b) 
+\[\quad P(G_2 \mid O_3) = \frac{P(O_3 \mid G_2) P(G_2)}{P(O_3)} = \frac{\frac{1}{3}}{\frac{1}{2}} = \boxed{\frac{2}{3}} \\
+\]
+\text{Le raisonnement est similaire si le présentateur ouvre la porte 2.} \\
+
+\text{En conclusion, mieux vaut changer son choix initial !} \\
+
+\text{On pourrait aussi résoudre le problème de la manière suivante :} \\
+
+G = \text{la personne gagne} \\
+B = \text{la personne choisit la bonne porte} \\
+\[
+P(G) = P(G \mid B) \cdot P(B) + P(G \mid \overline{B}) \cdot P(\overline{B}) = \frac{1}{3} \cdot P(G \mid B) + \frac{2}{3} P(G \mid \overline{B}) \\
+\]
+\underline{\text{La personne ne change pas de porte :}} \\
+
+P(G \mid B) = 1 \\
+P(G \mid \overline{B}) = 0 \\
+\Rightarrow P(G) = \frac{1}{3} \cdot 1 = \frac{1}{3} \\
+
+\underline{\text{La personne change de porte :}} \\
+
+P(G \mid B) = 0 \\
+P(G \mid \overline{B}) = 1 \\
+\Rightarrow P(G) = \frac{2}{3} \cdot 1 = \frac{2}{3}
+
+\end{document}

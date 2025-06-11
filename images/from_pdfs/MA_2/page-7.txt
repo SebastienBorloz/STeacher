@@ -1,0 +1,87 @@
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+4. (a) Soient $A$ et $B$ des matrices $n \times n$ symétriques. Montrer que $AB$ est symétrique si et seulement si $AB = BA$. (On dit que $A$ et $B$ commutent.)
+
+(b) Que peut-on dire d'une matrice $A$ pour laquelle $A^T = -A$ ?
+
+\medskip
+
+a) $AB$ symétrique $\Rightarrow AB = (AB)^T = B^T A^T = BA$
+
+$AB = BA \Rightarrow A^T B^T = B^T A^T$ (car $A$ et $B$ sont symétriques)
+
+$\Rightarrow (BA)^T = (AB)^T = ((AB)^T)^T = ((BA)^T)^T \Rightarrow BA = AB$.
+
+\medskip
+
+b) $A$ doit être une matrice carrée. Soit 
+\[
+A = \begin{pmatrix}
+a_{11} & a_{12} & \ldots & a_{1n} \\
+a_{21} & a_{22} & \ldots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \ldots & a_{nn}
+\end{pmatrix}
+\]
+
+\[
+A^T = -A \Rightarrow
+\begin{pmatrix}
+a_{11} & a_{21} & \ldots & a_{n1} \\
+a_{12} & a_{22} & \ldots & a_{n2} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{1n} & a_{2n} & \ldots & a_{nn}
+\end{pmatrix}
+= 
+\begin{pmatrix}
+-a_{11} & -a_{12} & \ldots & -a_{1n} \\
+-a_{21} & -a_{22} & \ldots & -a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+-a_{n1} & -a_{n2} & \ldots & -a_{nn}
+\end{pmatrix}
+\]
+
+$a_{ii} = -a_{ii} \Rightarrow a_{ii} = 0$
+
+$\forall i = 1, \ldots, n$
+
+$a_{ij} = -a_{ji} \Rightarrow$ les éléments symétriques sont opposés.
+
+\medskip
+
+5. On considère $\vec{u}, \vec{v} \in \mathbb{R}^n$ comme des matrices $n \times 1$ (vecteurs colonnes).
+
+Calculer $\vec{u}^T \vec{v}$, $\vec{u} \vec{u}^T$ et $\vec{v} \vec{v}^T$. Que constatez-vous ?
+
+\medskip
+
+\[
+\vec{u} = \begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix}, \quad
+\vec{v} = \begin{pmatrix} b_1 \\ \vdots \\ b_n \end{pmatrix}
+\]
+
+\[
+\vec{u}^T \vec{v} = (a_1, \ldots, a_n) \begin{pmatrix} b_1 \\ \vdots \\ b_n \end{pmatrix} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n \quad \rightarrow \text{produit scalaire}
+\]
+
+\[
+\vec{u}^T \vec{u} = (a_1, \ldots, a_n) \begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix} = a_1^2 + a_2^2 + \ldots + a_n^2 = \|\vec{u}\|^2
+\]
+
+\[
+\vec{v} \vec{v}^T = \begin{pmatrix} b_1 \\ \vdots \\ b_n \end{pmatrix} (b_1, \ldots, b_n) = 
+\begin{pmatrix}
+b_1^2 & b_1 b_2 & \ldots & b_1 b_n \\
+b_2 b_1 & b_2^2 & \ldots & b_2 b_n \\
+\vdots & \vdots & \ddots & \vdots \\
+b_n b_1 & b_n b_2 & \ldots & b_n^2
+\end{pmatrix}
+\quad \text{matrice symétrique formée des produits } a_i b_j
+\]
+
+\end{document}
+```

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+Ex 4
+
+a) 
+\[
+P = \frac{\binom{4}{2}}{4!} = \frac{\frac{4!}{2!2!}}{4!} = \frac{\frac{4 \cdot 3!}{4}}{4!} = \frac{1}{3 \cdot 2} = \frac{1}{6} \implies \frac{\binom{4}{2}}{16} = \frac{6}{6}
+\]
+
+b) Valeurs de la somme = 0, 1, 2, 3, 4
+
+\[
+P(\{0,3\}) = \frac{1}{16} \binom{4}{0}
+\]
+
+\[
+P(\{1,1\}) = \frac{4}{16} \binom{4}{1} = \frac{1}{6}
+\]
+
+\[
+P(\{2,2\}) = \frac{6}{16} \binom{4}{2} = a
+\]
+
+\[
+P(\{3,3\}) = \frac{\binom{4}{3}}{16} = \frac{(4-3)! \cdot 3!}{16} = \frac{4}{16}
+\]
+
+\[
+P(\{4,0\}) = \frac{\binom{4}{4}}{16} = \frac{1}{16}
+\]
+
+\end{document}

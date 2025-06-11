@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{a) } a^2 x - 2 b^2 y + 2 a^2 y - b^3 x \implies (a^2 - b^2)(x + 2 y)
+\]
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{Ex 3}
+\]
+
+\[
+P(\text{il fait beau}) = \frac{3}{5}
+\]
+
+\[
+P(B) = \frac{3}{5} P(H) = \frac{2}{5}
+\]
+
+\[
+P(H|B) = 0.8
+\]
+
+\[
+P(M| PH) = 0.25
+\]
+
+\[
+\text{a) } P(H) = P(H|B) \cdot P(B) + P(H|\overline{B}) \cdot P(\overline{B})
+\]
+
+\[
+= 0.8 \cdot 0.6 + 0.25 \cdot (1 - 0.6)
+\]
+
+\[
+= 0.58
+\]
+
+\[
+\text{b) } P(B|H) = \frac{P(H|B) \cdot P(B)}{P(H)}
+\]
+
+\[
+= \frac{0.8 \cdot 0.6}{0.58} = 0.8
+\]
+
+\end{document}

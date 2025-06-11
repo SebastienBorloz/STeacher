@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\[
+\text{Série 3}
+\]
+
+\[
+\text{Ex 1}
+\]
+
+
+\[
+\text{a) } M = 20 p = \frac{1}{3} K = 2
+\]
+
+\[
+P(x=2) = \binom{n}{k} p^k (1-p)^{n-k}
+\]
+
+\[
+= \binom{20}{2} (\frac{1}{3})^2 (1-\frac{1}{3})^{20-2}
+\]
+
+\[
+1 - P(x=0) - P(x=1)
+\]
+
+\[
+= \frac{20 \cdot 19}{2} \cdot \frac{1}{9} \left(\frac{2}{3}\right)^{18}
+\]
+
+\[
+= \frac{190}{9} \left(\frac{2}{3}\right)^{18} =
+\]
+
+\[
+1 - P(x=2)
+\]
+
+\[
+\text{b) Non}
+\]
+
+\end{document}

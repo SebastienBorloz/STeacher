@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\[
+\text{b) } a^2 - b^2 - 24 a x + 6 b y + 144 x^2 - 9 y^2 \implies (a - 12 x - b + 3 y)(a - 12 x + b - 3 y)
+\]
+
+\end{document}
