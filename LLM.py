@@ -63,7 +63,7 @@ class AnthropicClient:
 		response = self.client.messages.create(
 			model=self.model,
 			messages=input,
-			max_tokens=max_tokens,
+			#max_tokens=max_tokens,
 			temperature=temperature
 		)
 

@@ -126,74 +126,104 @@ class handwritten_tester:
 				json.dump(results, f, indent=4)
 
 
+
 # ===============================================================================================================================
+# main benchmark
+
+# import concurrent.futures
 
 # LLMs = [
-# 	OpenAIClient("gpt-4.1-mini"), 
-# 	OpenAIClient("gpt-4.1"), 
-# 	OpenAIClient("gpt-4o"),
-# 	AnthropicClient("claude-opus-4-20250514"),
-# 	AnthropicClient("claude-sonnet-4-20250514"),
-# 	AnthropicClient("claude-3-7-sonnet-20250219"),
-# 	AnthropicClient("claude-3-5-haiku-20241022"),
-# 	InfNetClient("meta-llama/llama-3.2-11b-instruct"),
-# 	InfNetClient("qwen/qwen2.5-7b-instruct"),
-# 	InfNetClient("deepseek/deepseek-vl2-small"),
-# 	GrokClient("grok-2-vision-1212"),
-# 	GeminiClient("gemini-2.5-pro-preview-06-05"),
-# 	GeminiClient("gemini-2.5-flash-preview-05-20"),
-# 	GeminiClient("gemini-2.0-flash"),
+#     OpenAIClient("gpt-4.1"), 
+#     OpenAIClient("gpt-4o"),
+#     AnthropicClient("claude-opus-4-20250514"),
+#     AnthropicClient("claude-sonnet-4-20250514"),
+#     AnthropicClient("claude-3-7-sonnet-20250219"),
+#     AnthropicClient("claude-3-5-haiku-20241022"),
+#     InfNetClient("meta-llama/llama-3.2-11b-instruct"),
+#     InfNetClient("qwen/qwen2.5-7b-instruct"),
+#     InfNetClient("deepseek/deepseek-vl2-small"),
+#     GrokClient("grok-2-vision-1212"),
+#     GeminiClient("gemini-2.5-pro-preview-06-05", "low"),
+# 	  GeminiClient("gemini-2.5-pro-preview-06-05", "medium"),
+# 	  GeminiClient("gemini-2.5-pro-preview-06-05", "high"),
+#     GeminiClient("gemini-2.5-flash-preview-05-20"),
+#     GeminiClient("gemini-2.0-flash"),
 # ]
 
-# foired = []
+# prompt = read_file("./prompts/latex_gen_v3.md")
 
-# for LLM in LLMs:
-# 	try:
-# 		test = handwritten_tester(LLM=LLM)
-# 		prompt = read_file("./prompts/latex_gen_v3.md")
-# 		test.benchmark(["easy", "intermediate", "hard"],0,prompt)
-# 	except:
-# 		foired.append(LLM.model)
-# 		print(f"y a eu un probleme avec le {LLM.model} chef")
+# def run_benchmark(LLM):
+#     try:
+#         test = handwritten_tester(LLM=LLM)
+#         test.benchmark(["easy", "intermediate", "hard"], 0, prompt)
+#     except Exception as e:
+#         print(f"Error with {LLM.model}: {e}")
 
-# print("on a fini chef, vla les modeles qui ont foiré:")
-# print(foired)
+# #run_benchmark(GeminiClient("gemini-2.5-pro-preview-06-05", "medium"))
+
+# # Use ThreadPoolExecutor to run benchmarks in parallel
+# if __name__ == "__main__":
+#     with concurrent.futures.ThreadPoolExecutor(max_workers=min(10, len(LLMs))) as executor:
+#         executor.map(run_benchmark, LLMs)
 
 
-
-
-import concurrent.futures
+# ===============================================================================================================================
+# single test
 
 LLMs = [
-    # OpenAIClient("gpt-4.1"), 
-    # OpenAIClient("gpt-4o"),
+    OpenAIClient("gpt-4.1"), 
+    OpenAIClient("gpt-4o"),
     AnthropicClient("claude-opus-4-20250514"),
     AnthropicClient("claude-sonnet-4-20250514"),
     AnthropicClient("claude-3-7-sonnet-20250219"),
     AnthropicClient("claude-3-5-haiku-20241022"),
-    # InfNetClient("meta-llama/llama-3.2-11b-instruct"),
-    # InfNetClient("qwen/qwen2.5-7b-instruct"),
-    # InfNetClient("deepseek/deepseek-vl2-small"),
-    # GrokClient("grok-2-vision-1212"),
-    # GeminiClient("gemini-2.5-pro-preview-06-05", "low"),
-	# GeminiClient("gemini-2.5-pro-preview-06-05", "medium"),
-	# GeminiClient("gemini-2.5-pro-preview-06-05", "high"),
-    # GeminiClient("gemini-2.5-flash-preview-05-20"),
-    # GeminiClient("gemini-2.0-flash"),
+    InfNetClient("meta-llama/llama-3.2-11b-instruct"),
+    InfNetClient("qwen/qwen2.5-7b-instruct"),
+    InfNetClient("deepseek/deepseek-vl2-small"),
+    GrokClient("grok-2-vision-1212"),
+    GeminiClient("gemini-2.5-pro-preview-06-05", "low"),
+	GeminiClient("gemini-2.5-pro-preview-06-05", "medium"),
+	GeminiClient("gemini-2.5-pro-preview-06-05", "high"),
+    GeminiClient("gemini-2.5-flash-preview-05-20"),
+    GeminiClient("gemini-2.0-flash"),
 ]
+
+LLM = InfNetClient("deepseek/deepseek-vl2")
+difficulty = "intermediate"
+test_num = 6
 
 prompt = read_file("./prompts/latex_gen_v3.md")
 
-def run_benchmark(LLM):
-    try:
-        test = handwritten_tester(LLM=LLM)
-        test.benchmark(["easy", "intermediate", "hard"], 0, prompt)
-    except Exception as e:
-        print(f"Error with {LLM.model}: {e}")
 
-#run_benchmark(GeminiClient("gemini-2.5-pro-preview-06-05", "medium"))
+results = {}
+results[difficulty] = {}
 
-# Use ThreadPoolExecutor to run benchmarks in parallel
-if __name__ == "__main__":
-    with concurrent.futures.ThreadPoolExecutor(max_workers=min(10, len(LLMs))) as executor:
-        executor.map(run_benchmark, LLMs)
+try:
+	results[difficulty][test_num] = {}
+	tester = handwritten_tester(LLM=LLM)
+	test = tester.dataset[difficulty][test_num]
+
+	img_path = test["image_path"]
+	b64_img = img_to_b64(img_path)
+
+	resp, usage = tester.get_llm_answer(prompt, b64_img, 0)
+	y = test["expected_output"]
+	dist, clean_resp, clean_sol = tester.evaluate_response(resp, y)
+
+	# for a result report json
+	results[difficulty][test_num]["image"] = test["image_path"]
+	results[difficulty][test_num]["prompt"] = prompt
+	results[difficulty][test_num]["score"] = dist
+	results[difficulty][test_num]["response"] = resp
+	results[difficulty][test_num]["clean_response"] = clean_resp
+	results[difficulty][test_num]["solution"] = test["expected_output"]
+	results[difficulty][test_num]["clean_solution"] = clean_sol
+	#results[difficulty][test_num]["usage"] = usage
+	print(f"fini {difficulty}:{test_num} for {tester.LLM.model}")
+	print(usage)
+
+	with open(f"./single_test_{tester.model_name}.json", "w") as f:
+		json.dump(results, f, indent=4)
+
+except Exception as e:
+	print(f"Error: {e}")

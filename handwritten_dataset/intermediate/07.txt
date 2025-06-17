@@ -3,11 +3,11 @@
 \begin{document}
 
 \[
-\text{On suppose pour le reste de l'exercice qu'il y a en tout 1 milliard d'utilisatrices et utilisateurs d'InstaTikter. Le jour $t=0$, le compte @EasterRabbitOfficial poste un message disant que le Père Noël n'existe pas. Le même jour, la publication est lue par 1000 personnes, puis partagée. On suppose qu'en dehors de ces 1000 personnes, aucun·e utilisatrice ou utilisateur d'InstaTikter n'avait été confronté·e à cette rumeur.}
+\text{On suppose pour le reste de l'exercice qu'il y a en tout 1 milliard d'utilisatrices et utilisateurs d'InstaTikter. Le jour t=0, le compte @EasterRabbitOfficial poste un message disant que le Père Noël n'existe pas. Le même jour, la publication est lue par 1000 personnes, puis partagée. On suppose qu'en dehors de ces 1000 personnes, aucun·e utilisatrice ou utilisateur d'InstaTikter n'avait été confronté·e à cette rumeur.}
 \]
 
 \[
-\text{(c) Donner la fonction $F(t)$ qui modélise la situation décrite ci-dessus.}
+\text{(c) Donner la fonction F(t) qui modélise la situation décrite ci-dessus.}
 \]
 
 \[

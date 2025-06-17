@@ -3,7 +3,7 @@
 \begin{document}
 
 \[
-\partial |A P| = \partial |B, P|
+d(A, P) = d(B, P) 
 \]
 \[
 \implies (p_1 - 1)^2 + (p_2 - 0)^2 + (p_3 - 2)^2 + (p_4 + 1)^2 = (p_1 - 0)^2 + (p_2 - 1)^2 + (p_3 + 1)^2 + (p_4 - 1)^2

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from natsort import natsorted
 import jaro
 import re
+import random
 
 CATEGORY_ORDER = ['easy', 'intermediate', 'hard']
 
@@ -146,7 +147,6 @@ class results:
 					label.set_fontweight("bold")
 
 
-
 		# Titres et axes
 		plt.title(title, fontsize=16)
 		plt.xlabel("Tests", fontsize=12)
@@ -155,63 +155,116 @@ class results:
 		plt.tight_layout()
 		plt.show()
 
-def _replace_element_from_2s(response, solution, element, replacement=""):
-	resp_clear = response.replace(element, replacement)
-	sol_clear = solution.replace(element, replacement)
-	return resp_clear, sol_clear
 
-def metric_standardized_text(row):
+def _replace_element(text, element, replacement=""):
+	#if replacement == "":
+	#	replacement = len(element) * " "
+	text_clear = text.replace(element, replacement)
+	return text_clear
+
+def _replace_element_reg(text, element, replacement=""):
+	text_clear = re.sub(element, replacement, text)
+	return text_clear
+
+def standardize_text(text):
+	try:
+		text = text.split(r"\begin{document}")[1]
+		text = text.split(r"\end{document}")[0]
+	except:
+		text = text
+	
+	text = _replace_element(text, r" ")
+	text = _replace_element(text, r"\quad")
+	text = _replace_element(text, r"\qquad")
+	text = _replace_element(text, "\n")
+	text = _replace_element(text, r"\cancel")
+	text = _replace_element(text, r"\checkmark")
+	text = _replace_element(text, r"\textbf")
+	text = _replace_element(text, r"\text")
+	text = _replace_element(text, r"\underline")
+	text = _replace_element(text, r"\boxed")
+	text = _replace_element(text, r"\begin")
+	text = _replace_element(text, r"\end")
+	text = _replace_element(text, r"\left|", "|")
+	text = _replace_element(text, r"\right|", "|")
+	text = _replace_element(text, r"\mid", "|")
+	text = _replace_element(text, r"\Big|", "|")
+	text = _replace_element(text, r"\left(", "(")
+	text = _replace_element(text, r"\right)", ")") 
+	text = _replace_element(text, r"\left[", "[")
+	text = _replace_element(text, r"\right]", "]") 
+	text = _replace_element(text, r"\left{", "{")
+	text = _replace_element(text, r"\right}", "{") 
+	text = _replace_element(text, r"\Rightarrow", r"⇒")
+	text = _replace_element(text, r"\implies", r"⇒")
+	text = _replace_element(text, r"\times", r"*")
+	text = _replace_element(text, r"\cdot", r"*")
+
+	return text
+	
+
+def metric_standardized_text(row):	
 	response = row["response"]
 	solution = row["solution"]
-	try:
-		response = response.split(r"\begin{document}")[1]
-		response = response.split(r"\end{document}")[0]
-	except:
-		response = response
+	response = standardize_text(response)
+	solution = standardize_text(solution)
 
-	try:	
-		solution = solution.split(r"\begin{document}")[1]
-		solution = solution.split(r"\end{document}")[0]
-	except:
-		solution = solution	
-	
-	response, solution = _replace_element_from_2s(response,solution, r"\quad")
-	response, solution = _replace_element_from_2s(response,solution, r" ")
-	response, solution = _replace_element_from_2s(response,solution, "\n")
-	response, solution = _replace_element_from_2s(response,solution, r"\left|", "|")
-	response, solution = _replace_element_from_2s(response,solution, r"\right|", "|")
-	response, solution = _replace_element_from_2s(response,solution, r"\left(", "(")
-	response, solution = _replace_element_from_2s(response,solution, r"\left)", ")") 
-	response, solution = _replace_element_from_2s(response,solution, r"\Rightarrow", r"\implies")
-	response, solution = _replace_element_from_2s(response,solution, r"\times", r"\cdot")
+	# print("=====================================================================================")
+	# print("comparing:")
+	# print(response+"\n\n")
+	# print(solution)
+	# print("=====================================================================================")
 
-	#print("clear response: \n", response)
-	#print("clear solution: \n", solution)
 	dist = jaro.jaro_winkler_metric(response, solution)
 
 	return dist
 
 
 
-
-
-
-
 def metric_math_filter(row):
 	def remove_anything_not_maths(txt):
-		reg = r"(pmatrix|\\frac|\\vec|\\sqrt|\\cdot|[\d\+\=\-]+)"
-		x = re.findall(reg, txt)
-		return x
+		# reg = r"([\d\+\=\-\^{( ]+\w{1,3}[\d\+\=\-\^}) ]|pmatrix|\\frac|\\vec|\\sqrt|\\cdot|[\d\+\=\-\^(){}])"
+		# x = re.findall(reg, txt)
+		txt = _replace_element_reg(txt, "([\w',.]{10,})")
+		txt = _replace_element_reg(txt, r"{+}+")
+		return txt
 
 	response = row["response"]
 	solution = row["solution"]
 
 	if type(response) == str and type(solution) == str:
-		response = remove_anything_not_maths(response)
-		response = ' '.join(response)
-		solution = remove_anything_not_maths(solution)
-		solution = ' '.join(solution)
+		response_st = standardize_text(response)
+		solution_st = standardize_text(solution)
+
+		response = remove_anything_not_maths(response_st)
+		#response = ' '.join(response)
+		solution = remove_anything_not_maths(solution_st)
+		#solution = ' '.join(solution)
+
 		dist = jaro.jaro_winkler_metric(response, solution)
+
+		if random.random() >= 0.99:
+			# random choice to compare
+			print("=====================================================================================")
+			print(f"test: {row['model']}, {row['test_id']}")
+			print("initial:")
+			print(row["response"]+"\n")
+			print(row["solution"])
+			print("=====================================================================================")
+			print("transformed:")
+			print(response_st+"\n")
+			print(solution_st)
+			print("=====================================================================================")
+			print("comparing:")
+			print(response+"\n")
+			print(solution)
+			print("=====================================================================================")
+			print("distance:")
+			print(dist)
+			print("=====================================================================================")
+		
+
+
 
 		return dist
 	else:
