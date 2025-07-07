@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\begin{document}
+
+\text{10}
+
+\[
+\begin{cases}
+x^2 + y^2 + z^2 = 14 \\
+2x^2 - y^2 + z^2 = 15 \\
+x^2 - y^2 - 2z^2 = 4
+\end{cases}
+\]
+
+\[
+\text{L}_2 \leftarrow \text{L}_2 - 2\text{L}_1
+\]
+\[
+\text{L}_3 \leftarrow \text{L}_3 - \text{L}_1
+\]
+
+\[
+\begin{cases}
+x^2 + y^2 + z^2 = 14 \\
+-3y^2 - z^2 = -13 \\
+-2y^2 - 2z^2 = -10
+\end{cases}
+\]
+
+\[
+\text{L}_3 \leftarrow 3\text{L}_3 - 2\text{L}_2
+\]
+
+\[
+\begin{cases}
+x^2 + y^2 + z^2 = 14 \\
+-3y^2 - z^2 = -13 \\
+-4z^2 = -4
+\end{cases}
+\]
+
+\[
+\rightarrow -4z^2 = -4
+\]
+\[
+\Leftrightarrow z^2 = 1
+\]
+\[
+\Leftrightarrow \sqrt{z} = \sqrt{1}
+\]
+\[
+\Leftrightarrow z = 1
+\]
+
+\[
+\rightarrow -3y^2 - 1 = -13
+\]
+\[
+\Leftrightarrow -3y^2 = -12
+\]
+\[
+\Leftrightarrow y^2 = 4
+\]
+\[
+\Leftrightarrow y = 2
+\]
+
+\[
+\rightarrow x^2 + 2 + 1 = 14
+\]
+\[
+\Leftrightarrow x^2 = 11
+\]
+\[
+\Leftrightarrow x = \sqrt{11}
+\]
+
+\[
+\text{Oui, le système possède une solution unique.}
+\]
+\[
+S = \{(x,y,z) | (x = \sqrt{11}, y = 2, z = 1)\}
+\]
+
+\end{document}

@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 12,
+		"description" : "erreur de calcul, ({(x+1)^2(x+2)(x-1)}) devrait être ({(x+1)(x+2)(x-1)})"
+	},
+	"2":{
+		"line" : 14,
+		"description" : "erreur de signe, ({-x^2+4x-3 - x^2+5x+6}) devrait être ({-x^2+4x-3 - x^2-5x-6})"
+	}
+}

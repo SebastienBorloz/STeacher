@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 25,
+		"description" : "erreur de calcul, (4x + 4y + 6z = 0) devrait être (4x + 4y + 6z = 30)"
+	}
+}

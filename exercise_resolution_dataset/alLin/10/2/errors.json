@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 8,
+		"description" : "erreur de calcul"
+	},
+	"2":{
+		"line" : 26,
+		"description" : "erreur de calcul, (\\frac{860^\\circ}{4} = 200^\\circ) devrait être (\\frac{860^\\circ}{4} = 215^\\circ)"
+	},
+	"3":{
+		"line" : 27,
+		"description" : "erreur de calcul"
+	}
+}

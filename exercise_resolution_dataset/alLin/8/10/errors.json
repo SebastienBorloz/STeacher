@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 15,
+		"description" : "erreur de signe, (z = 1) devrait être (z = +-1)"
+	},
+	"2":{
+		"line" : 17,
+		"description" : "erreur de signe, (x = 3) devrait être (x = +-3)"
+	},
+	"3":{
+		"line" : 18,
+		"description" : "erreur de signe, (y = 2) devrait être (y = +-2)"
+	}
+}

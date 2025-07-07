@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 7,
+		"description" : "erreur de borne, (x \\gt -1) devrait être (x \\ge -1)"
+	},
+	"2":{
+		"line" : 8,
+		"description" : "erreur de raisonnement"
+	},
+	"3":{
+		"line" : 27,
+		"description" : "erreur de calcul, (10x-x^2-20-x^2)"
+	}
+}

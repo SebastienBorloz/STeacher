@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 19,
+		"description" : "erreur de bornes, (D = ]2, 8[) devrait être (D = ]2, 8[)"
+	},
+	"2":{
+		"line" : 24,
+		"description" : ""
+	}
+}

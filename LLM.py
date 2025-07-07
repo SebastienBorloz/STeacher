@@ -2,6 +2,8 @@ from openai import OpenAI
 import anthropic
 import os
 from utilities import img_to_b64
+from PIL import Image
+from transformers import AutoTokenizer, AutoProcessor, AutoModelForImageTextToText
 
 # -------------------------------------------------------------------
 # OpenAI
@@ -278,6 +280,60 @@ class GeminiClient:
 		return answer, usage
 
 
+# -------------------------------------------------------------------
+# OpenAI
+# -------------------------------------------------------------------
+class HuggingFaceClient:
+	def __init__(self, model):
+		self.model = AutoModelForImageTextToText.from_pretrained(
+			model, 
+			torch_dtype="auto", 
+			device_map="auto", 
+			#attn_implementation="flash_attention_2"
+		)
+		model.eval()
+
+		tokenizer = AutoTokenizer.from_pretrained(model)
+		processor = AutoProcessor.from_pretrained(model)
+
+	def ask_LLM(self, input, temperature=1):
+		response = self.client.responses.create(
+			model=self.model,
+			input=input,
+			temperature=temperature
+		)
+
+		return response.output_text, response.usage
+
+
+	def ask_LLM_txt(self, prompt, temperature=1):
+		input = [
+			{
+				"role": "user",
+				"content": [
+					{"type": "input_text", "text": prompt},
+				],
+			}
+		]
+
+		answer, usage = self.ask_LLM(input, temperature)
+		return answer, usage
+
+	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		input = [
+			{
+				"role": "user",
+				"content": [
+					{"type": "input_image", "image_url":  f"data:image/jpg;base64,{image}"},
+					{"type": "input_text", "text": prompt}
+				],
+			}
+		]
+
+		answer, usage = self.ask_LLM(input, temperature)
+		return answer, usage
+
+
 # ==================================================================================================================================================
 # tests
 
@@ -336,3 +392,6 @@ class GeminiClient:
 # print("=======================")
 # print(usage)
 # print("=======================")
+
+#model_path = "nanonets/Nanonets-OCR-s"
+#hug = HuggingFaceClient(model_path)

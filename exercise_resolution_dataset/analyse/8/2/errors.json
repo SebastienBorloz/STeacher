@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 10,
+		"description" : "erreur de calcul"
+	},
+	"2":{
+		"line" : 18,
+		"description" : "réponse erronée"
+	},
+	"3":{
+		"line" : 18,
+		"description" : "raisonnement incomplet"
+	}
+}

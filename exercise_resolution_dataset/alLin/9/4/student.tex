@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath} % For pmatrix and other math environments
+
+\begin{document}
+
+\[ 4. \quad C=(a,0,1) \quad r=2 \]
+\[ \vec{d}:\vec{r}(t) = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} + t \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} x \\ y \\ z \end{pmatrix} \]
+\[ \Pi: (x-a)^2 + (y-0)^2 + (z-1)^2 = 2^2 \]
+\[ \vec{MP} \perp \vec{d} \]
+\[ \text{donc } \vec{MP} \cdot \vec{d} = 0 \]
+\[ x^2 - 2xa + a^2 + y^2 - 2y + 0 + z^2 - 2z + 1 = 4 \]
+\[ x^2 - 2xa + a^2 + y^2 - 2z + z^2 + 1 = 4 \]
+\[ \vec{MP} = \begin{pmatrix} a \\ 0 \\ 1 \end{pmatrix} + t \cdot ( \]
+\[ P \in d \]
+\[ 1-2t = x \]
+\[ 1+t = y \]
+\[ 1 = z \]
+\[ \vec{M} = (a,0,1) \]
+\[ \vec{AM} = \begin{pmatrix} a-1 \\ 0-1 \\ 1-1 \end{pmatrix} = \begin{pmatrix} a-1 \\ -1 \\ 0 \end{pmatrix} \]
+\[ \text{proj}_{\vec{d}} \vec{AM} = \frac{\vec{AM} \cdot \vec{d}}{||\vec{d}||^2} \cdot \vec{d} \]
+\[ \vec{AM} \cdot \vec{d} = (a-1) \cdot -2 + -1 \cdot 1 + 0 \]
+\[ = -2a + 2 - 1 = -2a + 1 \]
+\[ -2a+1 = t \]
+\[ ||\vec{a}||^2 = (-2)^2 + 1^2 + 0^2 = 5 \]
+\[ \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} + \frac{-2a+1}{5} \cdot \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} x \\ y \\ z \end{pmatrix} \]
+\[ 1 + \frac{4a-2}{5} = \frac{5}{5} + \frac{4a-2}{5} = \frac{4a+3}{5} = x \]
+\[ \text{remplacer dans équation sphère puis résoudre pour a} \]
+
+\end{document}

@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 18,
+		"description" : "erreur de calcul, ({x^2+2x+6-3}) devrait être ({x^2+2x+6-9})"
+	}
+}

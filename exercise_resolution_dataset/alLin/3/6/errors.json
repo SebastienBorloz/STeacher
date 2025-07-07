@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 11,
+		"description" : "erreur de signe, ((\\vec{b} \\times \\vec{c}) - (2\\vec{a} \\times 3\\vec{c})) devrait être ((\\vec{b} \\times \\vec{c}) - (2\\vec{a} \\times 3\\vec{c}))"
+	}
+}

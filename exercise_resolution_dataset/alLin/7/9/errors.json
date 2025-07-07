@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 26,
+		"description" : "erreur de calcul, (2w = -5) devrait être (-z + 2w = -5)"
+	},
+	"2":{
+		"line" : 27,
+		"description" : "erreur de calcul, (-2z - 2w = 5) devrait être (z - 2w = 5)"
+	},
+	"3":{
+		"line" : 100,
+		"description" : "erreur de raisonnement"
+	}
+}

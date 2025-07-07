@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 28,
+		"description" : "erreur de report, (z = 5 - 2w) devrait être (z = 5 + 2w)"
+	},
+	"2":{
+		"line" : 40,
+		"description" : "erreur de logique, même équation que la deuxieme du systeme (ligne 37)"
+	}
+}

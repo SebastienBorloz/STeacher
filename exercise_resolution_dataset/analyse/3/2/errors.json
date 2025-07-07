@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 8,
+		"description" : "erreur de calcul, (4 - 2\\sqrt{x+1} + (x+1)) devrait être (4 - 4\\sqrt{x+1} + (x+1))"
+	},
+	"2":{
+		"line" : 19,
+		"description" : "raisonnement incomplet"
+	}
+}

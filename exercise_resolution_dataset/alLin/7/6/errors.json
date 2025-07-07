@@ -1,0 +1,11 @@
+{
+	"1":{
+		"line" : 18,
+		"description" : "erreur de report, (- 3[(\\vec{c} \\times \\vec{a})) devrait être (- 3[(\\vec{c} \\times \\vec{a}))"
+	},
+	"2":{
+		"line" : 24,
+		"description" : "erreur de calcul, (\\vec{b} \\times 2\\vec{a}) correspond à (-2(\\vec{a} \\times \\vec{b}))"
+	}
+}
+

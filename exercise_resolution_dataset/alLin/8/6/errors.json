@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 7,
+		"description" : "erreurs de calcul, (\\vec{b}\\vec{c} + 3\\vec{c}\\vec{b} - 2\\vec{a}\\vec{c}) devrait être (\\vec{b}\\vec{c} - 3\\vec{c}\\vec{b} + 2\\vec{a}\\vec{c})"
+	},
+	"2":{
+		"line" : 7,
+		"description" : "notation pas claire, (\\vec{b}\\vec{c}) devrait être (\\vec{b} \\times \\vec{c})"
+	}
+}

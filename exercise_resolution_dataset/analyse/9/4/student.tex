@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath} % For align, multiline, etc.
+\usepackage{amssymb} % For math symbols
+\usepackage{array} % For tables
+
+\begin{document}
+
+\[ \text{4)} f(x) = \frac{x^3 - 2x^2 + x}{x+1} \]
+\[ = \frac{x(x^2 - 2x + 1)}{x+1} \]
+\[ = \frac{x(x-1)^2}{x+1} \]
+\[ \text{Zéros: } x=0 \]
+\[ x=1 \]
+\[ f(x)=0 \]
+\[ \text{Indéfini: } x=-1 \]
+
+\[ 
+\begin{array}{|c|ccccccc|} 
+\hline 
+& -\infty & & -1 & & 0 & & 1 & & +\infty \\ 
+\hline 
+x & & - &  & - & 0 & + & & + & \\ 
+\hline 
+(x-1)^2 & & + & & + & & + & 0 & + & \\ 
+\hline 
+x+1 & & - & 0 & + & & + & & + & \\ 
+\hline 
+ & & + & // & - & 0 & + & 0 & + & \\ 
+\hline
+\end{array} 
+\]
+
+\[ \lim_{x \to -1^{\pm}} f(x) = \frac{-1(-1-1)^2}{(-1^{\pm}+1)} \]
+\[ = \frac{-1 \cdot 4}{0^{\pm}} \]
+\[ = \frac{-4}{0^{\pm}} \]
+\[ = \mp \infty \]
+
+\[ \lim_{x \to \pm \infty} \frac{f(x)}{x} = \lim_{x \to \pm \infty} \frac{x(x-1)^2}{x(x+1/x)} \]
+\[ = \lim_{x \to \pm \infty} \frac{(x-1)^2}{1} \]
+\[ = (\pm \infty)^2 \]
+\[ = \pm \infty \]
+
+\[ = x^2 - 3x + 4 - \frac{4}{x+1} \]
+\[ = \Delta = 9 - 4 \cdot 1 \cdot 4 \]
+\[ = 9 - 16 \]
+\[ \Delta < 0 \]
+\[ \text{Pas de } x_0 \]
+
+
+\[ \text{b) Non, pas } x=-1 \]
+\[ \text{Elle tend vers } +\infty \text{ au } 2 \text{ extremités} \]
+\[ \text{selon cette parabole: } x^2-3x+4 \]
+
+\[ \text{c) } D \in [1; +\infty[ \]
+
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\text{Exo 5}
+\[ \text{Intersection droite-plan} \rightarrow d interescts P \leftrightarrow \vec{n} \cdot \vec{d} \neq 0 \]
+\[ \vec{AB} = \begin{pmatrix} 4-2 \\ 5-6 \\ 2-1 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} \]
+\[ \vec{AC} = \begin{pmatrix} 5-2 \\ 6-6 \\ 3-1 \end{pmatrix} = \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix} \]
+\[ \vec{AB} \times \vec{AC} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} \times \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} -1 \cdot 2 - 1 \cdot 0 \\ -(2 \cdot 2 - 1 \cdot 3) \\ 2 \cdot 0 - (-1) \cdot 3 \end{pmatrix} = \begin{pmatrix} -2 - 0 \\ -(4 - 3) \\ 0 + 3 \end{pmatrix} = \begin{pmatrix} -2 \\ -1 \\ 3 \end{pmatrix} = \vec{n} \]
+\[ d: \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 2 \\ 6 \\ 1 \end{pmatrix} + t \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix} \Rightarrow \begin{cases} x = 2 + 2t \\ y = 6 - t \\ z = 1 + t \end{cases} \]
+\[ x=0 \text{ et } z=0 \text{ pour intersection avec axe } Oy \]
+\[ -1 = 6 - t \Rightarrow t = -7\]
+\[ \vec{n} \cdot \vec{d} \neq 0 \leftrightarrow \begin{pmatrix} -2 \\ -1 \\ 3 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ y \\ 1 \end{pmatrix} \neq 0 \]
+\[ \leftrightarrow (-2) \cdot 2 + (-1) \cdot y + 3 \cdot 1 \neq 0 \]
+\[ \leftrightarrow -4 - y + 3 \neq 0 \]
+\[ -4 - y + 3 = 0 \leftrightarrow -y \neq 1 \Rightarrow y = -1 \]
+
+\end{document}

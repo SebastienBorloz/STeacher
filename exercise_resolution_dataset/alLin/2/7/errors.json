@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 9,
+		"description" : "erreur de calcul,  (\\begin{pmatrix} -6 - (-3) \\\\ 3 - (9) \\\\ -3 - (2) \\end{pmatrix}) devrait être ( \\begin{pmatrix} -6 - (-3) \\\\ 3 - (9) \\\\ -3 - (2) \\end{pmatrix})"
+	},
+	"2":{
+		"line" : 13,
+		"description" : "erreur de calcul, le résultat devrait être un nombre."
+	}
+}

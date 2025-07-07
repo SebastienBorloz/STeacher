@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 20,
+		"description" : "erreur de signe, x = (\\sqrt(9)) devrait être (x = +-\\sqrt(9))"
+	},
+	"2":{
+		"line" : 21,
+		"description" : "résultat pour y incohérent avec la déclaration ligne 23."
+	}
+}

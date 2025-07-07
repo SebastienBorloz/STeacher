@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 7,
+		"description" : "erreur de report, (2x^2 - y^2 + z^2 = 14) devrait être (2x^2 - y^2 + z^2 = 15)"
+	}
+}

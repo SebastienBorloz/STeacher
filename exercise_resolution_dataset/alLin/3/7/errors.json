@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 21,
+		"description" : "erreur de signe, (-((-3) \\cdot (-3) + (3) \\cdot (-1))) devrait être (-((-3) \\cdot (-3) - (3) \\cdot (-1)))"
+	},
+	"2":{
+		"line" : 45,
+		"description" : "raisonnement inachevé"
+	}
+}

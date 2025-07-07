@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 9,
+		"description" : "erreur de signe, le deuxième (2(\\vec{a} \\times \\vec{b})) devrait être (-2(\\vec{a} \\times \\vec{b})) "
+	}
+}

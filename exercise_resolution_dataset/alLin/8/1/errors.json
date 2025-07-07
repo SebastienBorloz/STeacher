@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 8,
+		"description" : "erreur de logique: c'est bien un point du cercle, mais il y en a d'autres."
+	},
+	"2":{
+		"line" : 12,
+		"description" : "erreur de calcul, (3x + (-6)) devrait être (-3x + (6))"
+	}
+}

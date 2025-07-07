@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 39,
+		"description" : "mal reporté le signe depuis le z, (x = 3) devrait être (x = +- 3)"
+	},
+	"2":{
+		"line" : 45,
+		"description" : "mal reporté le signe depuis le x, (2 = y) devrait être (+- 2 = y)"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 16,
+		"description" : "erreur de calcul, (x = \\pm 9) devrait être (x = \\pm \\sqrt{9})"
+	},
+	"2":{
+		"line" : 22,
+		"description" : "erreur de calcul, (y = \\sqrt{112}) devrait être (y = +- \\sqrt{112})"
+	}
+}

@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath} % For align environment and other math tools
+\usepackage{amssymb} % For R symbol
+\usepackage{amsfonts} % For mathbb
+
+\begin{document}
+
+\[
+f(x) = \frac{x^3 - 4x}{x^3 + x^2 - x - 1} \quad D(f) = \mathbb{R} \setminus \{\pm1\}
+\]
+
+\[
+\text{zéros: } x^3 - 4x = 0 \implies x(x^2 - 4) \implies x(x-2)(x+2)
+\]
+\[
+\text{zéros: } \{0, \pm 2\}
+\]
+
+\[
+f(0) = \frac{0^3 - 4 \cdot 0}{0^3 + 0^2 - 0 - 1} = \frac{0}{-1} = 0 \quad \text{intersection avec axe des y } (0,0)
+\]
+
+\[
+\text{Asymptotes}
+\]
+\[
+\text{AV: quand dénominateur s'annule } \implies x = 1, x = -1
+\]
+\[
+\text{AH: } \lim_{x \to \pm\infty} f(x) = \frac{x^3}{x^3} = 1 \quad y = 1
+\]
+
+\[
+\text{AO: } \lim_{x \to \infty} (f(x) - (ax+b)) = 0
+\]
+\[
+\text{Polynomial division for oblique asymptote (as shown in image):}
+\]
+\[
+\begin{array}{r|l}
+x^3 + 0x^2 - 4x + 0 & x^2 + x - 3 \\
+\cline{2-2}
+-(x^3 + x^2 - 3x) & x - 1 \\
+\cline{1-1}
+\quad -x^2 - x + 0 & \\
+-(-x^2 - x + 3) & \\
+\cline{1-1}
+\quad \quad \quad -3 & \\
+\end{array}
+\]
+
+\end{document}

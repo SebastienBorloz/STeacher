@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 31,
+		"description" : "erreur de calcul, (2y+z^2=10) devrait être (y^2+z^2=10)"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 32,
+		"description" : "erreur de calcul, (x = 90^\\circ + k \\cdot 360^\\circ) devrait être (x = 90^\\circ + k \\cdot 360^\\circ)"
+	}
+}

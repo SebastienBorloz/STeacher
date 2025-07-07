@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 13,
+		"description" : "erreur de calcul, (\\sqrt{132}) devrait être (\\sqrt{142})"
+	},
+	"2":{
+		"line" : 15,
+		"description" : "erreur de méthode"
+	}
+}

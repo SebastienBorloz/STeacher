@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 8,
+		"description" : "erreur de report, (\frac{x^3 - 2x^2 + x}{x+1}) devrait être (\frac{x^3 - 2x^2 + x}{x-1})"
+	},
+	"2":{
+		"line" : 54,
+		"description" : "erreur de raisonnement"
+	}
+}

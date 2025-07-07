@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+
+\[ \textcircled{5} \quad f(x) = \frac{x^3 - 4x}{x^3 + x^2 - x - 1} \]
+
+\[ \text{Df:} \quad x^3 + x^2 - x - 1 = 0 \]
+\[ \begin{array}{c|ccc|c}
+  & 1 & 1 & -1 & -1 \\
+\hline
+  &   & 1 & 2  & 1  \\
+1 & 1 & 2 & 1  & 0
+\end{array} \]
+\[ \implies x^3 + x^2 - x - 1 = (x-1)(x^2 + 2x + 1) \implies \text{toujours positif} \]
+\[ \rightarrow \text{Df:} = \mathbb{R} \setminus \{1\} \]
+
+\[ \text{zf:} \quad x^3 - 4x = 0 \]
+\[ \implies x(x^2 - 4) \]
+\[ \implies x(x-2)(x+2) \]
+\[ \text{zf:} = \{0, 2, -2\} \]
+
+\[ \text{signe:} \quad \frac{x(x-2)(x+2)}{(x-1)(x^2+2x+1)} \]
+\[ \begin{array}{|c|ccccccccccccc|}
+\hline
+x & -\infty & & -2 & & 0 & & 1 & & 2 & & +\infty \\
+\hline
+x & - & & - & & 0 & & + & & + & & + \\
+(x-2) & - & & - & & - & & - & & 0 & & + \\
+(x+2) & - & & 0 & & + & & + & & + & & + \\
+(x-1) & - & & - & & - & & 0 & & + & & + \\
+(x+1)^2 & + & & + & & + & & + & & + & & + \\
+\hline
+\frac{N}{D} & + & & 0 & & 0 & & + // - & & 0 & & + \\
+\hline
+\end{array} \]
+
+\[ \text{AV: } \lim_{x \to 1\pm} \frac{x^3 - 4x}{x^3 + x^2 - x - 1} = \lim_{x \to 1\pm} \frac{-3}{0\pm} = \pm\infty \]
+\[ \text{AV en } x=1\]
+
+\[ \text{AH: } \lim_{x \to \pm\infty} \frac{x^3 - 4x}{x^3 + x^2 - x - 1} = \frac{\infty}{\infty} \quad \text{THD} \quad \lim_{x \to \pm\infty} \frac{x^3}{x^3} = 1 \]
+\[ y=1 \text{ est AH en } \pm\infty \]
+
+\[ \text{AO: } \rightarrow \text{pas d'AO car AH en } \pm\infty \]
+
+\end{document}

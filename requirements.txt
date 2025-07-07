@@ -4,3 +4,4 @@ pillow
 einops 
 timm
 openai
+flash-attn

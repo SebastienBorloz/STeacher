@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\[
+\text{Exo 8)}
+\begin{pmatrix}
+L1) & 1 & 2 & a & | & 0 \\
+L2) & 1 & 2 & 3 & | & 0 \\
+L3) & 1 & 2 & -7 & | & 0
+\end{pmatrix}
+\xrightarrow{L_1-L_2}
+\xrightarrow{L_3-L_2}
+\quad \iff \quad \vec{v} = \lambda_1 \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} + \lambda_2 \begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix} + \lambda_3 \begin{pmatrix} a \\ 3 \\ -7 \end{pmatrix}
+\]
+\[
+\text{et si } \lambda_1 = \lambda_2 = \lambda_3 = 0, \text{ alors ils sont linéairement indépendants}
+\]
+\[
+\begin{pmatrix}
+L1) & 0 & 0 & a-3 & | & 0 \\
+L2) & 1 & 2 & 3 & | & 0 \\
+L3) & 0 & 0 & -10 & | & 0
+\end{pmatrix}
+\rightarrow \text{impossible}
+\text{ce n'est pas possible qu'ils soient linéairement indépendants, car L3 démontre que -10 \neq 0, et don} \lambda_3 \neq 0
+\]
+
+\end{document}

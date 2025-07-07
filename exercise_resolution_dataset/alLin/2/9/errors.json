@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 11,
+		"description" : "mal reporté, il manque une des équations"
+	},
+	"2":{
+		"line" : 13,
+		"description" : "mal reporté, (x + y + 2z - t = 0) devrait être (x + y + 2z - t = 10)"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"1":{
+		"line" : 8,
+		"description" : "Domaine faux"
+	},
+	"2":{
+		"line" : 11,
+		"description" : "erreur de raisonnement"
+	},
+	"3":{
+		"line" : 36,
+		"description" : "erreur de signe, (2 - \\sqrt{x-1}) devrait être (2 - \\sqrt{x+1})"
+	},
+	"4":{
+		"line" : 77,
+		"description" : "erreur de raisonnement"
+	}
+}

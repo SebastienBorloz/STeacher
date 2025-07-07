@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath} % For \sum and other math environments
+
+\begin{document}
+
+\[ \text{Exercice 3} \]
+\[ \text{a)} \sum_{k=1}^6 7(10^{-k}) \]
+\[ = 7 \sum_{k=1}^6 \frac{1}{10^k} \]
+\[ = 7 \sum_{k=1}^6 10^{-k} \]
+\[ \implies -k = t\]
+\[ = 7 \sum_{t=-1}^t 10^{t} \]
+\[ = 7 \left( \frac{10^{5}-1}{10-1} +10^{-1}\right) \]
+\[ = 7 \left( \frac{10^{-5} - 1}{9} + \frac{1}{10^1} \right) \]
+\[ = 7 \frac{10(10^5-1) + 9}{90} \]
+\[ = 7 \frac{10^6 - 10+9}{90} \]
+\[ = 7 \frac{10^6 - 1}{90} \]
+\[ = \frac{7}{90}(10^6 - 1) \]
+
+\[ \text{b)} \]
+\[ 5 = 4 \cdot 1 + 1 \]
+\[ 9 = 5 + 4 = 4 \cdot 2 + 1 \]
+\[ 13 = 9 + 4 = 4 \cdot 3 + 1 \]
+\[ 17 = 13 + 4 = 4 \cdot 4 + 1 \]
+\[ 105 = 26 \cdot 4 + 1 \]
+\[ \to \sum_{k=1}^{26} 4k+1 \]
+\[ \to 4 \sum_{k=1}^{26} k + \sum_{k=1}^{26} 1 \]
+\[ = 4 \frac{26 \times 27}{2} + 26 - 1 + 1 \]
+\[ = 4 \cdot 13 \cdot 27 + 26 \]
+\[ = 52 \cdot 27 + 26 \]
+\[ = 1404 + 26 \]
+\[ = 1430 \]
+
+\end{document}

@@ -1,0 +1,14 @@
+{
+	"1":{
+		"line" : 51,
+		"description" : "erreur de signe, (\\sqrt{z} = \\sqrt{1}) devrait être (\\sqrt{z} = +-\\sqrt{1})"
+	},
+	"2":{
+		"line" : 67,
+		"description" : "erreur de signe, (y = 2) devrait être (y = +-2)"
+	},
+	"3":{
+		"line" : 71,
+		"description" : "erreur de signe, (x^2 + 2 + 1 = 14) devrait être (x^2 + 2^2 + 1 = 14)"
+	}
+}

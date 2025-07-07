@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+
+\[ \text{4. } C = (a, 0, 1), t = 2 \]
+\[ \text{sphere: } (x-a)^2 + (y-0)^2 + (z-1)^2 = 4 \]
+\[ d: \begin{cases} x = 1-2t \\ y = 1+t \\ z = 1 \end{cases} \]
+\[ \text{sphere } \cap d: ((1-2t)-a)^2 + (1+t)^2 + (1-1)^2 = 4 \]
+\[ 4t^2 - 4t + 1 - 2a(1-2t) + a^2 + 1 + 2t + t^2 = 4 \]
+\[ 5t^2 - 4t + 1 - 2a + 4at + a^2 + 1 + 2t = 4 \]
+\[ 5t^2 - 2t + 4at + a^2 - 2a + 2 = 4 \]
+\[ 5t^2 - (2-4a)t + a^2 - 2a - 2 = 0 \]
+\[ \Delta = (2-4a)^2 - 4 \cdot 5 \cdot (a^2 - 2a - 2) = 0 \]
+\[ \implies 16a^2 - 16a + 4 - 20a^2 + 40a + 40 = 0 \]
+\[ \implies -4a^2 + 24a + 44 = 0 \]
+\[ \implies -4(a^2 - 6a - 11) = 0 \]
+\[ \Delta = 36 + 44 = 80 \]
+\[ a_{1,2} = \frac{6 \pm 4\sqrt{5}}{2} = 3 \pm 2\sqrt{5} \]
+\[ S = \{3 \pm 2\sqrt{5}\} \]
+
+\end{document}

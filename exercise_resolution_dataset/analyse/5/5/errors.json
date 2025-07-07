@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 18,
+		"description" : "raisonnement incomplet, (\\mathbb{R} \\setminus \\{1\\}) devrait être (\\mathbb{R} \\setminus \\{1;-1\\})"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 17,
+		"description" : "calcul mal effectué, (0, 0, 1, -2) devrait être (0, 0, 1, 2)"
+	},
+	"2":{
+		"line" : 17,
+		"description" : "conséquence erreur 1, (1z + 2w) devrait être (1z - 2w)"
+	}
+}

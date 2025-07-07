@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 26,
+		"description" : "erreurs de signes jusqu'à x=0, (f(x) & & - & 0 & + & || & + & 0 ...) devrait être (f(x) & & + & 0 & - & || & - & 0 ...)"
+	}
+}

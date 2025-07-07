@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath} % For align environment and other math tools
+\usepackage{amsfonts} % For math symbols like R
+
+\begin{document}
+
+\[ f(x) = \frac{x(x^2-4)}{(x^2-1)(x+1)} = \frac{x(x+2)(x-2)}{(x+1)^2(x-1)} \]
+
+\[ \text{1) } D_f = \mathbb{R} - \{-1, 1\} \]
+
+\[ \text{2) } f(x) = 0 \text{ lorsque } x \in \{-2, 2, 0\} \]
+
+\[ \text{3)} \]
+\[
+\begin{array}{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+ & -\infty & -2 & & -1 & & 0 & & 1 & & 2 & +\infty \\
+\hline
+x & - & - & - & - & - & 0 & + & + & + & + & + \\
+\hline
+x+2 & - & 0 & + & + & + & + & + & + & + & + & + \\
+\hline
+x-2 & - & - & - & - & - & - & - & - & - & 0 & + \\
+\hline
+(x+1)^2 & + & + & + & / & + & + & + & + & + & + & + \\
+\hline
+x-1 & - & - & - & - & - & - & - & / & + & + & + \\
+\hline
+f(x) & + & 0 & - & / & - & 0 & + & / & - & 0 & + \\ 
+\hline
+\end{array}
+\]
+
+\[ \text{4) AV:} \]
+\[ \lim_{x \to 1} \frac{x(x+2)(x-2)}{(x+1)^2(x-1)} = \left(\frac{3}{0}\right) = +\infty \]
+\[ \lim_{x \to 1} \frac{x(x+2)(x-2)}{(x+1)^2(x-1)} = \left(\frac{-3}{0}\right) = -\infty \]
+\[ \text{AV en } x \in \{-1, 1\} \]
+
+\[ \text{AH: } \]
+\[ \lim_{x \to -\infty} \frac{x^3 - 4x}{x^3 + x^2 - x - 1} = \lim_{x \to \infty} \frac{x^3(\frac{1}{1} - \frac{4}{x^2})}{x^3(\frac{1}{1} + \frac{1}{x} - \frac{1}{x^2} - \frac{1}{x^3})} = 1 \]
+\[ \lim_{x \to -\infty} \frac{x^3 - 4x}{x^3 + x^2 - x - 1} = 1 \]
+
+\[ \text{AO:} \]
+\[ \lim_{x \to \infty} \frac{f(x)}{x} = 0 \quad \text{pas d'AO} \]
+
+\[ \text{5) Pas d'A car pas d'AO} \]
+
+\end{document}

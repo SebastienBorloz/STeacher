@@ -1,0 +1,10 @@
+{
+	"1":{
+		"line" : 12,
+		"description" : "erreur de signe, (\\vec{a} \\times \\vec{c}) - 6(\\vec{a} \\times \\vec{c}) devrait être (\\vec{a} \\times \\vec{c}) + 6(\\vec{a} \\times \\vec{c})"
+	},
+	"2":{
+		"line" : 12,
+		"description" : "erreur de signe, (\\vec{b} \\times \\vec{c} - 3(\\vec{b} \\times \\vec{c})) devrait être (\\vec{b} \\times \\vec{c} + 3(\\vec{b} \\times \\vec{c}))"
+	}
+}

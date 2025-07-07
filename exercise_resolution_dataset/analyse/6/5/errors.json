@@ -1,0 +1,6 @@
+{
+	"1":{
+		"line" : 10,
+		"description" : "erreur de signe, (1 + \\frac{x^2-3x+1}{x^3-x^2-x-1}) devrait être (1 + \\frac{-x^2-3x+1}{x^3-x^2-x-1})"
+	}
+}
