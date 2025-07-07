@@ -10,11 +10,14 @@ from transformers import AutoTokenizer, AutoProcessor, AutoModelForImageTextToTe
 # -------------------------------------------------------------------
 class OpenAIClient:
 	def __init__(self, model):
+		# key in environment variables
 		api_key = os.environ.get("OPENAI_KEY_R")
 		self.client = OpenAI(api_key=api_key)
 		self.model = model
 
+
 	def ask_LLM(self, input, temperature=1):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		response = self.client.responses.create(
 			model=self.model,
 			input=input,
@@ -25,6 +28,21 @@ class OpenAIClient:
 
 
 	def ask_LLM_txt(self, prompt, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -37,7 +55,26 @@ class OpenAIClient:
 		answer, usage = self.ask_LLM(input, temperature)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -57,11 +94,14 @@ class OpenAIClient:
 # -------------------------------------------------------------------
 class AnthropicClient:
 	def __init__(self, model):
+		# key in environment variables
 		api_key = os.environ.get("ANTHROPIC_KEY_R")
 		self.client = anthropic.Anthropic(api_key=api_key)
 		self.model = model
 
+
 	def ask_LLM(self, input, temperature, max_tokens):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		response = self.client.messages.create(
 			model=self.model,
 			messages=input,
@@ -71,7 +111,23 @@ class AnthropicClient:
 
 		return response.content[0].text, response.usage
 
+
 	def ask_LLM_txt(self, prompt, temperature=1, max_tokens=1000):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -87,7 +143,26 @@ class AnthropicClient:
 		answer, usage = self.ask_LLM(input, temperature, max_tokens)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1, max_tokens=1000):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -116,11 +191,14 @@ class AnthropicClient:
 # -------------------------------------------------------------------
 class InfNetClient:
 	def __init__(self, model):
+		# key in environment variables
 		api_key = os.environ.get("INFERENCE_KEY_R")
 		self.client = OpenAI(api_key=api_key, base_url="https://api.inference.net/v1")
 		self.model = model
 
+
 	def ask_LLM(self, input, temperature=1):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		response = self.client.chat.completions.create(
 			model="deepseek/deepseek-vl2-small/fp-16",
 			messages=input,
@@ -131,6 +209,21 @@ class InfNetClient:
 
 
 	def ask_LLM_txt(self, prompt, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -143,7 +236,26 @@ class InfNetClient:
 		answer, usage = self.ask_LLM(input, temperature)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user", 
@@ -169,11 +281,14 @@ class InfNetClient:
 # -------------------------------------------------------------------
 class GrokClient:
 	def __init__(self, model):
+		# key in environment variables
 		api_key = os.environ.get("GROK_KEY_R")
 		self.client = OpenAI(api_key=api_key, base_url="https://api.x.ai/v1")
 		self.model = model
 
+
 	def ask_LLM(self, input, temperature):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		response = self.client.chat.completions.create(
 			model=self.model,
 			messages=input,
@@ -181,7 +296,23 @@ class GrokClient:
 		)
 		return response.choices[0].message.content, response.usage
 	
+
 	def ask_LLM_txt(self, prompt, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user", 
@@ -197,7 +328,26 @@ class GrokClient:
 		answer, usage = self.ask_LLM(input, temperature)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user", 
@@ -222,12 +372,15 @@ class GrokClient:
 # -------------------------------------------------------------------
 class GeminiClient:
 	def __init__(self, model, reasoning_effort=None):
+		# key in environment variables
 		api_key = os.environ.get("GEMINI_KEY_R")
 		self.client = OpenAI(api_key=api_key,base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
 		self.model = model
 		self.reasoning_effort = reasoning_effort
 
+
 	def ask_LLM(self, input, temperature):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		if self.reasoning_effort == None:
 			response = self.client.chat.completions.create(
 				model=self.model,
@@ -243,7 +396,23 @@ class GeminiClient:
 			)
 		return response.choices[0].message.content, response.usage
 
+
 	def ask_LLM_txt(self, prompt, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user", 
@@ -259,7 +428,26 @@ class GeminiClient:
 		answer, usage = self.ask_LLM(input, temperature)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user", 
@@ -281,7 +469,7 @@ class GeminiClient:
 
 
 # -------------------------------------------------------------------
-# OpenAI
+# HuggingFace
 # -------------------------------------------------------------------
 class HuggingFaceClient:
 	def __init__(self, model):
@@ -293,10 +481,9 @@ class HuggingFaceClient:
 		)
 		model.eval()
 
-		tokenizer = AutoTokenizer.from_pretrained(model)
-		processor = AutoProcessor.from_pretrained(model)
 
 	def ask_LLM(self, input, temperature=1):
+		''' base wihtout the structured output, not to be used as is. (use ask_LLM_txt or ask_LLM_txt_and_img)'''
 		response = self.client.responses.create(
 			model=self.model,
 			input=input,
@@ -307,6 +494,21 @@ class HuggingFaceClient:
 
 
 	def ask_LLM_txt(self, prompt, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+			
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",
@@ -319,7 +521,26 @@ class HuggingFaceClient:
 		answer, usage = self.ask_LLM(input, temperature)
 		return answer, usage
 
+
 	def ask_LLM_txt_and_img(self, prompt, image, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and image. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		image : string
+			The input image converted to a b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
 		input = [
 			{
 				"role": "user",

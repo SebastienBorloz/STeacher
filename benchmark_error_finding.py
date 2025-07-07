@@ -1,4 +1,3 @@
-import jaro
 import os
 from LLM import *
 from utilities import read_file, parse_prompt
@@ -112,21 +111,21 @@ class error_finding_tester:
 import concurrent.futures
 
 LLMs = [
-    # OpenAIClient("gpt-4.1"), 
-    # OpenAIClient("gpt-4o"),
-    # AnthropicClient("claude-opus-4-20250514"),
-    # AnthropicClient("claude-sonnet-4-20250514"),
-    # AnthropicClient("claude-3-7-sonnet-20250219"),
-    # AnthropicClient("claude-3-5-haiku-20241022"),
-    # InfNetClient("meta-llama/llama-3.2-11b-instruct"),
-    # InfNetClient("qwen/qwen2.5-7b-instruct"),
-    # InfNetClient("deepseek/deepseek-vl2-small"),
-    # GrokClient("grok-2-vision-1212"),
-    # GeminiClient("gemini-2.5-pro-preview-06-05", "low"),
-	# GeminiClient("gemini-2.5-pro-preview-06-05", "medium"),
-	# GeminiClient("gemini-2.5-pro-preview-06-05", "high"),
+    OpenAIClient("gpt-4.1"), 
+    OpenAIClient("gpt-4o"),
+    AnthropicClient("claude-opus-4-20250514"),
+    AnthropicClient("claude-sonnet-4-20250514"),
+    AnthropicClient("claude-3-7-sonnet-20250219"),
+    AnthropicClient("claude-3-5-haiku-20241022"),
+    InfNetClient("meta-llama/llama-3.2-11b-instruct"),
+    InfNetClient("qwen/qwen2.5-7b-instruct"),
+    InfNetClient("deepseek/deepseek-vl2-small"),
+    GrokClient("grok-2-vision-1212"),
+    GeminiClient("gemini-2.5-pro-preview-06-05", "low"),
+	GeminiClient("gemini-2.5-pro-preview-06-05", "medium"),
+	GeminiClient("gemini-2.5-pro-preview-06-05", "high"),
     GeminiClient("gemini-2.5-flash-preview-05-20"),
-    # GeminiClient("gemini-2.0-flash"),
+    GeminiClient("gemini-2.0-flash"),
 ]
 
 prompt = read_file("./prompts/error_finding_v3+correc.md")
@@ -138,8 +137,6 @@ def run_benchmark(LLM):
         test.benchmark(0, prompt)
     except Exception as e:
         print(f"Error with {LLM.model}: {e}")
-
-#run_benchmark(GeminiClient("gemini-2.5-pro-preview-06-05", "medium"))
 
 
 # Use ThreadPoolExecutor to run benchmarks in parallel
@@ -181,7 +178,7 @@ if __name__ == "__main__":
 
 # try:
 # 	results[difficulty][test_num] = {}
-# 	tester = handwritten_tester(LLM=LLM)
+# 	tester = error_finding_tester(LLM=LLM)
 # 	test = tester.dataset[difficulty][test_num]
 
 # 	img_path = test["image_path"]

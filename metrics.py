@@ -53,7 +53,6 @@ class results:
 		return df_all_tests
 
 
-
 	def order_df(self, df_to_sort):
 		# Trier les colonnes selon l'ordre easy → intermediate → hard
 		ordered_columns = []
@@ -64,7 +63,6 @@ class results:
 			ordered_columns.extend(natsorted(cols))
 
 		return ordered_columns
-
 
 
 	def add_metric(self, metric_function, mean_med = True):
@@ -85,7 +83,6 @@ class results:
 		if mean_med:
 			self.df[new_line_name + "_mean"] = self.df.mean(axis=1)
 			self.df[new_line_name + "_median"] = self.df.median(axis=1)
-
 
 
 	def add_separation(self, group1, group2 = [], mean_med = True):
@@ -162,9 +159,11 @@ def _replace_element(text, element, replacement=""):
 	text_clear = text.replace(element, replacement)
 	return text_clear
 
+
 def _replace_element_reg(text, element, replacement=""):
 	text_clear = re.sub(element, replacement, text)
 	return text_clear
+
 
 def standardize_text(text):
 	try:
@@ -220,7 +219,6 @@ def metric_standardized_text(row):
 	return dist
 
 
-
 def metric_math_filter(row):
 	def remove_anything_not_maths(txt):
 		# reg = r"([\d\+\=\-\^{( ]+\w{1,3}[\d\+\=\-\^}) ]|pmatrix|\\frac|\\vec|\\sqrt|\\cdot|[\d\+\=\-\^(){}])"
@@ -263,13 +261,6 @@ def metric_math_filter(row):
 			print(dist)
 			print("=====================================================================================")
 		
-
-
-
 		return dist
 	else:
 		return None
-
-
-
-data_dir = "benchmark_results/first bench"

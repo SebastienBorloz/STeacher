@@ -2,6 +2,20 @@ import base64
 import os
 
 def read_file(file_path):
+	"""
+    Reads a text file and outputs its content
+
+    Parameters
+    ----------
+    file_path : string
+        Path of the file you want to read.
+		
+
+    Returns
+    -------
+    string
+        The content of the file.
+    """
 	try:
 		with open(file_path, 'r', encoding='utf-8') as file_path:
 			input = file_path.read()
@@ -15,6 +29,26 @@ def read_file(file_path):
 		return ""
 
 def parse_prompt(file_path=None, txt=None, **params):
+	"""
+    Replaces all parameters in {} in an input text with the input parameters of this function.
+
+    Parameters
+    ----------
+    file_path : string
+        First possible way of giving the text to parse, through a text file to read, will have priority if the two options are used.
+    txt : string
+        Second possible way of giving the text to parse, already in a string.
+	**params: string
+		texts to place in the inputed text, for example: 
+		with the prompt being "I have just seen a {object}!", you should have an object parameter, 
+		like object="bird". The output of the function will then be "I have just seen a bird!"
+		
+
+    Returns
+    -------
+    string
+        The inputed text with params instead of the {} blocs in the text.
+    """
 	input = ""
 	if file_path != None:
 		try:
@@ -39,60 +73,21 @@ def parse_prompt(file_path=None, txt=None, **params):
 	
 
 def img_to_b64(img_path):
-    with open(img_path, "rb") as image_file:
-        b64_image = base64.b64encode(image_file.read()).decode("utf-8")
-    return b64_image
+	"""
+	Reads an image and returns it as a b64 formatted string.
 
+	Parameters
+	----------
+	img_path : string
+		Path of the image you want to read.
+		
 
-def write_experience_report(exp_name, model, prompt, output):
-	dir = f"./resultats/{exp_name}"
-	try:
-		os.mkdir(dir)
-		print(f"Directory '{dir}' created successfully.")
-	except Exception as e:
-		print(f"An error occurred: {e}")
+	Returns
+	-------
+	string
+		The b64 encoded image.
+	"""
+	with open(img_path, "rb") as image_file:
+		b64_image = base64.b64encode(image_file.read()).decode("utf-8")
+	return b64_image
 
-	template = '''# contexte
-Ce test a été effectué sur {model}.
-[contexte du test]
-
-# inputs
-Voici le prompt:
-
-```text
-{prompt}
-```
-
-Autres inputs:
-
-# outputs
-Voici le rendu du modele:
-
-```text
-{output}
-```
-
-Autres précisions output:
-
-# analyse
-[analyse de l'output]'''
-
-	with open(f"{dir}/output.txt", "a") as f:
-		f.write(output)
-
-	final_text = template.format(model=model,prompt=prompt,output=output)
-
-	with open(f"{dir}/note.md", "a") as f:
-		f.write(final_text)
-
-	print("tout bon le rapport")
-
-
-
-
-
-
-#exercise_bloc = read_file("./prompts/exercise_example.md")
-
-#txt = parse_prompt(file_path="./prompts/proto_prompt_error.md", exercise_bloc=exercise_bloc)
-#print(txt)
