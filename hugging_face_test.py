@@ -12,11 +12,11 @@ model_for_hug = AutoModelForImageTextToText.from_pretrained(
 model_for_hug.eval()
 
 
-def ocr_page_with_nanonets_s(image_path, model, max_new_tokens=4096):
+def ocr_page_with_nanonets_s(image_path, model, prompt, max_new_tokens=4096):
 	tokenizer = AutoTokenizer.from_pretrained(model_path)
 	processor = AutoProcessor.from_pretrained(model_path)
 
-	prompt = """Extract the text from the above document as if you were reading it naturally. Return the tables in html format. Return the equations in LaTeX representation. If there is an image in the document and image caption is not present, add a small description of the image inside the <img></img> tag; otherwise, add the image caption inside <img></img>. Watermarks should be wrapped in brackets. Ex: <watermark>OFFICIAL COPY</watermark>. Page numbers should be wrapped in brackets. Ex: <page_number>14</page_number> or <page_number>9/22</page_number>. Prefer using ☐ and ☑ for check boxes."""
+	#prompt = """Extract the text from the above document as if you were reading it naturally. Return the tables in html format. Return the equations in LaTeX representation. If there is an image in the document and image caption is not present, add a small description of the image inside the <img></img> tag; otherwise, add the image caption inside <img></img>. Watermarks should be wrapped in brackets. Ex: <watermark>OFFICIAL COPY</watermark>. Page numbers should be wrapped in brackets. Ex: <page_number>14</page_number> or <page_number>9/22</page_number>. Prefer using ☐ and ☑ for check boxes."""
 	image = Image.open(image_path)
 	messages = [
 		{"role": "system", "content": "You are a helpful assistant."},
