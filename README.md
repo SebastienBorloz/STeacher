@@ -22,7 +22,7 @@ Il s'agit d'une tache d'OCR un peu specifique et un peu plus compliquée que de 
 - de notes de cours et d'exercices que j'ai ecrit a l'epoque de mes cours de maths
 - de notes de cours et d'exercices que m'ont fournis des camarades de classe
 - de notes de cours et d'exercices que m'ont fournis des eleves de mon responsable de bachelor
-- de corrigés de series de maths que m'a fourni un de professeurs de mathematiques avec qui j'ai pu discuter du projet
+- de corrigés de series de maths que m'a fourni un de professeurs de mathematiques avec qui j'ai pu discuter du projet \
 *J'en profite pour remercier ici toutes les personnes qui ont eu la gentillesse de me fournir du contenu pour mon dataset!*
 
 2. 
@@ -30,7 +30,7 @@ La seconde tache est une tache de logique plus dure techniquement et surtout plu
 La aussi, pour faire mon evaluation, j'ai pu composer un dataset. Celui-ci a été créé a partir d'examens de mathématiques anonymisés afin de reunir les informations que je souhaitais pour mes experiences:
 - consigne de l'exercice
 - un raisonnement d'eleve pour resoudre l'exercice, erroné ou non
-- un raisonnement de prof pour resoudre l'exercice qui arrive a la bonne reponse
+- un raisonnement de prof pour resoudre l'exercice qui arrive a la bonne reponse \
 *La aussi, mini remerciement que pas grand monde ne verra pour la confiance que l'ont m'a accordé avec ces données*
 
 
