@@ -51,19 +51,22 @@ Les feuilles a la base de ce dataset etaient un echantillon d'examens d'analyse 
 	- errors.json: un compte rendu des erreurs relevées par l'enseignant. Si le projet devait etre continué, il s'agit ici d'une partie importante a ameliorer de ce dataset: les descriptions des erreurs sont tres limitées car je n'avais ni le temps ni un souvenir suffisant de mes cours de mathematique pour les corriger moi meme efficacement et decrire les erreurs au dela de ce que le prof a bien voulu annoter. Les erreurs de signe / de report sont assez concises mais les erreurs de raisonnement, les mauvaises utilisations d'equations, etc. qui sont plus dures a voir ne sont actuellement pas (ou mal) décrites dans ces errors.json. Je les ai quand meme annotées afin d'en verifier la position, ce qui m'a fourni un debut de reponse sur la performance d'un LLM pour cette tache.
 
 - benchmark_results:
-contient les gros rapports d'experiences faits sur les benchmarks. first bench contient les resultats de la premiere partie, second bench contient les resultats de la seconde partie. individual tests contient des petits tests supplementaires faits sur la premiere partie.
+contient les gros rapports d'experiences faits sur les benchmarks. first bench contient les resultats de la premiere partie, second bench contient les resultats de la seconde partie. individual tests contient des petits tests supplementaires faits sur la premiere partie. all in one bench contient les resultats du test du pipeline simplifié (donc on passe directement d'une image de la feuille de l'etudiant a une detection de l'erreur).
 
 - journal de bord:
 contient un calendrier avec quelques notes sur mon occupation au cours du projet ainsi que des notes personnelles prise a mesure.
 
 - prompts:
-contient les principaux prompts utilisés. Tous les tests de la premiere partie ont été faits avec le prompt latex_gen_v3.md. Tous les autres prompts sont des variations employées pour la seconde partie.
+contient les principaux prompts utilisés. Tous les tests de la premiere partie ont été faits avec le prompt latex_gen_v3.md. les prompts commencant par "error_finding" sont des variations employées pour la seconde partie. Les prompts "all_in_one" ont été employés pour tester les performances d'un LLM sur le pipeline simplifié.
 
 - benchmark_handwritten.py:
 contient le code principal pour passer un LLM a travers le benchmark de lecture de texte et generer une output selon le format trouvable dans benchmark_results.
 
 - benchmark_error_finding.py:
 contient le code principal pour passer un LLM a travers le benchmark de detection d'erreur et generer une output selon le format trouvable dans benchmark_results.
+
+- benchmark_all_in_one.py:
+contient le code principal pour passer un LLM a travers le pipeline simplifié en employant les données de la partie 2. Celui ci n'est pas reproductible car il necessite des photos des pages des examens. Ces examens ont beau etre anonymisés dans la mesure du possible, je ne les mettrai pas directement sur ce git.
 
 - huggingface_test.py:
 contient un bout de code pour faire tourner un modele huggingface en local, avait été fait pour tester un petit modele sorti en milieu de projet et presenté comme un specialiste de l'OCR.
@@ -85,3 +88,8 @@ pip freeze de fin de projet, il y a sans doute quelques librairies en trop mais 
 
 - utilities.py:
 quelques petites fonctions utilitaires reutilisées un peu partout (lecture de fichiers, parsing, image to 64b)
+
+
+## Emploi
+dans les .py de benchmark (donc benchmark_error_finding.py et benchmark_handwritten.py), creer des objets LLM pour les modeles a tester et les mettre dans la liste "LLMs". choisir le prompt dans la variable "prompt" et lancer le code.
+Le code fait un thread par LLM et passe le tout a travers le benchmark. Quand un LLM a fini tous les exercices, le fichier de rapport est generé dans "./benchmark_results".

@@ -468,6 +468,48 @@ class GeminiClient:
 		return answer, usage
 
 
+	def ask_LLM_txt_and_imgs(self, prompt, images, temperature=1):
+		'''
+		Requests a LLM response for the given text prompt and images. Temperature can be modified with the well named parameter, default at 1.
+
+		Parameters
+		----------
+		prompt : string
+		
+		images : list[string]
+			The input images converted to b64 string
+
+		temperature : float
+			
+
+		Returns
+		-------
+		string, RespondUsage
+			The answer of the LLM and the "usage" part of the response, can change from an API to the other.
+		'''
+		input = [
+			{
+				"role": "user", 
+				"content": [
+					{
+						"type": "text",
+						"text": prompt
+					},
+				]
+			}
+		]
+		for img in images:
+			input[0]["content"].append(
+				{
+					"type": "image_url",
+					"image_url": { "url": f"data:image/png;base64,{img}" }
+				}
+			)
+
+		answer, usage = self.ask_LLM(input, temperature)
+		return answer, usage
+
+
 # -------------------------------------------------------------------
 # HuggingFace
 # -------------------------------------------------------------------
